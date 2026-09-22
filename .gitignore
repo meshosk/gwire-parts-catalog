@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Editors and IDEs
+.vscode/
+.idea/
+.kilo/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
