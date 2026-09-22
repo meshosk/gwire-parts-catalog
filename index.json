@@ -1,4 +1,5 @@
 {
     "tags": "https://raw.githubusercontent.com/meshosk/gwire-parts-catalog/refs/heads/main/tags.json",
-    "parts": "https://raw.githubusercontent.com/meshosk/gwire-parts-catalog/refs/heads/main/parts/index.json"
+    "partsDir": "https://raw.githubusercontent.com/meshosk/gwire-parts-catalog/refs/heads/main/parts/",
+    "partsIndex": "https://raw.githubusercontent.com/meshosk/gwire-parts-catalog/refs/heads/main/parts-index.json"
 }
