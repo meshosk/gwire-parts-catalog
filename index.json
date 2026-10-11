@@ -1,5 +1,7 @@
 {
     "tags": "https://raw.githubusercontent.com/meshosk/gwire-parts-catalog/refs/heads/main/tags.json",
     "partsDir": "https://raw.githubusercontent.com/meshosk/gwire-parts-catalog/refs/heads/main/parts/",
-    "partsIndex": "https://raw.githubusercontent.com/meshosk/gwire-parts-catalog/refs/heads/main/parts-index.json"
+    "partsIndex": "https://raw.githubusercontent.com/meshosk/gwire-parts-catalog/refs/heads/main/parts-index.json",
+    "schemesIndex": "https://raw.githubusercontent.com/meshosk/gwire-parts-catalog/refs/heads/main/schemes-index.json",
+    "schemesDir": "https://raw.githubusercontent.com/meshosk/gwire-parts-catalog/refs/heads/main/schemes/"
 }
