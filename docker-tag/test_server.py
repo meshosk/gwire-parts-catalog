@@ -56,14 +56,13 @@ class TagServerTests(unittest.TestCase):
         del tags[1]
         status, saved = self.request(data={"tags": tags, "revision": loaded["revision"]})
         self.assertEqual(status, 200)
-        self.assertEqual(saved["tags"], ["toggle switch", "humbucker"])
+        self.assertEqual(saved["tags"], ["humbucker", "toggle switch"])
         self.assertEqual(json.loads(self.path.read_bytes()), saved["tags"])
-        self.assertEqual(self.backup.read_bytes(), self.original)
+        self.assertFalse(self.backup.exists())
         self.assertEqual(self.request()[1]["tags"], saved["tags"])
-        previous = self.path.read_bytes()
         self.assertEqual(self.request(data={"tags": [], "revision": saved["revision"]})[0], 200)
         self.assertEqual(json.loads(self.path.read_bytes()), [])
-        self.assertEqual(self.backup.read_bytes(), previous)
+        self.assertFalse(self.backup.exists())
 
     def test_invalid_edits_do_not_touch_files(self):
         _, loaded = self.request()
@@ -92,7 +91,7 @@ class TagServerTests(unittest.TestCase):
                 self.assertEqual(self.path.read_bytes(), raw)
                 self.assertFalse(self.backup.exists())
 
-    def test_backup_failure_prevents_write(self):
+    def test_write_failure_preserves_original(self):
         _, loaded = self.request()
         with patch("server.atomic_write", side_effect=OSError("permission denied")):
             status, _ = self.request(data={"tags": ["new"], "revision": loaded["revision"]})

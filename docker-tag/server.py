@@ -109,6 +109,7 @@ def make_server(tags_path, host="0.0.0.0", port=8080):
                 tags = normalize_tags(data["tags"])
                 if len(tags) != len(data["tags"]):
                     raise ValueError("Tags contain duplicates after normalization.")
+                tags.sort()
                 with lock:
                     old_raw = tags_path.read_bytes()
                     normalize_tags(json.loads(old_raw))
@@ -116,7 +117,6 @@ def make_server(tags_path, host="0.0.0.0", port=8080):
                         self.reply(409, {"error": "The file has changed since it was loaded. Reload the page before making further edits."})
                         return
                     raw = (json.dumps(tags, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
-                    atomic_write(tags_path.with_name(tags_path.name + ".bak"), old_raw)
                     atomic_write(tags_path, raw)
                 self.reply(200, {"tags": tags, "revision": revision(raw), "normalized": False})
             except (ValueError, UnicodeError) as error:

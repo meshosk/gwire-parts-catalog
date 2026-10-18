@@ -145,7 +145,7 @@ if (typeof document !== "undefined") {
       tags = data.tags;
       revision = data.revision;
       dirty = false;
-      status("Saved to tags.json. The previous contents are backed up in tags.json.bak.");
+      status("Saved to tags.json.");
     } catch (error) { status(error.message, true); }
     finally { saving = false; render(); }
   });
