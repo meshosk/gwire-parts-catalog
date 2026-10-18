@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tag manager</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><div><p class="eyebrow">GWIRE / CATALOG</p><h1>Tag manager</h1></div><button id="save" disabled>Save</button></header>
+    <p>Edit catalog tags. Saving updates <code>tags.json</code> and creates a backup at <code>tags.json.bak</code>.</p>
+    <p id="status" role="status" aria-live="polite">Loading tags…</p>
+    <section id="edit-section" aria-labelledby="editor-title" hidden>
+      <h2 id="editor-title">Edit tag</h2>
+      <form id="editor"><label for="tag">Tag name</label><div class="input-row"><input id="tag" required autocomplete="off" placeholder="e.g. toggle switch" disabled><button id="submit-tag" disabled>Apply</button><button id="cancel" class="secondary" type="button">Cancel</button></div></form>
+      <p id="form-error" role="alert"></p>
+    </section>
+    <section aria-labelledby="list-title">
+      <div class="list-heading"><h2 id="list-title">Tags</h2><span id="count"></span></div>
+      <form id="search-form">
+        <label for="search">Search or add a tag</label>
+        <div class="input-row"><input id="search" type="search" autocomplete="off" aria-describedby="search-hint" placeholder="Search or enter a new tag" disabled><button id="add-tag" type="submit" disabled>Add tag</button></div>
+        <p id="search-hint" role="status" aria-live="polite">Type to search, including similar spellings.</p>
+      </form>
+      <ul id="tags"></ul><p id="empty" hidden>No matching tags.</p>
+    </section>
+  </main>
+</body>
+</html>

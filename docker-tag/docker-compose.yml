@@ -1,0 +1,11 @@
+services:
+  tags:
+    build: .
+    ports:
+      - "8080:8080"
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    volumes:
+      - type: bind
+        source: ..
+        target: /catalog
+    restart: unless-stopped
