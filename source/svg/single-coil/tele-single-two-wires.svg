@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="160" viewBox="0 0 480 160" role="img" aria-labelledby="tele-title tele-description">
+  <title id="tele-title">Telecaster neck single-coil pickup — top view</title>
+  <desc id="tele-description">Closed chrome pickup cover with a dark reflective face and a bright metal rim. A black fiber mounting base extends at both ends and broadens along the lower side. No exposed pole pieces. Transparent background.</desc>
+  <defs>
+    <linearGradient id="tele-fiber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#15181d"/>
+      <stop offset="1" stop-color="#2c3037"/>
+    </linearGradient>
+    <linearGradient id="tele-rim" x1="0" y1="0" x2="0.15" y2="1">
+      <stop offset="0" stop-color="#edf3f7"/>
+      <stop offset="0.18" stop-color="#929eaa"/>
+      <stop offset="0.42" stop-color="#f9fcff"/>
+      <stop offset="0.65" stop-color="#555e68"/>
+      <stop offset="0.83" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#9ca8b2"/>
+    </linearGradient>
+    <linearGradient id="tele-face" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#858e9c"/>
+      <stop offset="0.46" stop-color="#707b8b"/>
+      <stop offset="0.78" stop-color="#626b79"/>
+      <stop offset="1" stop-color="#515a66"/>
+    </linearGradient>
+  </defs>
+  <!-- Continuous black flatwork, including the mounting ears. -->
+  <path d="M47,43 H433 A24,24 0 0 1 457,67 C457,82 448,93 432,97 L310,131 Q240,149 170,131 L48,97 C32,93 23,82 23,67 A24,24 0 0 1 47,43 Z
+           M52.5,67 A5.5,5.5 0 1 0 41.5,67 A5.5,5.5 0 1 0 52.5,67 Z
+           M438.5,67 A5.5,5.5 0 1 0 427.5,67 A5.5,5.5 0 1 0 438.5,67 Z"
+        fill="url(#tele-fiber)" fill-rule="evenodd" stroke="#111419" stroke-width="2"/>
+  <path d="M81,105 L174,128 Q240,144 306,128 L399,105" fill="none" stroke="#464c56" stroke-width="1"/>
+  <!-- A narrow chrome lip surrounds the unbroken reflective top. -->
+  <rect x="76" y="29" width="328" height="78" rx="39" fill="url(#tele-rim)" stroke="#313942" stroke-width="1.8"/>
+  <rect x="81" y="34" width="318" height="68" rx="34" fill="url(#tele-face)" stroke="#d5dde3" stroke-width="1.1"/>
+  <path d="M83,62 A32,32 0 0 1 115,36 H365 Q390,36 397,60" fill="none" stroke="#edf2f7" stroke-opacity="0.8" stroke-width="1.2"/>
+  <path d="M88,84 Q97,102 115,103 H365 Q389,103 397,84" fill="none" stroke="#ffffff" stroke-width="1.7"/>
+  <path d="M114,100 H366" fill="none" stroke="#202731" stroke-width="1.1"/>
+  <g fill="#ae965f" stroke="#15181d" stroke-width="1">
+    <circle cx="224" cy="128" r="3"/>
+    <circle cx="256" cy="128" r="3"/>
+  </g>
+  <g fill="#d8d7d0"><circle cx="224" cy="128" r="1.3"/><circle cx="256" cy="128" r="1.3"/></g>
+</svg>

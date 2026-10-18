@@ -1,0 +1,88 @@
+{
+  "$id": "1",
+  "id": "9038b2c4-79e4-45d1-ace0-f87232b14300",
+  "width": 170,
+  "height": 134,
+  "svgMarkup": "\u003C?xml version=\u00221.0\u0022 encoding=\u0022UTF-8\u0022 standalone=\u0022no\u0022?\u003E\n\u003C!DOCTYPE svg PUBLIC \u0022-//W3C//DTD SVG 1.1//EN\u0022 \u0022http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\u0022\u003E\n\u003Csvg width=\u0022100%\u0022 height=\u0022100%\u0022 viewBox=\u00220 0 200 200\u0022 version=\u00221.1\u0022 xmlns=\u0022http://www.w3.org/2000/svg\u0022 xmlns:xlink=\u0022http://www.w3.org/1999/xlink\u0022 xml:space=\u0022preserve\u0022 xmlns:affinity=\u0022https://www.affinity.studio/\u0022 style=\u0022fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;\u0022\u003E\n    \u003Cpath d=\u0022M77.274,18.657C77.274,10.508 83.89,3.892 92.039,3.892C100.188,3.892 106.804,10.508 106.804,18.657L106.804,53.376C106.804,61.525 100.188,68.142 92.039,68.142C83.89,68.142 77.274,61.525 77.274,53.376L77.274,18.657Z\u0022 style=\u0022fill:rgb(167,167,167);stroke:black;stroke-width:4.17px;\u0022/\u003E\n    \u003Cpath d=\u0022M92.039,36.15C136.181,36.15 172.018,71.987 172.018,116.129C172.018,160.271 136.181,196.108 92.039,196.108C47.897,196.108 12.06,160.271 12.06,116.129C12.06,71.987 47.897,36.15 92.039,36.15ZM92.039,86.598C75.74,86.598 62.508,99.831 62.508,116.129C62.508,132.428 75.74,145.66 92.039,145.66C108.337,145.66 121.57,132.428 121.57,116.129C121.57,99.831 108.337,86.598 92.039,86.598Z\u0022 style=\u0022fill:rgb(200,140,92);stroke:black;stroke-width:4.17px;\u0022/\u003E\n    \u003Cpath d=\u0022M138.795,105.29C139.601,108.773 140.026,112.402 140.026,116.129C140.026,142.614 118.524,164.117 92.039,164.117C65.554,164.117 44.051,142.614 44.051,116.129C44.051,89.644 65.554,68.142 92.039,68.142C104.111,68.142 115.149,72.609 123.586,79.98L164.979,52.354C171.757,47.83 180.933,49.66 185.457,56.438C189.981,63.216 188.151,72.392 181.373,76.916L139.683,104.741C139.391,104.935 139.095,105.118 138.795,105.29ZM92.039,86.598C75.74,86.598 62.508,99.831 62.508,116.129C62.508,132.428 75.74,145.66 92.039,145.66C108.337,145.66 121.57,132.428 121.57,116.129C121.57,99.831 108.337,86.598 92.039,86.598Z\u0022 style=\u0022fill:rgb(167,167,167);stroke:black;stroke-width:4.17px;\u0022/\u003E\n    \u003Cg\u003E\n        \u003Cpath d=\u0022M173.018,56L173.018,65\u0022 style=\u0022fill:none;stroke:black;stroke-width:2.08px;\u0022/\u003E\n        \u003Cpath d=\u0022M170.018,71L176.018,71\u0022 style=\u0022fill:none;stroke:black;stroke-width:2.08px;\u0022/\u003E\n        \u003Cpath d=\u0022M168.518,68L177.518,68\u0022 style=\u0022fill:none;stroke:black;stroke-width:2.08px;\u0022/\u003E\n        \u003Cpath d=\u0022M166.018,65L180.018,65\u0022 style=\u0022fill:none;stroke:black;stroke-width:2.08px;\u0022/\u003E\n    \u003C/g\u003E\n\u003C/svg\u003E\n",
+  "svgLocalPosition": {
+    "x": 12.597656,
+    "y": 16.605469
+  },
+  "schemePosition": {
+    "x": 0,
+    "y": 0
+  },
+  "tags": {
+    "$id": "2",
+    "$values": []
+  },
+  "classType": "CircuitPart",
+  "name": "Mono jack socket",
+  "description": "",
+  "points": {
+    "$id": "3",
+    "$values": [
+      {
+        "$id": "4",
+        "label": "Line",
+        "localPosition": {
+          "x": 91.93359,
+          "y": 18.394531
+        },
+        "owner": {
+          "$ref": "1"
+        },
+        "connectionPoints": {
+          "$id": "5",
+          "$values": []
+        }
+      },
+      {
+        "$id": "6",
+        "label": "Ground",
+        "localPosition": {
+          "x": 160.07812,
+          "y": 51.726562
+        },
+        "owner": {
+          "$ref": "1"
+        },
+        "connectionPoints": {
+          "$id": "7",
+          "$values": []
+        }
+      }
+    ]
+  },
+  "states": {
+    "$id": "8",
+    "$values": [
+      {
+        "$id": "9",
+        "label": "State 1",
+        "connectionGroups": {
+          "$id": "10",
+          "$values": [
+            {
+              "$id": "11",
+              "connectedPints": {
+                "$id": "12",
+                "$values": [
+                  {
+                    "$ref": "6"
+                  },
+                  {
+                    "$ref": "4"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "activeState": {
+    "$ref": "9"
+  }
+}

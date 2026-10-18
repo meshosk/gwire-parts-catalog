@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="160" viewBox="0 0 480 160" role="img" aria-labelledby="strat-title strat-description">
+  <title id="strat-title">Stratocaster single-coil pickup — top view</title>
+  <desc id="strat-description">White pickup cover and white mounting ears with six flat exposed pole pieces. The black fiber base widens along the lower side, as seen from directly above. Transparent background.</desc>
+  <defs>
+    <linearGradient id="strat-white" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.7" stop-color="#f6f5f0"/>
+      <stop offset="1" stop-color="#deddd6"/>
+    </linearGradient>
+    <linearGradient id="strat-fiber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16171a"/>
+      <stop offset="1" stop-color="#303135"/>
+    </linearGradient>
+    <linearGradient id="strat-pole-metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7e5dd"/>
+      <stop offset="0.5" stop-color="#c1c0b8"/>
+      <stop offset="1" stop-color="#aaa9a3"/>
+    </linearGradient>
+    <g id="strat-pole">
+      <circle r="10.7" fill="url(#strat-pole-metal)" stroke="#4b4944" stroke-width="1.5"/>
+      <path d="M-6,-6 L5,5 M-7,-2 L2,7 M-2,-7 L7,2" fill="none" stroke="#f3f0e7" stroke-opacity="0.5" stroke-width="0.65"/>
+    </g>
+  </defs>
+  <!-- Asymmetric fiber flatwork, broadening below the cover. -->
+  <path d="M38,44 H442 A24,24 0 0 1 466,68 C466,83 456,94 441,98 L320,134 Q240,155 160,134 L39,98 C24,94 14,83 14,68 A24,24 0 0 1 38,44 Z
+           M44,68 A6,6 0 1 0 32,68 A6,6 0 1 0 44,68 Z
+           M448,68 A6,6 0 1 0 436,68 A6,6 0 1 0 448,68 Z"
+        fill="url(#strat-fiber)" fill-rule="evenodd" stroke="#111215" stroke-width="2"/>
+  <path d="M71,105 L164,131 Q240,150 316,131 L409,105" fill="none" stroke="#55565a" stroke-width="1"/>
+  <!-- Mounting ears are part of the white cover flange, not black tabs. -->
+  <path d="M38,46 H442 A22,22 0 0 1 464,68 A22,22 0 0 1 442,90 H38 A22,22 0 0 1 16,68 A22,22 0 0 1 38,46 Z
+           M44,68 A6,6 0 1 0 32,68 A6,6 0 1 0 44,68 Z
+           M448,68 A6,6 0 1 0 436,68 A6,6 0 1 0 448,68 Z"
+        fill="url(#strat-white)" fill-rule="evenodd" stroke="#bbb9b0" stroke-width="1.5"/>
+  <rect x="63" y="27" width="354" height="82" rx="41" fill="url(#strat-white)" stroke="#b9b7af" stroke-width="1.5"/>
+  <path d="M105,30 H375 A38,38 0 0 1 413,68" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <path d="M68,78 Q75,105 105,106 H375 Q400,106 410,86" fill="none" stroke="#ceccc3" stroke-width="1"/>
+  <g transform="translate(125 68)"><use href="#strat-pole"/></g>
+  <g transform="translate(171 68)"><use href="#strat-pole"/></g>
+  <g transform="translate(217 68)"><use href="#strat-pole"/></g>
+  <g transform="translate(263 68)"><use href="#strat-pole"/></g>
+  <g transform="translate(309 68)"><use href="#strat-pole"/></g>
+  <g transform="translate(355 68)"><use href="#strat-pole"/></g>
+  <!-- Small connection eyelets in the exposed flatwork. -->
+  <g fill="#b79858" stroke="#17181a" stroke-width="1">
+    <circle cx="221" cy="131" r="3.4"/>
+    <circle cx="259" cy="131" r="3.4"/>
+  </g>
+  <g fill="#d6d2c5"><circle cx="221" cy="131" r="1.5"/><circle cx="259" cy="131" r="1.5"/></g>
+</svg>
