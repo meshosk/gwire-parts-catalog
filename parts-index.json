@@ -1,3 +1,5 @@
 [
-  "mono-jack-socket.part.json"
+  "mono-jack-socket.part.json",
+  "pot.part.json",
+  "singlecoil pickup.part.json"
 ]

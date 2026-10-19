@@ -60,6 +60,8 @@ def scheme_entry(path, directory):
 def build_indexes(root):
     root = root.resolve()
     config = read_json(root / "index.json")
+    if not isinstance(config, dict):
+        raise ValueError("index.json must contain a JSON object")
     parts_dir = local_path(root, config, "partsDir")
     schemes_dir = local_path(root, config, "schemesDir")
     parts_index = local_path(root, config, "partsIndex")
@@ -80,7 +82,7 @@ def build_indexes(root):
             json.dumps(entries, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
-        print(f"{destination.name}: {len(entries)} entries")
+    return {"parts": len(parts), "schemes": len(schemes)}
 
 
 def main():
@@ -91,10 +93,11 @@ def main():
     )
     args = parser.parse_args()
     try:
-        build_indexes(args.root)
+        counts = build_indexes(args.root)
     except (OSError, ValueError, KeyError) as error:
         print(f"Cannot build indexes: {error}", file=sys.stderr)
         return 1
+    print(f"Indexes rebuilt: {counts['parts']} parts, {counts['schemes']} schemes")
     return 0
 
 

@@ -73,3 +73,48 @@ test('live search adds unique normalized tags and preserves editing and saving',
   assert.deepEqual(posted.tags, ['pickup', 'humbucker']);
   assert.equal(get('save').disabled, true);
 });
+
+test('rebuild button shows progress, counts and errors without changing pending tags', async () => {
+  const elements = new Map();
+  const get = id => {
+    if (!elements.has(id)) elements.set(id, new Element());
+    return elements.get(id);
+  };
+  let complete, calls = 0;
+  const context = {
+    document: {getElementById: get, createElement: () => new Element()},
+    window: {addEventListener() {}},
+    fetch: async (url, options) => {
+      if (url === '/api/indexes') {
+        calls++;
+        assert.equal(options.method, 'POST');
+        assert.equal(options.body, '{}');
+        return new Promise(resolve => { complete = resolve; });
+      }
+      return {ok: true, json: async () => ({tags: ['pickup'], revision: 'test', normalized: false})};
+    }
+  };
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'static/app.js'), 'utf8'), context);
+  await new Promise(resolve => setImmediate(resolve));
+  get('search').value = 'new tag';
+  get('search-form').dispatch('submit');
+  assert.equal(get('save').disabled, false);
+  const rebuilding = get('build-indexes').dispatch('click');
+  assert.equal(get('build-indexes').disabled, true);
+  assert.equal(get('index-status').textContent, 'Rebuilding catalog indexes…');
+  await get('build-indexes').dispatch('click');
+  assert.equal(calls, 1);
+  complete({ok: true, json: async () => ({parts: 4, schemes: 2})});
+  await rebuilding;
+  assert.equal(get('index-status').textContent, 'Indexes rebuilt: 4 parts, 2 schemes.');
+  assert.equal(get('build-indexes').disabled, false);
+  assert.equal(get('save').disabled, false);
+  assert.equal(get('status').textContent, 'You have unsaved changes.');
+  assert.equal(get('tags').children[0].children[0].textContent, 'new tag');
+
+  const retry = get('build-indexes').dispatch('click');
+  complete({ok: false, json: async () => ({error: 'Invalid scheme metadata'})});
+  await retry;
+  assert.equal(get('index-status').textContent, 'Invalid scheme metadata');
+  assert.equal(get('build-indexes').disabled, false);
+});

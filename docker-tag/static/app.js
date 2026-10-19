@@ -32,6 +32,7 @@ if (typeof module !== "undefined") module.exports = {normalize, distance, matchS
 if (typeof document !== "undefined") {
   const $ = id => document.getElementById(id);
   let tags = [], revision = null, editing = null, dirty = false, saving = false;
+  let indexing = false;
 
   function status(message, error = false) {
     $("status").textContent = message;
@@ -104,8 +105,8 @@ if (typeof document !== "undefined") {
     }
   }
 
-  async function request(options) {
-    const response = await fetch("/api/tags", options);
+  async function request(options, path = "/api/tags") {
+    const response = await fetch(path, options);
     const data = await response.json();
     if (!response.ok) throw new Error(data.error || "Request failed.");
     return data;
@@ -135,6 +136,25 @@ if (typeof document !== "undefined") {
     $("search").focus();
   });
   $("search").addEventListener("input", render);
+  $("build-indexes").addEventListener("click", async () => {
+    if (indexing) return;
+    indexing = true;
+    $("build-indexes").disabled = true;
+    $("build-indexes").textContent = "Rebuilding…";
+    $("index-status").textContent = "Rebuilding catalog indexes…";
+    $("index-status").classList.toggle("error", false);
+    try {
+      const data = await request({method: "POST", headers: {"Content-Type": "application/json"}, body: "{}"}, "/api/indexes");
+      $("index-status").textContent = `Indexes rebuilt: ${data.parts} parts, ${data.schemes} schemes.`;
+    } catch (error) {
+      $("index-status").textContent = error.message;
+      $("index-status").classList.toggle("error", true);
+    } finally {
+      indexing = false;
+      $("build-indexes").disabled = false;
+      $("build-indexes").textContent = "Rebuild indexes";
+    }
+  });
   $("save").addEventListener("click", async () => {
     if (!dirty || saving) return;
     saving = true;

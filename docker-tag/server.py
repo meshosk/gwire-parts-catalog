@@ -11,6 +11,8 @@ import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlsplit
 
+from build_indexes import build_indexes
+
 
 def normalize_tags(value):
     if not isinstance(value, list) or any(not isinstance(tag, str) for tag in value):
@@ -50,6 +52,7 @@ def make_server(tags_path, host="0.0.0.0", port=8080):
     tags_path = Path(tags_path).resolve()
     static_path = Path(__file__).resolve().parent / "static"
     lock = threading.Lock()
+    index_lock = threading.Lock()
 
     class Handler(SimpleHTTPRequestHandler):
         def __init__(self, *args, **kwargs):
@@ -88,7 +91,8 @@ def make_server(tags_path, host="0.0.0.0", port=8080):
                 self.reply(404, {"error": "Page not found."})
 
         def do_POST(self):
-            if urlsplit(self.path).path != "/api/tags":
+            route = urlsplit(self.path).path
+            if route not in ("/api/tags", "/api/indexes"):
                 self.reply(404, {"error": "Page not found."})
                 return
             origin = self.headers.get("Origin")
@@ -104,6 +108,9 @@ def make_server(tags_path, host="0.0.0.0", port=8080):
                     self.reply(413, {"error": "Invalid request size (maximum 1 MB)."})
                     return
                 data = json.loads(self.rfile.read(length))
+                if route == "/api/indexes":
+                    self.rebuild_indexes(data)
+                    return
                 if not isinstance(data, dict) or "tags" not in data or "revision" not in data:
                     raise ValueError("Missing tags or file revision.")
                 tags = normalize_tags(data["tags"])
@@ -123,6 +130,23 @@ def make_server(tags_path, host="0.0.0.0", port=8080):
                 self.reply(400, {"error": str(error)})
             except OSError as error:
                 self.reply(500, {"error": f"Save failed: {error}"})
+
+        def rebuild_indexes(self, data):
+            if not isinstance(data, dict) or data:
+                self.reply(400, {"error": "Expected an empty JSON object."})
+                return
+            if not index_lock.acquire(blocking=False):
+                self.reply(409, {"error": "Index generation is already running. Try again shortly."})
+                return
+            try:
+                counts = build_indexes(tags_path.parent)
+                self.reply(200, counts)
+            except (ValueError, KeyError) as error:
+                self.reply(422, {"error": f"Cannot build indexes: {error}"})
+            except OSError as error:
+                self.reply(500, {"error": f"Cannot build indexes: {error}"})
+            finally:
+                index_lock.release()
 
     return ThreadingHTTPServer((host, port), Handler)
 

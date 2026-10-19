@@ -12,6 +12,12 @@
     <header><div><p class="eyebrow">GWIRE / CATALOG</p><h1>Tag manager</h1></div><button id="save" disabled>Save</button></header>
     <p>Edit catalog tags. Saving updates <code>tags.json</code>.</p>
     <p id="status" role="status" aria-live="polite">Loading tags…</p>
+    <section aria-labelledby="indexes-title">
+      <h2 id="indexes-title">Catalog indexes</h2>
+      <p>Rebuild the parts and schemes indexes after changing catalog files.</p>
+      <button id="build-indexes" type="button">Rebuild indexes</button>
+      <p id="index-status" role="status" aria-live="polite"></p>
+    </section>
     <section id="edit-section" aria-labelledby="editor-title" hidden>
       <h2 id="editor-title">Edit tag</h2>
       <form id="editor"><label for="tag">Tag name</label><div class="input-row"><input id="tag" required autocomplete="off" placeholder="e.g. toggle switch" disabled><button id="submit-tag" disabled>Apply</button><button id="cancel" class="secondary" type="button">Cancel</button></div></form>

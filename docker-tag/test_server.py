@@ -3,6 +3,7 @@ from pathlib import Path
 import tempfile
 import threading
 import unittest
+from concurrent.futures import ThreadPoolExecutor
 from unittest.mock import patch
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
@@ -106,8 +107,84 @@ class TagServerTests(unittest.TestCase):
 
     def test_foreign_origin_and_non_json_rejected(self):
         data = {"tags": [], "revision": "x"}
-        self.assertEqual(self.request(data=data, headers={"Content-Type": "application/json", "Origin": "https://example.org"})[0], 403)
-        self.assertEqual(self.request(data=data, headers={"Content-Type": "text/plain"})[0], 415)
+        for route in ("/api/tags", "/api/indexes"):
+            self.assertEqual(self.request(path=route, data=data, headers={"Content-Type": "application/json", "Origin": "https://example.org"})[0], 403)
+            self.assertEqual(self.request(path=route, data=data, headers={"Content-Type": "text/plain"})[0], 415)
+
+    def catalog(self):
+        root = self.path.parent
+        config = {"partsDir": "https://example.org/catalog/parts/", "schemesDir": "schemes",
+                  "partsIndex": "parts-index.json", "schemesIndex": "schemes-index.json"}
+        (root / "index.json").write_text(json.dumps(config))
+        (root / "parts" / "nested").mkdir(parents=True)
+        (root / "schemes").mkdir()
+        (root / "parts" / "z.json").write_text('{}')
+        (root / "parts" / "nested" / "a.json").write_text('{}')
+        (root / "schemes" / "one.json").write_text(json.dumps({
+            "name": "Example", "description": "Test scheme", "tags": {"$values": ["pickup"]}}))
+        (root / "parts-index.json").write_text('["stale.json"]')
+        (root / "schemes-index.json").write_text('[]')
+        return root, config
+
+    def test_rebuild_indexes_from_local_catalog(self):
+        root, _ = self.catalog()
+        status, data = self.request(path="/api/indexes", data={})
+        self.assertEqual(status, 200)
+        self.assertEqual(data, {"parts": 2, "schemes": 1})
+        self.assertEqual(json.loads((root / "parts-index.json").read_text()), ['nested/a.json', 'z.json'])
+        self.assertEqual(json.loads((root / "schemes-index.json").read_text()), [{
+            "file": "one.json", "name": "Example", "description": "Test scheme", "tags": ["pickup"]}])
+        self.assertEqual(self.path.read_bytes(), self.original)
+        # Removing source files also removes their entries on the next rebuild.
+        (root / "parts" / "z.json").unlink()
+        (root / "schemes" / "one.json").unlink()
+        self.assertEqual(self.request(path="/api/indexes", data={})[1], {"parts": 1, "schemes": 0})
+
+    def test_invalid_scheme_preserves_both_indexes_and_allows_retry(self):
+        root, _ = self.catalog()
+        scheme = root / "schemes" / "one.json"
+        scheme.write_text('{"name": "Invalid"}')
+        status, data = self.request(path="/api/indexes", data={})
+        self.assertEqual(status, 422)
+        self.assertIn("description", data["error"])
+        self.assertEqual((root / "parts-index.json").read_text(), '["stale.json"]')
+        self.assertEqual((root / "schemes-index.json").read_text(), '[]')
+        scheme.write_text('{"name": "Valid", "description": "", "tags": []}')
+        self.assertEqual(self.request(path="/api/indexes", data={})[0], 200)
+
+    def test_invalid_index_paths_are_rejected(self):
+        root, config = self.catalog()
+        for destination in ('../outside.json', 'schemes-index.json'):
+            config['partsIndex'] = destination
+            (root / "index.json").write_text(json.dumps(config))
+            self.assertEqual(self.request(path="/api/indexes", data={})[0], 422)
+            self.assertEqual((root / "parts-index.json").read_text(), '["stale.json"]')
+
+    def test_index_write_error_is_reported(self):
+        with patch("server.build_indexes", side_effect=OSError("permission denied")):
+            status, data = self.request(path="/api/indexes", data={})
+        self.assertEqual(status, 500)
+        self.assertIn("permission denied", data["error"])
+
+    def test_concurrent_rebuild_is_rejected(self):
+        started, release = threading.Event(), threading.Event()
+
+        def build(_):
+            started.set()
+            release.wait(timeout=2)
+            return {"parts": 0, "schemes": 0}
+
+        with patch("server.build_indexes", side_effect=build), ThreadPoolExecutor() as pool:
+            first = pool.submit(self.request, path="/api/indexes", data={})
+            try:
+                self.assertTrue(started.wait(timeout=1))
+                self.assertEqual(self.request(path="/api/indexes", data={})[0], 409)
+            finally:
+                release.set()
+            self.assertEqual(first.result()[0], 200)
+
+    def test_rebuild_request_cannot_override_catalog_root(self):
+        self.assertEqual(self.request(path="/api/indexes", data={"root": "/tmp"})[0], 400)
 
 
 if __name__ == "__main__":

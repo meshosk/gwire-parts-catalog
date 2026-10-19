@@ -2,27 +2,12 @@
 
 The catalog JSON files are maintained separately from the app.
 
-## Docker tools
+## Tag manager (`docker-tag`)
 
-Both images build locally on top of `python:3.13-slim`. They require Docker with
+The image builds locally on top of `python:3.13-slim`. It requires Docker with
 Compose and a running daemon. Run the commands below from the repository root;
 the catalog is mounted at `/catalog`, so changes are written directly to this checkout.
 Your user and group IDs are passed to preserve file ownership.
-
-### Catalog index builder (`docker-index`)
-
-Rebuilds `parts-index.json` and `schemes-index.json` after adding, editing, or
-removing parts or schemes. Runs once without networking and removes the container
-when finished:
-
-```sh
-LOCAL_UID="$(id -u)" LOCAL_GID="$(id -g)" \
-  docker compose -f docker-index/compose.yaml run --build --rm indexes
-```
-
-Alternatively, use `make -C docker-index indexes`.
-
-### Tag manager (`docker-tag`)
 
 Web app for searching (including fuzzy matches), adding, editing, and deleting
 tags. Tags are lowercased and trimmed; duplicates are rejected. **Save** updates
@@ -35,6 +20,9 @@ LOCAL_UID="$(id -u)" LOCAL_GID="$(id -g)" \
 
 Open [localhost:8080](http://localhost:8080). Search filters results as you type;
 **Add tag** or Enter adds the search text only if that tag does not already exist.
+Click **Rebuild indexes** after changing parts or schemes to regenerate
+`parts-index.json` and `schemes-index.json`. The result shows entry counts or an
+error. Index generation uses local catalog files and is separate from saving tags.
 The app has no authentication; use it on a trusted local network.
 
 Stop it with:
@@ -45,7 +33,7 @@ docker compose -f docker-tag/docker-compose.yml down
 
 ## Index format
 
-The index builder can also run locally with `python3 docker-index/build_indexes.py`
+The index builder can also run locally with `python3 docker-tag/build_indexes.py`
 (Python 3.9+).
 
 The script reads `index.json` to locate the catalog directories and index outputs.
