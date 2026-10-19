@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="240" height="260" viewBox="0 0 240 260" role="img" aria-labelledby="pot-title pot-description">
-  <title id="pot-title">Guitar potentiometer — shaft-side top view</title>
-  <desc id="pot-description">Round metal potentiometer housing with a brass mounting nut, split knurled shaft, brown insulating terminal board and three solder lugs with transparent holes. Transparent background.</desc>
+  <title id="pot-title">Guitar potentiometer — schematic top view</title>
+  <desc id="pot-description">Round metal potentiometer housing with an unobstructed center for a schematic label, brown insulating terminal board and three solder lugs with transparent holes. Transparent background.</desc>
   <defs>
     <linearGradient id="pot-housing" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#eef0f1"/>
@@ -15,11 +15,6 @@
       <stop offset="0.75" stop-color="#e0e4e7"/>
       <stop offset="1" stop-color="#79848e"/>
     </linearGradient>
-    <linearGradient id="pot-brass" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#eee0ad"/>
-      <stop offset="0.5" stop-color="#c0a56a"/>
-      <stop offset="1" stop-color="#96804b"/>
-    </linearGradient>
     <linearGradient id="pot-terminal" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#a8afb3"/>
       <stop offset="0.45" stop-color="#f1f2ee"/>
@@ -31,7 +26,6 @@
             fill="url(#pot-terminal)" fill-rule="evenodd" stroke="#40474c" stroke-width="1.8" stroke-linejoin="round"/>
       <path d="M-6,207 H6" fill="none" stroke="#747d83" stroke-width="1.2"/>
     </g>
-    <path id="pot-knurl" d="M0,-13 V-17" fill="none" stroke="#626a70" stroke-width="1.5" stroke-linecap="round"/>
     <g id="pot-crimp">
       <path d="M-8,-82 H8 L7,-73 H-7 Z" fill="url(#pot-rim)" stroke="#747e86" stroke-width="1.1" stroke-linejoin="round"/>
     </g>
@@ -47,7 +41,7 @@
     <circle cx="120" cy="197" r="4"/>
     <circle cx="170" cy="197" r="4"/>
   </g>
-  <!-- Stamped circular housing, viewed directly along the shaft. -->
+  <!-- Stamped circular housing; the center is left clear for a label. -->
   <circle cx="120" cy="106" r="86" fill="url(#pot-rim)" stroke="#343b41" stroke-width="2.5"/>
   <circle cx="120" cy="106" r="79" fill="url(#pot-housing)" stroke="#8a949c" stroke-width="1.4"/>
   <path d="M47,91 A75,75 0 0 1 156,40" fill="none" stroke="#ffffff" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round"/>
@@ -59,34 +53,4 @@
     <use href="#pot-crimp" transform="rotate(240)"/>
     <use href="#pot-crimp" transform="rotate(300)"/>
   </g>
-  <!-- Washer, hexagonal mounting nut and threaded bushing. -->
-  <circle cx="120" cy="106" r="39" fill="url(#pot-rim)" stroke="#707980" stroke-width="1.5"/>
-  <path d="M120,72 L149.45,89 V123 L120,140 L90.55,123 V89 Z" fill="url(#pot-brass)" stroke="#74613c" stroke-width="1.8" stroke-linejoin="round"/>
-  <path d="M93,90 L120,75 L147,90 M93,91 V121" fill="none" stroke="#f7e8b9" stroke-width="1.6" stroke-linejoin="round"/>
-  <circle cx="120" cy="106" r="24" fill="#9d8855" stroke="#74613c" stroke-width="1.4"/>
-  <circle cx="120" cy="106" r="21" fill="url(#pot-brass)" stroke="#e6d39b" stroke-width="1.2"/>
-  <!-- Split shaft with a ring of axial knurling. -->
-  <circle cx="120" cy="106" r="17.5" fill="url(#pot-housing)" stroke="#4d555d" stroke-width="1.5"/>
-  <g transform="translate(120 106)">
-    <use href="#pot-knurl"/>
-    <use href="#pot-knurl" transform="rotate(20)"/>
-    <use href="#pot-knurl" transform="rotate(40)"/>
-    <use href="#pot-knurl" transform="rotate(60)"/>
-    <use href="#pot-knurl" transform="rotate(80)"/>
-    <use href="#pot-knurl" transform="rotate(100)"/>
-    <use href="#pot-knurl" transform="rotate(120)"/>
-    <use href="#pot-knurl" transform="rotate(140)"/>
-    <use href="#pot-knurl" transform="rotate(160)"/>
-    <use href="#pot-knurl" transform="rotate(180)"/>
-    <use href="#pot-knurl" transform="rotate(200)"/>
-    <use href="#pot-knurl" transform="rotate(220)"/>
-    <use href="#pot-knurl" transform="rotate(240)"/>
-    <use href="#pot-knurl" transform="rotate(260)"/>
-    <use href="#pot-knurl" transform="rotate(280)"/>
-    <use href="#pot-knurl" transform="rotate(300)"/>
-    <use href="#pot-knurl" transform="rotate(320)"/>
-    <use href="#pot-knurl" transform="rotate(340)"/>
-  </g>
-  <path d="M118,89.5 V122.5 H122 V89.5 Z" fill="#454b51"/>
-  <path d="M117,92 V120" fill="none" stroke="#f3f5f6" stroke-width="1"/>
 </svg>

@@ -1,4 +1,6 @@
 [
+  "balance",
+  "blend",
   "capacitor",
   "hh",
   "hhh",
@@ -11,6 +13,7 @@
   "p90",
   "pickup",
   "pot",
+  "potentiometer",
   "push pull pot",
   "push pull pot switch",
   "push pull switch",
@@ -19,8 +22,11 @@
   "socket",
   "ssh",
   "sss",
+  "standard",
   "stereo",
   "switch",
   "toggle switch",
-  "treble bleed"
+  "tone",
+  "treble bleed",
+  "volume"
 ]
