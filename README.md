@@ -30,7 +30,7 @@ wiring schemes, shared tags, and a local tag manager with an index builder.
 5. Rebuild the indexes after adding, removing, renaming, or editing parts or schemes.
    Include the updated index files with the catalog changes.
 
-The index builder only regenerates index files. It does not convert SVG artwork
+The index builder normalizes catalog filenames and regenerates index files. It does not convert SVG artwork
 into parts or modify component definitions.
 
 ## Tag manager
@@ -94,6 +94,12 @@ paths resolve inside the catalog root. It recursively scans all `*.json` files i
 the configured part and scheme directories, sorts their relative paths, and
 replaces both indexes, removing stale entries. Standalone SVG files are not indexed.
 
+During each rebuild, JSON filenames are renamed to lowercase with spaces replaced
+by hyphens (for example, `Singlecoil Pickup.part.json` becomes
+`singlecoil-pickup.part.json`). Directory names and metadata inside JSON files stay
+unchanged. Both indexes use the renamed files. Filename collisions and invalid
+scheme metadata are rejected before any files are renamed or indexes are written.
+
 `parts-index.json` is an array of filenames, for example:
 
 ```json
@@ -101,7 +107,7 @@ replaces both indexes, removing stale entries. Standalone SVG files are not inde
   "5-way-strat-switch.part.json",
   "mono-jack-socket.part.json",
   "pot.part.json",
-  "singlecoil pickup.part.json"
+  "singlecoil-pickup.part.json"
 ]
 ```
 
@@ -110,7 +116,7 @@ replaces both indexes, removing stale entries. Standalone SVG files are not inde
 ```json
 [
   {
-    "file": "Testovacka 01.scheme.json",
+    "file": "testovacka-01.scheme.json",
     "name": "Testovacka 01",
     "description": "Test test testtest",
     "tags": ["humbucker", "resistor", "p90"]

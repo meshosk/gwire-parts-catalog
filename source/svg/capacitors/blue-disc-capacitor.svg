@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-labelledby="cap-title cap-description">
+  <title id="cap-title">Modrý obalený diskový kondenzátor bez potlače</title>
+  <desc id="cap-description">Štylizovaná súčiastka pre gitarové schémy zapojenia podľa dodanej fotografie. Telo bez potlače a bez viditeľných textov, pripravené na doplnenie hodnoty. Priehľadné pozadie. Body pripojenia: (124, 292), (196, 292).</desc>
+  <defs>
+    <linearGradient id="cap-body" x1="0" y1="0" x2="0.75" y2="1">
+      <stop offset="0" stop-color="#35bbf5"/><stop offset="0.55" stop-color="#079cde"/><stop offset="1" stop-color="#0086c6"/>
+    </linearGradient>
+    <linearGradient id="cap-wire" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#92999d"/><stop offset="0.42" stop-color="#f1f3f2"/><stop offset="1" stop-color="#9ca3a7"/>
+    </linearGradient>
+  </defs>
+  <g><path id="terminal-1" d="M124 181 V292" fill="none" stroke="#5c6266" stroke-width="9" stroke-linecap="round"/><path d="M124 181 V292" fill="none" stroke="url(#cap-wire)" stroke-width="6" stroke-linecap="round"/>
+<path id="terminal-2" d="M196 181 V292" fill="none" stroke="#5c6266" stroke-width="9" stroke-linecap="round"/><path d="M196 181 V292" fill="none" stroke="url(#cap-wire)" stroke-width="6" stroke-linecap="round"/></g>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M88 105 C88 64 117 35 160 35 C203 35 232 64 232 105 C232 137 215 148 207 166 L204 183 Q198 193 189 184 Q160 174 131 184 Q122 193 116 183 L113 166 C105 148 88 137 88 105Z" fill="url(#cap-body)" stroke="#087bb5" stroke-width="2.4"/>
+    <path d="M101 94 Q110 49 151 47" fill="none" stroke="#9addfa" stroke-opacity="0.65" stroke-width="3"/>
+    <path d="M119 166 Q126 170 132 175 M188 175 Q194 170 201 166" fill="none" stroke="#007cb9" stroke-opacity="0.65" stroke-width="2"/>
+</g>
+</svg>

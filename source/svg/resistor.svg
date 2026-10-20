@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="160" viewBox="0 0 440 160" role="img" aria-labelledby="resistor-title resistor-description">
+  <title id="resistor-title">Axiálny rezistor bez pásikov</title>
+  <desc id="resistor-description">Béžové telo rezistora s dvoma striebornými vývodmi, bez farebných pásikov a bez viditeľného textu. Stred tela je voľný na doplnenie hodnoty. Priehľadné pozadie. Body pripojenia: (20, 80), (420, 80). Odporúčané miesto pre centrovaný text: (220, 80).</desc>
+  <defs>
+    <linearGradient id="resistor-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ead6ac"/>
+      <stop offset="0.35" stop-color="#f2e2c2"/>
+      <stop offset="0.7" stop-color="#ddc398"/>
+      <stop offset="1" stop-color="#bda17a"/>
+    </linearGradient>
+    <linearGradient id="resistor-wire" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#92999d"/>
+      <stop offset="0.42" stop-color="#f1f3f2"/>
+      <stop offset="1" stop-color="#9ca3a7"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke-linecap="round">
+    <path id="terminal-1" d="M20 80 H130" stroke="#5c6266" stroke-width="8"/>
+    <path id="terminal-2" d="M310 80 H420" stroke="#5c6266" stroke-width="8"/>
+    <path d="M20 80 H130 M310 80 H420" stroke="url(#resistor-wire)" stroke-width="5.5"/>
+  </g>
+  <!-- Slightly flared ends give the unmarked body a familiar resistor silhouette. -->
+  <path d="M132 44 C120 44 114 54 114 66 V94 C114 106 120 116 132 116 H146 C158 116 160 108 174 108 H266 C280 108 282 116 294 116 H308 C320 116 326 106 326 94 V66 C326 54 320 44 308 44 H294 C282 44 280 52 266 52 H174 C160 52 158 44 146 44Z" fill="url(#resistor-body)" stroke="#897252" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M127 60 Q128 55 135 55 H145 Q158 63 174 63 H266 Q282 63 295 55 H305" fill="none" stroke="#fff4dc" stroke-opacity="0.65" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

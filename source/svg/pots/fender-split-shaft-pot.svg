@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="390" viewBox="0 0 360 390" role="img" aria-labelledby="fender-pot-title fender-pot-description">
+  <title id="fender-pot-title">Fender split-shaft potenciometer s tlačidlovým prepínačom</title>
+  <desc id="fender-pot-description">Štylizovaná grafika podľa dodanej fotografie, zo strany kontaktov s miernym odsadením zostavy pre prehľadnosť. Strieborné puzdro potenciometra, tri samostatné vývody hore, čierne teleso prepínača a zelená kruhová doska s dvanástimi kontaktmi po obvode. Bez viditeľných popisov. Stred dosky je voľný pre text, odporúčaný stred textu (180, 238). Priehľadné pozadie. Čísla v identifikátoroch SVG neurčujú elektrické zapojenie.</desc>
+  <defs>
+    <linearGradient id="fender-metal" x1="0" y1="0" x2="0.8" y2="1">
+      <stop stop-color="#eceeeb"/><stop offset="0.35" stop-color="#cbd0ce"/><stop offset="0.7" stop-color="#a6aeab"/><stop offset="1" stop-color="#d9ddda"/>
+    </linearGradient>
+    <linearGradient id="fender-contact" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f4edd6"/><stop offset="0.5" stop-color="#d7d6bd"/><stop offset="1" stop-color="#a5ac9b"/>
+    </linearGradient>
+    <linearGradient id="fender-board" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#488e71"/><stop offset="0.55" stop-color="#357e60"/><stop offset="1" stop-color="#28674f"/>
+    </linearGradient>
+  </defs>
+  <!-- Potentiometer lugs and insulating wafer behind the housing. -->
+    <g id="pot-terminal-1" transform="translate(120 0)">
+      <path d="M-10 85 V28 Q-10 21 -3 21 H3 Q10 21 10 28 V85 Z M-4 32 V43 A4 4 0 0 0 4 43 V32 A4 4 0 0 0 -4 32Z" fill="url(#fender-contact)" fill-rule="evenodd" stroke="#665e42" stroke-width="1.8"/>
+    </g>
+    <g id="pot-terminal-2" transform="translate(180 0)">
+      <path d="M-10 85 V28 Q-10 21 -3 21 H3 Q10 21 10 28 V85 Z M-4 32 V43 A4 4 0 0 0 4 43 V32 A4 4 0 0 0 -4 32Z" fill="url(#fender-contact)" fill-rule="evenodd" stroke="#665e42" stroke-width="1.8"/>
+    </g>
+    <g id="pot-terminal-3" transform="translate(240 0)">
+      <path d="M-10 85 V28 Q-10 21 -3 21 H3 Q10 21 10 28 V85 Z M-4 32 V43 A4 4 0 0 0 4 43 V32 A4 4 0 0 0 -4 32Z" fill="url(#fender-contact)" fill-rule="evenodd" stroke="#665e42" stroke-width="1.8"/>
+    </g>
+  <rect x="101" y="61" width="158" height="32" rx="8" fill="#d2b975" stroke="#827148" stroke-width="2"/>
+  <!-- Round stamped metal housing. -->
+  <circle cx="180" cy="173" r="122" fill="url(#fender-metal)" stroke="#515b57" stroke-width="2.5"/>
+  <path d="M69 152 A113 113 0 0 1 242 78" fill="none" stroke="#f7faf7" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M73 190 L85 186 L91 202 L79 208Z M275 144 L287 149 L282 165 L270 160Z" fill="#89938e" stroke="#626d67" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Offset switch module and support posts visible behind the circuit board. -->
+  <rect x="115" y="128" width="130" height="120" rx="10" fill="#2c322f" stroke="#1e2521" stroke-width="2.4"/>
+  <path d="M121 137 H239" stroke="#5b655e" stroke-width="2"/>
+  <path d="M89 136 L106 143 L93 231 L76 224Z M254 143 L271 136 L284 224 L267 231Z" fill="url(#fender-metal)" stroke="#606c65" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Black backing and green circular switch PCB. -->
+  <circle cx="180" cy="238" r="124" fill="#2b302d" stroke="#1f2722" stroke-width="2.5"/>
+  <circle cx="180" cy="238" r="118" fill="url(#fender-board)" stroke="#22553f" stroke-width="2.2"/>
+  <path d="M71 215 A111 111 0 0 1 220 134" fill="none" stroke="#83b79a" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round"/>
+  <!-- Plated contacts. The central area stays clear for an application label. -->
+    <g id="switch-terminal-1" transform="translate(155.15 145.27)">
+      <circle r="10" fill="url(#fender-contact)" stroke="#a0a28b" stroke-width="1.4"/>
+      <circle r="5.5" fill="#29312e" stroke="#f3ead3" stroke-width="1.2"/>
+    </g>
+    <g id="switch-terminal-2" transform="translate(204.85 145.27)">
+      <circle r="10" fill="url(#fender-contact)" stroke="#a0a28b" stroke-width="1.4"/>
+      <circle r="5.5" fill="#29312e" stroke="#f3ead3" stroke-width="1.2"/>
+    </g>
+    <g id="switch-terminal-3" transform="translate(247.88 170.12)">
+      <circle r="10" fill="url(#fender-contact)" stroke="#a0a28b" stroke-width="1.4"/>
+      <circle r="5.5" fill="#29312e" stroke="#f3ead3" stroke-width="1.2"/>
+    </g>
+    <g id="switch-terminal-4" transform="translate(272.73 213.15)">
+      <circle r="10" fill="url(#fender-contact)" stroke="#a0a28b" stroke-width="1.4"/>
+      <circle r="5.5" fill="#29312e" stroke="#f3ead3" stroke-width="1.2"/>
+    </g>
+    <g id="switch-terminal-5" transform="translate(272.73 262.85)">
+      <circle r="10" fill="url(#fender-contact)" stroke="#a0a28b" stroke-width="1.4"/>
+      <circle r="5.5" fill="#29312e" stroke="#f3ead3" stroke-width="1.2"/>
+    </g>
+    <g id="switch-terminal-6" transform="translate(247.88 305.88)">
+      <circle r="10" fill="url(#fender-contact)" stroke="#a0a28b" stroke-width="1.4"/>
+      <circle r="5.5" fill="#29312e" stroke="#f3ead3" stroke-width="1.2"/>
+    </g>
+    <g id="switch-terminal-7" transform="translate(204.85 330.73)">
+      <circle r="10" fill="url(#fender-contact)" stroke="#a0a28b" stroke-width="1.4"/>
+      <circle r="5.5" fill="#29312e" stroke="#f3ead3" stroke-width="1.2"/>
+    </g>
+    <g id="switch-terminal-8" transform="translate(155.15 330.73)">
+      <circle r="10" fill="url(#fender-contact)" stroke="#a0a28b" stroke-width="1.4"/>
+      <circle r="5.5" fill="#29312e" stroke="#f3ead3" stroke-width="1.2"/>
+    </g>
+    <g id="switch-terminal-9" transform="translate(112.12 305.88)">
+      <circle r="10" fill="url(#fender-contact)" stroke="#a0a28b" stroke-width="1.4"/>
+      <circle r="5.5" fill="#29312e" stroke="#f3ead3" stroke-width="1.2"/>
+    </g>
+    <g id="switch-terminal-10" transform="translate(87.27 262.85)">
+      <circle r="10" fill="url(#fender-contact)" stroke="#a0a28b" stroke-width="1.4"/>
+      <circle r="5.5" fill="#29312e" stroke="#f3ead3" stroke-width="1.2"/>
+    </g>
+    <g id="switch-terminal-11" transform="translate(87.27 213.15)">
+      <circle r="10" fill="url(#fender-contact)" stroke="#a0a28b" stroke-width="1.4"/>
+      <circle r="5.5" fill="#29312e" stroke="#f3ead3" stroke-width="1.2"/>
+    </g>
+    <g id="switch-terminal-12" transform="translate(112.12 170.12)">
+      <circle r="10" fill="url(#fender-contact)" stroke="#a0a28b" stroke-width="1.4"/>
+      <circle r="5.5" fill="#29312e" stroke="#f3ead3" stroke-width="1.2"/>
+    </g>
+  <g fill="#d4d7c7" stroke="#8b9d8e" stroke-width="1">
+    <circle cx="128" cy="185" r="4"/><circle cx="232" cy="185" r="4"/>
+    <circle cx="116" cy="213" r="4"/><circle cx="244" cy="213" r="4"/>
+    <circle cx="116" cy="263" r="4"/><circle cx="244" cy="263" r="4"/>
+    <circle cx="128" cy="291" r="4"/><circle cx="232" cy="291" r="4"/>
+  </g>
+</svg>

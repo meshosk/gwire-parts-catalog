@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="160" viewBox="0 0 480 160" role="img" aria-labelledby="three-pin-strat-title three-pin-strat-description">
+  <title id="three-pin-strat-title">Krémový single-coil snímač s tromi kontaktmi — pohľad zhora</title>
+  <desc id="three-pin-strat-description">Single-coil snímač podľa referenčnej fotografie: krémový kryt bez potlače, šesť sivých pólových nástavcov, dva montážne otvory a jantárová základňa s tromi samostatnými pocínovanými kontaktmi. Priehľadné pozadie. Body pripojenia zľava doprava: (200, 129), (240, 129), (280, 129). Poradie kontaktov neurčuje ich elektrickú funkciu.</desc>
+  <defs>
+    <linearGradient id="three-pin-strat-white" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff8e1"/>
+      <stop offset="0.7" stop-color="#eee3bf"/>
+      <stop offset="1" stop-color="#d4c59d"/>
+    </linearGradient>
+    <linearGradient id="three-pin-strat-fiber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d7a02d"/>
+      <stop offset="1" stop-color="#bd7c15"/>
+    </linearGradient>
+    <linearGradient id="three-pin-strat-pole-metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9b49e"/>
+      <stop offset="0.5" stop-color="#97927e"/>
+      <stop offset="1" stop-color="#817c69"/>
+    </linearGradient>
+    <g id="three-pin-strat-pole">
+      <circle r="10.7" fill="url(#three-pin-strat-pole-metal)" stroke="#4b4944" stroke-width="1.5"/>
+    </g>
+  </defs>
+  <!-- Amber base broadens below the cream cover, following the reference. -->
+  <path d="M38,44 H442 A24,24 0 0 1 466,68 C466,83 456,94 441,98 L320,134 Q240,155 160,134 L39,98 C24,94 14,83 14,68 A24,24 0 0 1 38,44 Z
+           M44,68 A6,6 0 1 0 32,68 A6,6 0 1 0 44,68 Z
+           M448,68 A6,6 0 1 0 436,68 A6,6 0 1 0 448,68 Z"
+        fill="url(#three-pin-strat-fiber)" fill-rule="evenodd" stroke="#8d641e" stroke-width="2"/>
+  <path d="M71,105 L164,131 Q240,150 316,131 L409,105" fill="none" stroke="#ebbd59" stroke-width="1"/>
+  <!-- Cream cover with integral mounting ears and open mounting holes. -->
+  <path d="M38,46 H442 A22,22 0 0 1 464,68 A22,22 0 0 1 442,90 H38 A22,22 0 0 1 16,68 A22,22 0 0 1 38,46 Z
+           M44,68 A6,6 0 1 0 32,68 A6,6 0 1 0 44,68 Z
+           M448,68 A6,6 0 1 0 436,68 A6,6 0 1 0 448,68 Z"
+        fill="url(#three-pin-strat-white)" fill-rule="evenodd" stroke="#b6a77e" stroke-width="1.5"/>
+  <rect x="63" y="27" width="354" height="82" rx="41" fill="url(#three-pin-strat-white)" stroke="#b9aa80" stroke-width="1.5"/>
+  <path d="M105,30 H375 A38,38 0 0 1 413,68" fill="none" stroke="#fff8e1" stroke-width="2"/>
+  <path d="M68,78 Q75,105 105,106 H375 Q400,106 410,86" fill="none" stroke="#cabc94" stroke-width="1"/>
+  <g transform="translate(125 68)"><use href="#three-pin-strat-pole"/></g>
+  <g transform="translate(171 68)"><use href="#three-pin-strat-pole"/></g>
+  <g transform="translate(217 68)"><use href="#three-pin-strat-pole"/></g>
+  <g transform="translate(263 68)"><use href="#three-pin-strat-pole"/></g>
+  <g transform="translate(309 68)"><use href="#three-pin-strat-pole"/></g>
+  <g transform="translate(355 68)"><use href="#three-pin-strat-pole"/></g>
+  <!-- Three separate solder terminals; no conductors or text are embedded. -->
+  <defs>
+    <linearGradient id="three-pin-strat-tin" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#858a82"/><stop offset="0.45" stop-color="#f0eee0"/><stop offset="1" stop-color="#a1a397"/>
+    </linearGradient>
+  </defs>
+  <g id="terminal-1" transform="translate(200 129)">
+    <path d="M-9 -13 H9 L10 11 H-10Z" fill="url(#three-pin-strat-tin)" stroke="#736b4e" stroke-width="1.4" stroke-linejoin="round"/>
+    <ellipse rx="3.5" ry="4.3" fill="#665d42" stroke="#f4efda" stroke-width="1.2"/>
+    <path d="M-5 -9 L-6 6" fill="none" stroke="#f9f6e6" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+  <g id="terminal-2" transform="translate(240 129)">
+    <path d="M-9 -13 H9 L10 11 H-10Z" fill="url(#three-pin-strat-tin)" stroke="#736b4e" stroke-width="1.4" stroke-linejoin="round"/>
+    <ellipse rx="3.5" ry="4.3" fill="#665d42" stroke="#f4efda" stroke-width="1.2"/>
+    <path d="M-5 -9 L-6 6" fill="none" stroke="#f9f6e6" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+  <g id="terminal-3" transform="translate(280 129)">
+    <path d="M-9 -13 H9 L10 11 H-10Z" fill="url(#three-pin-strat-tin)" stroke="#736b4e" stroke-width="1.4" stroke-linejoin="round"/>
+    <ellipse rx="3.5" ry="4.3" fill="#665d42" stroke="#f4efda" stroke-width="1.2"/>
+    <path d="M-5 -9 L-6 6" fill="none" stroke="#f9f6e6" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+</svg>

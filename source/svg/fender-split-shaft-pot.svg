@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="420" viewBox="185 80 160 210" role="img" aria-labelledby="s1-title s1-description">
+  <title id="s1-title">Fender potenciometer s tlačidlovým prepínačom — kontaktná strana</title>
+  <desc id="s1-description">Geometricky súmerná kresba podľa dodanej fotografie: kruhová zelená doska, dvanásť samostatných otvorov po obvode, dve skupiny po šiestich samostatných spájkovacích bodoch a tri vývody potenciometra dole. Všetky otvory aj spájkovacie body sú vzájomne oddelené zelenou medzerou. Bez potlače a s priehľadným pozadím. Identifikátory kontaktov nie sú elektrickým číslovaním výrobcu.</desc>
+  <defs>
+    <linearGradient id="s1-metal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#707b72"/><stop offset="0.3" stop-color="#d4d9d1"/><stop offset="0.52" stop-color="#909b90"/><stop offset="0.8" stop-color="#e1e4da"/><stop offset="1" stop-color="#788477"/>
+    </linearGradient>
+    <linearGradient id="s1-plating" x1="0" y1="0" x2="0.7" y2="1">
+      <stop stop-color="#fffdeb"/><stop offset="0.4" stop-color="#e4e7d8"/><stop offset="0.75" stop-color="#a9b5a3"/><stop offset="1" stop-color="#edf0de"/>
+    </linearGradient>
+    <linearGradient id="s1-solder" x1="0" y1="0" x2="0.6" y2="1">
+      <stop stop-color="#e1e6dc"/><stop offset="0.4" stop-color="#b9c5b5"/><stop offset="1" stop-color="#687d66"/>
+    </linearGradient>
+    <linearGradient id="s1-green" x1="0" y1="0" x2="0.7" y2="1">
+      <stop stop-color="#26835a"/><stop offset="0.5" stop-color="#166d44"/><stop offset="1" stop-color="#105b36"/>
+    </linearGradient>
+  </defs>
+  <!-- Amber terminal wafer is behind the assembly, as in the photograph. -->
+  <path d="M215 214 H305 Q313 214 314 222 L312 250 Q312 257 304 257 H214 Q205 257 205 248 L207 222 Q208 214 215 214Z" fill="#c8a342" stroke="#9e8438" stroke-width="1.2"/>
+  <path d="M216 222 H302 V249 H216Z" fill="#9d7932"/>
+  <!-- Lower edge of the metal pot can and dark switch spacer. -->
+  <path d="M198 162 C195 192 205 214 226 226 Q261 243 300 222 Q326 207 327 166Z" fill="url(#s1-metal)" stroke="#6c7b6b" stroke-width="1.3"/>
+  <path d="M204 185 Q209 219 241 229 L247 234 H271 L277 228 Q313 217 322 186Z" fill="#252c26" stroke="#151f18" stroke-width="1.1"/>
+  <path d="M230 218 L232 229 L243 233 L245 223 M277 223 L278 232 L290 228 L292 216" fill="url(#s1-metal)" stroke="#6d7a69" stroke-width="0.9"/>
+  <g id="pot-terminal-1">
+    <path d="M221 235 H229 V266 H221Z" fill="url(#s1-metal)" stroke="#656958" stroke-width="1"/>
+    <ellipse cx="225" cy="269" rx="8" ry="4.5" fill="url(#s1-plating)" stroke="#747b66" stroke-width="1"/>
+    <ellipse cx="225" cy="269" rx="4.2" ry="1.9" fill="#f5f6f1" stroke="#778474" stroke-width="0.6"/>
+    <path d="M220 230 H230 V245 H220Z" fill="url(#s1-metal)" stroke="#565f54" stroke-width="1"/>
+    <path d="M223 232 V242" stroke="#e1e6df" stroke-width="1.3"/>
+  </g>
+  <g id="pot-terminal-2">
+    <path d="M254 235 H262 V272 H254Z" fill="url(#s1-metal)" stroke="#656958" stroke-width="1"/>
+    <ellipse cx="258" cy="275" rx="8" ry="4.5" fill="url(#s1-plating)" stroke="#747b66" stroke-width="1"/>
+    <ellipse cx="258" cy="275" rx="4.2" ry="1.9" fill="#f5f6f1" stroke="#778474" stroke-width="0.6"/>
+    <path d="M253 230 H263 V245 H253Z" fill="url(#s1-metal)" stroke="#565f54" stroke-width="1"/>
+    <path d="M256 232 V242" stroke="#e1e6df" stroke-width="1.3"/>
+  </g>
+  <g id="pot-terminal-3">
+    <path d="M287 235 H295 V267 H287Z" fill="url(#s1-metal)" stroke="#656958" stroke-width="1"/>
+    <ellipse cx="291" cy="270" rx="8" ry="4.5" fill="url(#s1-plating)" stroke="#747b66" stroke-width="1"/>
+    <ellipse cx="291" cy="270" rx="4.2" ry="1.9" fill="#f5f6f1" stroke="#778474" stroke-width="0.6"/>
+    <path d="M286 230 H296 V245 H286Z" fill="url(#s1-metal)" stroke="#565f54" stroke-width="1"/>
+    <path d="M289 232 V242" stroke="#e1e6df" stroke-width="1.3"/>
+  </g>
+  <!-- Symmetric circular PCB, oriented like the reference photograph. -->
+  <circle id="switch-board" cx="262" cy="156" r="65" fill="url(#s1-green)" stroke="#5d9c79" stroke-width="1.4"/>
+  <!-- Twelve equally spaced plated eyelets; none touches an internal solder pad. -->
+  <g id="switch-terminal-1" transform="translate(236 110.967)">
+    <circle r="8.2" fill="url(#s1-plating)" stroke="#8a9c87" stroke-width="0.9"/>
+    <circle r="4.5" fill="#293d31" stroke="#f4f0d5" stroke-width="1.1"/>
+  </g>
+  <g id="switch-terminal-2" transform="translate(262 104)">
+    <circle r="8.2" fill="url(#s1-plating)" stroke="#8a9c87" stroke-width="0.9"/>
+    <circle r="4.5" fill="#293d31" stroke="#f4f0d5" stroke-width="1.1"/>
+  </g>
+  <g id="switch-terminal-3" transform="translate(288 110.967)">
+    <circle r="8.2" fill="url(#s1-plating)" stroke="#8a9c87" stroke-width="0.9"/>
+    <circle r="4.5" fill="#293d31" stroke="#f4f0d5" stroke-width="1.1"/>
+  </g>
+  <g id="switch-terminal-4" transform="translate(216.967 130)">
+    <circle r="8.2" fill="url(#s1-plating)" stroke="#8a9c87" stroke-width="0.9"/>
+    <circle r="4.5" fill="#293d31" stroke="#f4f0d5" stroke-width="1.1"/>
+  </g>
+  <g id="switch-terminal-5" transform="translate(307.033 130)">
+    <circle r="8.2" fill="url(#s1-plating)" stroke="#8a9c87" stroke-width="0.9"/>
+    <circle r="4.5" fill="#293d31" stroke="#f4f0d5" stroke-width="1.1"/>
+  </g>
+  <g id="switch-terminal-6" transform="translate(210 156)">
+    <circle r="8.2" fill="url(#s1-plating)" stroke="#8a9c87" stroke-width="0.9"/>
+    <circle r="4.5" fill="#293d31" stroke="#f4f0d5" stroke-width="1.1"/>
+  </g>
+  <g id="switch-terminal-7" transform="translate(314 156)">
+    <circle r="8.2" fill="url(#s1-plating)" stroke="#8a9c87" stroke-width="0.9"/>
+    <circle r="4.5" fill="#293d31" stroke="#f4f0d5" stroke-width="1.1"/>
+  </g>
+  <g id="switch-terminal-8" transform="translate(216.967 182)">
+    <circle r="8.2" fill="url(#s1-plating)" stroke="#8a9c87" stroke-width="0.9"/>
+    <circle r="4.5" fill="#293d31" stroke="#f4f0d5" stroke-width="1.1"/>
+  </g>
+  <g id="switch-terminal-9" transform="translate(307.033 182)">
+    <circle r="8.2" fill="url(#s1-plating)" stroke="#8a9c87" stroke-width="0.9"/>
+    <circle r="4.5" fill="#293d31" stroke="#f4f0d5" stroke-width="1.1"/>
+  </g>
+  <g id="switch-terminal-10" transform="translate(236 201.033)">
+    <circle r="8.2" fill="url(#s1-plating)" stroke="#8a9c87" stroke-width="0.9"/>
+    <circle r="4.5" fill="#293d31" stroke="#f4f0d5" stroke-width="1.1"/>
+  </g>
+  <g id="switch-terminal-11" transform="translate(262 208)">
+    <circle r="8.2" fill="url(#s1-plating)" stroke="#8a9c87" stroke-width="0.9"/>
+    <circle r="4.5" fill="#293d31" stroke="#f4f0d5" stroke-width="1.1"/>
+  </g>
+  <g id="switch-terminal-12" transform="translate(288 201.033)">
+    <circle r="8.2" fill="url(#s1-plating)" stroke="#8a9c87" stroke-width="0.9"/>
+    <circle r="4.5" fill="#293d31" stroke="#f4f0d5" stroke-width="1.1"/>
+  </g>
+  <!-- Two mirrored 2-by-3 groups of isolated solder pads. -->
+  <g id="switch-solder-pad-1" transform="translate(248 128)">
+    <circle r="3.5" fill="url(#s1-solder)" stroke="#627d65" stroke-width="0.7"/>
+    <circle cy="-0.6" r="1.5" fill="#d6dfcf"/>
+  </g>
+  <g id="switch-solder-pad-2" transform="translate(262 128)">
+    <circle r="3.5" fill="url(#s1-solder)" stroke="#627d65" stroke-width="0.7"/>
+    <circle cy="-0.6" r="1.5" fill="#d6dfcf"/>
+  </g>
+  <g id="switch-solder-pad-3" transform="translate(276 128)">
+    <circle r="3.5" fill="url(#s1-solder)" stroke="#627d65" stroke-width="0.7"/>
+    <circle cy="-0.6" r="1.5" fill="#d6dfcf"/>
+  </g>
+  <g id="switch-solder-pad-4" transform="translate(248 142)">
+    <circle r="3.5" fill="url(#s1-solder)" stroke="#627d65" stroke-width="0.7"/>
+    <circle cy="-0.6" r="1.5" fill="#d6dfcf"/>
+  </g>
+  <g id="switch-solder-pad-5" transform="translate(262 142)">
+    <circle r="3.5" fill="url(#s1-solder)" stroke="#627d65" stroke-width="0.7"/>
+    <circle cy="-0.6" r="1.5" fill="#d6dfcf"/>
+  </g>
+  <g id="switch-solder-pad-6" transform="translate(276 142)">
+    <circle r="3.5" fill="url(#s1-solder)" stroke="#627d65" stroke-width="0.7"/>
+    <circle cy="-0.6" r="1.5" fill="#d6dfcf"/>
+  </g>
+  <g id="switch-solder-pad-7" transform="translate(248 170)">
+    <circle r="3.5" fill="url(#s1-solder)" stroke="#627d65" stroke-width="0.7"/>
+    <circle cy="-0.6" r="1.5" fill="#d6dfcf"/>
+  </g>
+  <g id="switch-solder-pad-8" transform="translate(262 170)">
+    <circle r="3.5" fill="url(#s1-solder)" stroke="#627d65" stroke-width="0.7"/>
+    <circle cy="-0.6" r="1.5" fill="#d6dfcf"/>
+  </g>
+  <g id="switch-solder-pad-9" transform="translate(276 170)">
+    <circle r="3.5" fill="url(#s1-solder)" stroke="#627d65" stroke-width="0.7"/>
+    <circle cy="-0.6" r="1.5" fill="#d6dfcf"/>
+  </g>
+  <g id="switch-solder-pad-10" transform="translate(248 184)">
+    <circle r="3.5" fill="url(#s1-solder)" stroke="#627d65" stroke-width="0.7"/>
+    <circle cy="-0.6" r="1.5" fill="#d6dfcf"/>
+  </g>
+  <g id="switch-solder-pad-11" transform="translate(262 184)">
+    <circle r="3.5" fill="url(#s1-solder)" stroke="#627d65" stroke-width="0.7"/>
+    <circle cy="-0.6" r="1.5" fill="#d6dfcf"/>
+  </g>
+  <g id="switch-solder-pad-12" transform="translate(276 184)">
+    <circle r="3.5" fill="url(#s1-solder)" stroke="#627d65" stroke-width="0.7"/>
+    <circle cy="-0.6" r="1.5" fill="#d6dfcf"/>
+  </g>
+</svg>

@@ -32,9 +32,24 @@ def catalog_files(directory):
     if not directory.is_dir():
         raise ValueError(f"Missing catalog directory: {directory}")
     return sorted(
-        (path for path in directory.rglob("*.json") if path.is_file()),
+        (path for path in directory.rglob("*") if path.is_file() and path.suffix.lower() == ".json"),
         key=lambda path: path.relative_to(directory).as_posix(),
     )
+
+
+def normalized_path(path):
+    return path.with_name(path.name.lower().replace(" ", "-"))
+
+
+def validate_renames(paths):
+    destinations = {}
+    for source in paths:
+        destination = normalized_path(source)
+        if destination in destinations and destinations[destination] != source:
+            raise ValueError(f"Filename collision: {destinations[destination]} and {source} -> {destination}")
+        destinations[destination] = source
+        if source != destination and destination.exists() and not source.samefile(destination):
+            raise ValueError(f"Cannot rename {source}: {destination} already exists")
 
 
 def scheme_entry(path, directory):
@@ -50,7 +65,7 @@ def scheme_entry(path, directory):
     if not isinstance(tags, list) or any(not isinstance(tag, str) for tag in tags):
         raise ValueError(f"{path}: tags must be an array of strings or a $values wrapper")
     return {
-        "file": path.relative_to(directory).as_posix(),
+        "file": normalized_path(path).relative_to(directory).as_posix(),
         "name": data["name"],
         "description": data["description"],
         "tags": tags,
@@ -68,15 +83,23 @@ def build_indexes(root):
     schemes_index = local_path(root, config, "schemesIndex")
     if parts_index == schemes_index:
         raise ValueError("Parts and schemes indexes must have different paths")
-    parts = [
-        path.relative_to(parts_dir).as_posix()
-        for path in catalog_files(parts_dir)
-    ]
-    schemes = [
+    part_files = catalog_files(parts_dir)
+    scheme_files = catalog_files(schemes_dir)
+    files = part_files + scheme_files
+    validate_renames(files)
+    parts = sorted(
+        normalized_path(path).relative_to(parts_dir).as_posix()
+        for path in part_files
+    )
+    schemes = sorted([
         scheme_entry(path, schemes_dir)
-        for path in catalog_files(schemes_dir)
-    ]
-    # Validate all input before touching either output.
+        for path in scheme_files
+    ], key=lambda entry: entry["file"])
+    # Validate all input and collisions before renaming files or writing indexes.
+    for source in files:
+        destination = normalized_path(source)
+        if source != destination:
+            source.rename(destination)
     for destination, entries in ((parts_index, parts), (schemes_index, schemes)):
         destination.write_text(
             json.dumps(entries, ensure_ascii=False, indent=2) + "\n",

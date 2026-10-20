@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-labelledby="capacitor-title capacitor-description">
+  <title id="capacitor-title">Oranžový fóliový kondenzátor — CDE 716P</title>
+  <desc id="capacitor-description">Kondenzátor podľa referenčnej fotografie: oranžové zaoblené telo, potlač CDE716P100V, 473J a 1428, dva strieborné radiálne vývody. Priehľadné pozadie. Body na pripojenie vodičov sú (82, 292) a (238, 292). Kondenzátor nemá označenú polaritu.</desc>
+  <defs>
+    <linearGradient id="capacitor-orange" x1="60" y1="36" x2="262" y2="207" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9b4e"/>
+      <stop offset="0.3" stop-color="#ff8739"/>
+      <stop offset="0.75" stop-color="#f87526"/>
+      <stop offset="1" stop-color="#dc5b19"/>
+    </linearGradient>
+    <linearGradient id="capacitor-wire" x1="-5" y1="0" x2="5" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#767d81"/>
+      <stop offset="0.38" stop-color="#f3f4f3"/>
+      <stop offset="0.65" stop-color="#c8cdcf"/>
+      <stop offset="1" stop-color="#858c90"/>
+    </linearGradient>
+    <g id="capacitor-lead">
+      <path d="M-5 189 H5 V292 A5 5 0 0 1 -5 292Z" fill="url(#capacitor-wire)" stroke="#535a5e" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+  </defs>
+  <!-- Bare leads remain separate and extend below the epoxy body. -->
+  <g id="terminal-1" transform="translate(82 0)"><use href="#capacitor-lead"/></g>
+  <g id="terminal-2" transform="translate(238 0)"><use href="#capacitor-lead"/></g>
+  <!-- Softly moulded body with a shallow recessed lower edge between the leads. -->
+  <path d="M66 31 C49 31 39 41 37 58 L33 165 C32 184 41 198 57 201 L75 205 Q82 211 91 204 C111 188 131 184 160 184 C189 184 209 188 229 204 Q238 211 245 205 L263 201 C279 198 288 184 287 165 L283 58 C281 41 271 31 254 31Z" fill="url(#capacitor-orange)" stroke="#ad4f20" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M52 113 L55 59 Q56 46 70 46 H248" fill="none" stroke="#ffc28a" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+  <path d="M274 76 L277 163 Q278 181 262 186 L247 190" fill="none" stroke="#c7561a" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M50 152 Q48 167 54 173" fill="none" stroke="#ffe0ba" stroke-opacity="0.65" stroke-width="4" stroke-linecap="round"/>
+  <!-- Manufacturer markings retained from the supplied photograph. -->
+  <g id="capacitor-marking" fill="#55270f" font-family="'Courier New', Courier, monospace" font-size="23" font-weight="700">
+    <text x="160" y="100" text-anchor="middle" textLength="199" lengthAdjust="spacingAndGlyphs">CDE716P100V</text>
+    <text x="62" y="133">473J</text>
+    <text x="258" y="159" text-anchor="end">1428</text>
+  </g>
+</svg>
