@@ -124,7 +124,9 @@ scheme metadata are rejected before any files are renamed or indexes are written
 ]
 ```
 
-Scheme metadata comes from the top-level `name`, `description`, and `tags` fields.
+Scheme metadata comes from `circuit.name`, `circuit.description`, and `circuit.tags`
+in exported scheme documents. Older files with these fields at the top level are
+also supported.
 Exported tags wrapped in `$values` are flattened into an array in the index.
 Invalid scheme metadata is rejected before either index is written. Part files
 are indexed by filename; the builder does not validate their JSON contents.

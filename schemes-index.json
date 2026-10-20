@@ -1,12 +1,8 @@
 [
   {
-    "file": "testovacka-01.scheme.json",
-    "name": "Testovacka 01",
-    "description": "Test test testtest",
-    "tags": [
-      "humbucker",
-      "resistor",
-      "p90"
-    ]
+    "file": "simple-sss.scheme.json",
+    "name": "Simple sss",
+    "description": "",
+    "tags": []
   }
 ]

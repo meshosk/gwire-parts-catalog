@@ -56,18 +56,25 @@ def scheme_entry(path, directory):
     data = read_json(path)
     if not isinstance(data, dict):
         raise ValueError(f"{path}: scheme must be a JSON object")
+    metadata = data
+    prefix = ""
+    if "circuit" in data:
+        metadata = data["circuit"]
+        prefix = "circuit."
+        if not isinstance(metadata, dict):
+            raise ValueError(f"{path}: circuit must be a JSON object")
     for key in ("name", "description"):
-        if not isinstance(data.get(key), str):
-            raise ValueError(f"{path}: {key} must be a string")
-    tags = data.get("tags")
+        if not isinstance(metadata.get(key), str):
+            raise ValueError(f"{path}: {prefix}{key} must be a string")
+    tags = metadata.get("tags")
     if isinstance(tags, dict):
         tags = tags.get("$values")
     if not isinstance(tags, list) or any(not isinstance(tag, str) for tag in tags):
-        raise ValueError(f"{path}: tags must be an array of strings or a $values wrapper")
+        raise ValueError(f"{path}: {prefix}tags must be an array of strings or a $values wrapper")
     return {
         "file": normalized_path(path).relative_to(directory).as_posix(),
-        "name": data["name"],
-        "description": data["description"],
+        "name": metadata["name"],
+        "description": metadata["description"],
         "tags": tags,
     }
 

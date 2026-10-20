@@ -67,3 +67,32 @@ class FilenameTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             build_indexes(self.root)
         self.assertEqual(self.snapshot(), before)
+
+    def test_circuit_export_metadata_is_indexed_without_changing_contents(self):
+        for tags in ([], ['single coil'], {'$id': '3', '$values': ['single coil']}):
+            with self.subTest(tags=tags):
+                self.scheme = self.root / 'schemes' / 'My Scheme.scheme.json'
+                self.scheme.write_text(json.dumps({
+                    '$id': '1', 'schemeFormatVersion': 1,
+                    'circuit': {'$id': '2', 'name': 'Simple sss', 'description': '', 'tags': tags},
+                }))
+                original = self.scheme.read_bytes()
+                build_indexes(self.root)
+                normalized = self.scheme.with_name('my-scheme.scheme.json')
+                self.assertEqual(normalized.read_bytes(), original)
+                self.assertEqual(json.loads((self.root / 'schemes-index.json').read_text()), [{
+                    'file': 'my-scheme.scheme.json', 'name': 'Simple sss',
+                    'description': '', 'tags': tags if isinstance(tags, list) else tags['$values'],
+                }])
+                normalized.unlink()
+
+    def test_invalid_circuit_metadata_preserves_files_and_indexes(self):
+        for circuit in (None, [], {}, {'name': 123, 'description': '', 'tags': []},
+                        {'name': 'Test', 'description': None, 'tags': []},
+                        {'name': 'Test', 'description': '', 'tags': [123]}):
+            with self.subTest(circuit=circuit):
+                self.scheme.write_text(json.dumps({'circuit': circuit}))
+                before = self.snapshot()
+                with self.assertRaisesRegex(ValueError, 'circuit'):
+                    build_indexes(self.root)
+                self.assertEqual(self.snapshot(), before)

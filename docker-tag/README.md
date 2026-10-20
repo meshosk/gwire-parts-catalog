@@ -18,6 +18,8 @@ Adding, applying an edit, and deleting update the working list in the browser. O
 
 Click **Rebuild indexes** to regenerate the parts and schemes indexes from the local catalog, using the paths configured in `index.json` next to `tags.json`. The button shows progress, then entry counts or an error. Invalid source metadata is rejected before either index is updated. Only one rebuild can run at a time. This action does not save or discard pending tag edits.
 
+Scheme metadata (`name`, `description`, `tags`) is read from the exported `circuit` object, or from the top level in older files. Tags support both plain arrays and `$values` wrappers.
+
 Rebuilding also renames JSON files in the parts and schemes directories to lowercase
 with spaces replaced by hyphens. Indexes use these new filenames; metadata stays
 unchanged. Filename collisions stop the rebuild before files or indexes are changed.
