@@ -72,22 +72,37 @@
           "$id": "9",
           "$values": []
         }
+      },
+      {
+        "$id": "10",
+        "label": "case",
+        "localPosition": {
+          "x": 163.4414,
+          "y": 47.546875
+        },
+        "owner": {
+          "$ref": "1"
+        },
+        "connectionPoints": {
+          "$id": "11",
+          "$values": []
+        }
       }
     ]
   },
   "states": {
-    "$id": "10",
+    "$id": "12",
     "$values": [
       {
-        "$id": "11",
+        "$id": "13",
         "label": "Full Left",
         "connectionGroups": {
-          "$id": "12",
+          "$id": "14",
           "$values": [
             {
-              "$id": "13",
+              "$id": "15",
               "connectedPints": {
-                "$id": "14",
+                "$id": "16",
                 "$values": [
                   {
                     "$ref": "4"
@@ -102,15 +117,15 @@
         }
       },
       {
-        "$id": "15",
+        "$id": "17",
         "label": "Mixed",
         "connectionGroups": {
-          "$id": "16",
+          "$id": "18",
           "$values": [
             {
-              "$id": "17",
+              "$id": "19",
               "connectedPints": {
-                "$id": "18",
+                "$id": "20",
                 "$values": [
                   {
                     "$ref": "6"
@@ -128,15 +143,15 @@
         }
       },
       {
-        "$id": "19",
+        "$id": "21",
         "label": "Full right",
         "connectionGroups": {
-          "$id": "20",
+          "$id": "22",
           "$values": [
             {
-              "$id": "21",
+              "$id": "23",
               "connectedPints": {
-                "$id": "22",
+                "$id": "24",
                 "$values": [
                   {
                     "$ref": "6"
@@ -153,6 +168,6 @@
     ]
   },
   "activeState": {
-    "$ref": "11"
+    "$ref": "13"
   }
 }
