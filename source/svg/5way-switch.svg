@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="210" viewBox="0 0 440 210" role="img" aria-labelledby="selector-title selector-description">
+  <title id="selector-title">5-polohový gitarový prepínač — pohľad zospodu</title>
+  <desc id="selector-description">Štylizovaný spodný pohľad na otvorený gitarový blade prepínač. Dve oddelené rady po štyroch spájkovacích očkách, izolačné doštičky a kovový rám. Ovládacia páčka je na odvrátenej strane. Priehľadné pozadie a otvory. Body pripojenia A1 až A4: (112,36), (168,36), (224,36), (280,36); B1 až B4: (140,174), (196,174), (252,174), (308,174). Identifikátory kontaktov neurčujú ich elektrickú funkciu.</desc>
+  <defs>
+    <g id="selector-bottom-lug">
+      <path d="M-10 39 V-4 Q-10 -12 -2 -12 H2 Q10 -12 10 -4 V39 Z M-4 -3 V4 A4 4 0 0 0 4 4 V-3 A4 4 0 0 0 -4 -3Z" fill="#bfc2c4" fill-rule="evenodd" stroke="#303238" stroke-width="2.2" stroke-linejoin="round"/>
+    </g>
+  </defs>
+  <!-- Mounting strap lies behind the switch mechanism. -->
+  <path d="M31 84 H409 Q421 84 421 96 V114 Q421 126 409 126 H31 Q19 126 19 114 V96 Q19 84 31 84Z M47 105 A7 7 0 1 0 33 105 A7 7 0 1 0 47 105Z M407 105 A7 7 0 1 0 393 105 A7 7 0 1 0 407 105Z" fill="#a7a7a7" fill-rule="evenodd" stroke="#303238" stroke-width="2.4"/>
+  <!-- Solder tabs extend outward from the two insulating wafers. -->
+  <g id="terminal-A1" transform="translate(112 36)"><use href="#selector-bottom-lug"/></g>
+  <g id="terminal-A2" transform="translate(168 36)"><use href="#selector-bottom-lug"/></g>
+  <g id="terminal-A3" transform="translate(224 36)"><use href="#selector-bottom-lug"/></g>
+  <g id="terminal-A4" transform="translate(280 36)"><use href="#selector-bottom-lug"/></g>
+  <g id="terminal-B1" transform="translate(140 174) scale(1 -1)"><use href="#selector-bottom-lug"/></g>
+  <g id="terminal-B2" transform="translate(196 174) scale(1 -1)"><use href="#selector-bottom-lug"/></g>
+  <g id="terminal-B3" transform="translate(252 174) scale(1 -1)"><use href="#selector-bottom-lug"/></g>
+  <g id="terminal-B4" transform="translate(308 174) scale(1 -1)"><use href="#selector-bottom-lug"/></g>
+  <!-- Parallel phenolic terminal boards, seen edge-on from underneath. -->
+  <g fill="#c88c5c" stroke="#303238" stroke-width="2.3" stroke-linejoin="round">
+    <rect x="82" y="65" width="276" height="24" rx="4"/>
+    <rect x="82" y="121" width="276" height="24" rx="4"/>
+  </g>
+  <g fill="#a7a7a7" stroke="#303238" stroke-width="1.6">
+    <circle cx="112" cy="77" r="4"/><circle cx="168" cy="77" r="4"/>
+    <circle cx="224" cy="77" r="4"/><circle cx="280" cy="77" r="4"/>
+    <circle cx="140" cy="133" r="4"/><circle cx="196" cy="133" r="4"/>
+    <circle cx="252" cy="133" r="4"/><circle cx="308" cy="133" r="4"/>
+  </g>
+  <!-- Lower metal cage; the player-facing lever is hidden on the far side. -->
+  <rect x="77" y="88" width="286" height="34" rx="5" fill="#d0d1d2" stroke="#303238" stroke-width="2.4"/>
+  <path d="M105 95 H335 V115 H105Z" fill="#777b7e" stroke="#303238" stroke-width="1.7"/>
+  <path d="M119 99 H321 V111 H119Z" fill="#45494c"/>
+  <path d="M204 95 H236 V115 H204Z" fill="#a7a7a7" stroke="#303238" stroke-width="1.8"/>
+  <g fill="#a7a7a7" stroke="#303238" stroke-width="1.5">
+    <circle cx="91" cy="105" r="4"/><circle cx="349" cy="105" r="4"/>
+  </g>
+</svg>
