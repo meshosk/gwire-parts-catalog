@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="220" height="130" viewBox="105 255 220 130">
-  <title>Podložka a matica potenciometra podľa referencie</title>
-  <defs><linearGradient id="hardware-metal" x1="0" y1="0" x2="0.7" y2="1"><stop stop-color="#e0e2dc"/><stop offset="0.5" stop-color="#a8ada5"/><stop offset="0.75" stop-color="#e6e8e1"/><stop offset="1" stop-color="#949b90"/></linearGradient></defs>
-  <path d="M207 294 A44 27 0 1 0 119 294 A44 27 0 1 0 207 294Z M190 294 A27 16 0 1 0 136 294 A27 16 0 1 0 190 294Z" fill="url(#hardware-metal)" fill-rule="evenodd" stroke="#a9afa3" stroke-width="1"/>
-  <path d="M234 308 L268 307 L291 329 L275 350 L239 356 L214 338 L211 326Z M278 329 A26 17 0 1 0 226 329 A26 17 0 1 0 278 329Z" fill="url(#hardware-metal)" fill-rule="evenodd" stroke="#999f94" stroke-width="1.2"/>
-  <path d="M234 308 L268 307 L287 325 L272 346 L239 350 L216 333 L215 325Z M278 326 A26 16 0 1 0 226 326 A26 16 0 1 0 278 326Z" fill="url(#hardware-metal)" fill-rule="evenodd" stroke="#bdc2b6" stroke-width="1"/>
-  <path d="M228 322 Q251 309 276 321" fill="none" stroke="#6b7566" stroke-width="1.5"/>
-</svg>

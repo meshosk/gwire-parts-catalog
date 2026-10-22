@@ -1,8 +1,8 @@
 {
   "$id": "1",
   "id": "9276f813-e13a-408c-a4e8-207d0f3eb09a",
-  "width": 244,
-  "height": 256,
+  "width": 140,
+  "height": 269,
   "svgMarkup": "\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u0022440\u0022 height=\u0022210\u0022 viewBox=\u00220 0 440 210\u0022 role=\u0022img\u0022 aria-labelledby=\u0022selector-title selector-description\u0022\u003E\n  \u003Ctitle id=\u0022selector-title\u0022\u003E5-polohov\u00FD gitarov\u00FD prep\u00EDna\u010D \u2014 poh\u013Ead zospodu\u003C/title\u003E\n  \u003Cdesc id=\u0022selector-description\u0022\u003E\u0160tylizovan\u00FD spodn\u00FD poh\u013Ead na otvoren\u00FD gitarov\u00FD blade prep\u00EDna\u010D. Dve oddelen\u00E9 rady po \u0161tyroch sp\u00E1jkovac\u00EDch o\u010Dk\u00E1ch, izola\u010Dn\u00E9 do\u0161ti\u010Dky a kovov\u00FD r\u00E1m. Ovl\u00E1dacia p\u00E1\u010Dka je na odvr\u00E1tenej strane. Prieh\u013Eadn\u00E9 pozadie a otvory. Body pripojenia A1 a\u017E A4: (112,36), (168,36), (224,36), (280,36); B1 a\u017E B4: (140,174), (196,174), (252,174), (308,174). Identifik\u00E1tory kontaktov neur\u010Duj\u00FA ich elektrick\u00FA funkciu.\u003C/desc\u003E\n  \u003Cdefs\u003E\n    \u003Cg id=\u0022selector-bottom-lug\u0022\u003E\n      \u003Cpath d=\u0022M-10 39 V-4 Q-10 -12 -2 -12 H2 Q10 -12 10 -4 V39 Z M-4 -3 V4 A4 4 0 0 0 4 4 V-3 A4 4 0 0 0 -4 -3Z\u0022 fill=\u0022#bfc2c4\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00222.2\u0022 stroke-linejoin=\u0022round\u0022/\u003E\n    \u003C/g\u003E\n  \u003C/defs\u003E\n  \u003C!-- Mounting strap lies behind the switch mechanism. --\u003E\n  \u003Cpath d=\u0022M31 84 H409 Q421 84 421 96 V114 Q421 126 409 126 H31 Q19 126 19 114 V96 Q19 84 31 84Z M47 105 A7 7 0 1 0 33 105 A7 7 0 1 0 47 105Z M407 105 A7 7 0 1 0 393 105 A7 7 0 1 0 407 105Z\u0022 fill=\u0022#a7a7a7\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00222.4\u0022/\u003E\n  \u003C!-- Solder tabs extend outward from the two insulating wafers. --\u003E\n  \u003Cg id=\u0022terminal-A1\u0022 transform=\u0022translate(112 36)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-A2\u0022 transform=\u0022translate(168 36)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-A3\u0022 transform=\u0022translate(224 36)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-A4\u0022 transform=\u0022translate(280 36)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-B1\u0022 transform=\u0022translate(140 174) scale(1 -1)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-B2\u0022 transform=\u0022translate(196 174) scale(1 -1)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-B3\u0022 transform=\u0022translate(252 174) scale(1 -1)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-B4\u0022 transform=\u0022translate(308 174) scale(1 -1)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003C!-- Parallel phenolic terminal boards, seen edge-on from underneath. --\u003E\n  \u003Cg fill=\u0022#c88c5c\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00222.3\u0022 stroke-linejoin=\u0022round\u0022\u003E\n    \u003Crect x=\u002282\u0022 y=\u002265\u0022 width=\u0022276\u0022 height=\u002224\u0022 rx=\u00224\u0022/\u003E\n    \u003Crect x=\u002282\u0022 y=\u0022121\u0022 width=\u0022276\u0022 height=\u002224\u0022 rx=\u00224\u0022/\u003E\n  \u003C/g\u003E\n  \u003Cg fill=\u0022#a7a7a7\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00221.6\u0022\u003E\n    \u003Ccircle cx=\u0022112\u0022 cy=\u002277\u0022 r=\u00224\u0022/\u003E\u003Ccircle cx=\u0022168\u0022 cy=\u002277\u0022 r=\u00224\u0022/\u003E\n    \u003Ccircle cx=\u0022224\u0022 cy=\u002277\u0022 r=\u00224\u0022/\u003E\u003Ccircle cx=\u0022280\u0022 cy=\u002277\u0022 r=\u00224\u0022/\u003E\n    \u003Ccircle cx=\u0022140\u0022 cy=\u0022133\u0022 r=\u00224\u0022/\u003E\u003Ccircle cx=\u0022196\u0022 cy=\u0022133\u0022 r=\u00224\u0022/\u003E\n    \u003Ccircle cx=\u0022252\u0022 cy=\u0022133\u0022 r=\u00224\u0022/\u003E\u003Ccircle cx=\u0022308\u0022 cy=\u0022133\u0022 r=\u00224\u0022/\u003E\n  \u003C/g\u003E\n  \u003C!-- Lower metal cage; the player-facing lever is hidden on the far side. --\u003E\n  \u003Crect x=\u002277\u0022 y=\u002288\u0022 width=\u0022286\u0022 height=\u002234\u0022 rx=\u00225\u0022 fill=\u0022#d0d1d2\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00222.4\u0022/\u003E\n  \u003Cpath d=\u0022M105 95 H335 V115 H105Z\u0022 fill=\u0022#777b7e\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00221.7\u0022/\u003E\n  \u003Cpath d=\u0022M119 99 H321 V111 H119Z\u0022 fill=\u0022#45494c\u0022/\u003E\n  \u003Cpath d=\u0022M204 95 H236 V115 H204Z\u0022 fill=\u0022#a7a7a7\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00221.8\u0022/\u003E\n  \u003Cg fill=\u0022#a7a7a7\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00221.5\u0022\u003E\n    \u003Ccircle cx=\u002291\u0022 cy=\u0022105\u0022 r=\u00224\u0022/\u003E\u003Ccircle cx=\u0022349\u0022 cy=\u0022105\u0022 r=\u00224\u0022/\u003E\n  \u003C/g\u003E\n\u003C/svg\u003E\n",
   "customTextValue": null,
   "valuePosition": {
@@ -11,8 +11,8 @@
   },
   "svgRotation": 90,
   "svgLocalPosition": {
-    "x": 0,
-    "y": 0
+    "x": 0.890625,
+    "y": -6.0078125
   },
   "schemePosition": {
     "x": 0,
@@ -34,8 +34,8 @@
         "$id": "4",
         "label": "A1",
         "localPosition": {
-          "x": 62.70703,
-          "y": 81.01172
+          "x": 16.289062,
+          "y": 76.05469
         },
         "owner": {
           "$ref": "1"
@@ -49,8 +49,8 @@
         "$id": "6",
         "label": "A2",
         "localPosition": {
-          "x": 63.828125,
-          "y": 113.76172
+          "x": 15.4765625,
+          "y": 112.55078
         },
         "owner": {
           "$ref": "1"
@@ -64,8 +64,8 @@
         "$id": "8",
         "label": "A3",
         "localPosition": {
-          "x": 63.222656,
-          "y": 143.13281
+          "x": 15.40625,
+          "y": 147.13672
         },
         "owner": {
           "$ref": "1"
@@ -79,8 +79,8 @@
         "$id": "10",
         "label": "A0",
         "localPosition": {
-          "x": 63.73828,
-          "y": 176.1289
+          "x": 17.316406,
+          "y": 183.30469
         },
         "owner": {
           "$ref": "1"
@@ -94,8 +94,8 @@
         "$id": "12",
         "label": "B1",
         "localPosition": {
-          "x": 183.04688,
-          "y": 98.375
+          "x": 119.35547,
+          "y": 98.08984
         },
         "owner": {
           "$ref": "1"
@@ -109,8 +109,8 @@
         "$id": "14",
         "label": "B2",
         "localPosition": {
-          "x": 184.03125,
-          "y": 130.23047
+          "x": 120.88672,
+          "y": 132.4336
         },
         "owner": {
           "$ref": "1"
@@ -124,8 +124,8 @@
         "$id": "16",
         "label": "B3",
         "localPosition": {
-          "x": 182.875,
-          "y": 159.98438
+          "x": 120.44922,
+          "y": 164.71875
         },
         "owner": {
           "$ref": "1"
@@ -139,8 +139,8 @@
         "$id": "18",
         "label": "B0",
         "localPosition": {
-          "x": 182.86328,
-          "y": 68.39453
+          "x": 120.37109,
+          "y": 62.35547
         },
         "owner": {
           "$ref": "1"

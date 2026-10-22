@@ -1,7 +1,7 @@
 {
   "$id": "1",
   "id": "2dfb5424-65ee-4c5a-8a06-045e1fb07f41",
-  "width": 494,
+  "width": 175,
   "height": 527,
   "svgMarkup": "\u003C?xml version=\u00221.0\u0022 encoding=\u0022UTF-8\u0022?\u003E\n\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u0022480\u0022 height=\u0022160\u0022 viewBox=\u00220 0 480 160\u0022 role=\u0022img\u0022 aria-labelledby=\u0022strat-title strat-description\u0022\u003E\n  \u003Ctitle id=\u0022strat-title\u0022\u003EStratocaster single-coil pickup \u2014 top view\u003C/title\u003E\n  \u003Cdesc id=\u0022strat-description\u0022\u003EWhite pickup cover and white mounting ears with six flat exposed pole pieces. The black fiber base widens along the lower side, as seen from directly above. Transparent background.\u003C/desc\u003E\n  \u003Cdefs\u003E\n    \u003ClinearGradient id=\u0022strat-white\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#ffffff\u0022/\u003E\n      \u003Cstop offset=\u00220.7\u0022 stop-color=\u0022#f6f5f0\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#deddd6\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022strat-fiber\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#16171a\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#303135\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022strat-pole-metal\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#e7e5dd\u0022/\u003E\n      \u003Cstop offset=\u00220.5\u0022 stop-color=\u0022#c1c0b8\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#aaa9a3\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003Cg id=\u0022strat-pole\u0022\u003E\n      \u003Ccircle r=\u002210.7\u0022 fill=\u0022url(#strat-pole-metal)\u0022 stroke=\u0022#4b4944\u0022 stroke-width=\u00221.5\u0022/\u003E\n      \u003Cpath d=\u0022M-6,-6 L5,5 M-7,-2 L2,7 M-2,-7 L7,2\u0022 fill=\u0022none\u0022 stroke=\u0022#f3f0e7\u0022 stroke-opacity=\u00220.5\u0022 stroke-width=\u00220.65\u0022/\u003E\n    \u003C/g\u003E\n  \u003C/defs\u003E\n  \u003C!-- Asymmetric fiber flatwork, broadening below the cover. --\u003E\n  \u003Cpath d=\u0022M38,44 H442 A24,24 0 0 1 466,68 C466,83 456,94 441,98 L320,134 Q240,155 160,134 L39,98 C24,94 14,83 14,68 A24,24 0 0 1 38,44 Z\n           M44,68 A6,6 0 1 0 32,68 A6,6 0 1 0 44,68 Z\n           M448,68 A6,6 0 1 0 436,68 A6,6 0 1 0 448,68 Z\u0022\n        fill=\u0022url(#strat-fiber)\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#111215\u0022 stroke-width=\u00222\u0022/\u003E\n  \u003Cpath d=\u0022M71,105 L164,131 Q240,150 316,131 L409,105\u0022 fill=\u0022none\u0022 stroke=\u0022#55565a\u0022 stroke-width=\u00221\u0022/\u003E\n  \u003C!-- Mounting ears are part of the white cover flange, not black tabs. --\u003E\n  \u003Cpath d=\u0022M38,46 H442 A22,22 0 0 1 464,68 A22,22 0 0 1 442,90 H38 A22,22 0 0 1 16,68 A22,22 0 0 1 38,46 Z\n           M44,68 A6,6 0 1 0 32,68 A6,6 0 1 0 44,68 Z\n           M448,68 A6,6 0 1 0 436,68 A6,6 0 1 0 448,68 Z\u0022\n        fill=\u0022url(#strat-white)\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#bbb9b0\u0022 stroke-width=\u00221.5\u0022/\u003E\n  \u003Crect x=\u002263\u0022 y=\u002227\u0022 width=\u0022354\u0022 height=\u002282\u0022 rx=\u002241\u0022 fill=\u0022url(#strat-white)\u0022 stroke=\u0022#b9b7af\u0022 stroke-width=\u00221.5\u0022/\u003E\n  \u003Cpath d=\u0022M105,30 H375 A38,38 0 0 1 413,68\u0022 fill=\u0022none\u0022 stroke=\u0022#ffffff\u0022 stroke-width=\u00222\u0022/\u003E\n  \u003Cpath d=\u0022M68,78 Q75,105 105,106 H375 Q400,106 410,86\u0022 fill=\u0022none\u0022 stroke=\u0022#ceccc3\u0022 stroke-width=\u00221\u0022/\u003E\n  \u003Cg transform=\u0022translate(125 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(171 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(217 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(263 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(309 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(355 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003C!-- Small connection eyelets in the exposed flatwork. --\u003E\n  \u003Cg fill=\u0022#b79858\u0022 stroke=\u0022#17181a\u0022 stroke-width=\u00221\u0022\u003E\n    \u003Ccircle cx=\u0022221\u0022 cy=\u0022131\u0022 r=\u00223.4\u0022/\u003E\n    \u003Ccircle cx=\u0022259\u0022 cy=\u0022131\u0022 r=\u00223.4\u0022/\u003E\n  \u003C/g\u003E\n  \u003Cg fill=\u0022#d6d2c5\u0022\u003E\u003Ccircle cx=\u0022221\u0022 cy=\u0022131\u0022 r=\u00221.5\u0022/\u003E\u003Ccircle cx=\u0022259\u0022 cy=\u0022131\u0022 r=\u00221.5\u0022/\u003E\u003C/g\u003E\n\u003C/svg\u003E\n",
   "customTextValue": null,
@@ -35,8 +35,8 @@
         "$id": "4",
         "label": "in",
         "localPosition": {
-          "x": 304.21094,
-          "y": 240.92969
+          "x": 140.4961,
+          "y": 241.21484
         },
         "owner": {
           "$ref": "1"
@@ -50,8 +50,8 @@
         "$id": "6",
         "label": "Out",
         "localPosition": {
-          "x": 304.21484,
-          "y": 287.3828
+          "x": 140.45312,
+          "y": 289.10938
         },
         "owner": {
           "$ref": "1"

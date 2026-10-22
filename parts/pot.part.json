@@ -1,13 +1,13 @@
 {
   "$id": "1",
   "id": "eddf5c1c-4002-4ac3-aa0e-96855f021076",
-  "width": 228,
+  "width": 186,
   "height": 202,
   "svgMarkup": "\u003C?xml version=\u00221.0\u0022 encoding=\u0022UTF-8\u0022?\u003E\n\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u0022240\u0022 height=\u0022260\u0022 viewBox=\u00220 0 240 260\u0022 role=\u0022img\u0022 aria-labelledby=\u0022pot-title pot-description\u0022\u003E\n  \u003Ctitle id=\u0022pot-title\u0022\u003EGuitar potentiometer \u2014 schematic top view\u003C/title\u003E\n  \u003Cdesc id=\u0022pot-description\u0022\u003ERound metal potentiometer housing with an unobstructed center for a schematic label, brown insulating terminal board and three solder lugs with transparent holes. Transparent background.\u003C/desc\u003E\n  \u003Cdefs\u003E\n    \u003ClinearGradient id=\u0022pot-housing\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#eef0f1\u0022/\u003E\n      \u003Cstop offset=\u00220.35\u0022 stop-color=\u0022#cdd2d6\u0022/\u003E\n      \u003Cstop offset=\u00220.7\u0022 stop-color=\u0022#a7afb5\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#d9dde0\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022pot-rim\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220.2\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#f7f8f9\u0022/\u003E\n      \u003Cstop offset=\u00220.45\u0022 stop-color=\u0022#929ca4\u0022/\u003E\n      \u003Cstop offset=\u00220.75\u0022 stop-color=\u0022#e0e4e7\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#79848e\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022pot-terminal\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#a8afb3\u0022/\u003E\n      \u003Cstop offset=\u00220.45\u0022 stop-color=\u0022#f1f2ee\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#929b9f\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003Cg id=\u0022pot-lug\u0022\u003E\n      \u003Cpath d=\u0022M-10,194 H10 V239 Q10,245 4,245 H-4 Q-10,245 -10,239 Z\n               M-4,222 V234 A4,4 0 0 0 4,234 V222 A4,4 0 0 0 -4,222 Z\u0022\n            fill=\u0022url(#pot-terminal)\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#40474c\u0022 stroke-width=\u00221.8\u0022 stroke-linejoin=\u0022round\u0022/\u003E\n      \u003Cpath d=\u0022M-6,207 H6\u0022 fill=\u0022none\u0022 stroke=\u0022#747d83\u0022 stroke-width=\u00221.2\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg id=\u0022pot-crimp\u0022\u003E\n      \u003Cpath d=\u0022M-8,-82 H8 L7,-73 H-7 Z\u0022 fill=\u0022url(#pot-rim)\u0022 stroke=\u0022#747e86\u0022 stroke-width=\u00221.1\u0022 stroke-linejoin=\u0022round\u0022/\u003E\n    \u003C/g\u003E\n  \u003C/defs\u003E\n  \u003C!-- Phenolic board and three independent solder terminals. --\u003E\n  \u003Crect x=\u002244\u0022 y=\u0022164\u0022 width=\u0022152\u0022 height=\u002243\u0022 rx=\u002210\u0022 fill=\u0022#9e633f\u0022 stroke=\u0022#4c3327\u0022 stroke-width=\u00222\u0022/\u003E\n  \u003Cpath d=\u0022M51,199 H189\u0022 fill=\u0022none\u0022 stroke=\u0022#c18a60\u0022 stroke-width=\u00221.5\u0022/\u003E\n  \u003Cg transform=\u0022translate(70 0)\u0022\u003E\u003Cuse href=\u0022#pot-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(120 0)\u0022\u003E\u003Cuse href=\u0022#pot-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(170 0)\u0022\u003E\u003Cuse href=\u0022#pot-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg fill=\u0022#d2b47a\u0022 stroke=\u0022#64482e\u0022 stroke-width=\u00221.2\u0022\u003E\n    \u003Ccircle cx=\u002270\u0022 cy=\u0022197\u0022 r=\u00224\u0022/\u003E\n    \u003Ccircle cx=\u0022120\u0022 cy=\u0022197\u0022 r=\u00224\u0022/\u003E\n    \u003Ccircle cx=\u0022170\u0022 cy=\u0022197\u0022 r=\u00224\u0022/\u003E\n  \u003C/g\u003E\n  \u003C!-- Stamped circular housing; the center is left clear for a label. --\u003E\n  \u003Ccircle cx=\u0022120\u0022 cy=\u0022106\u0022 r=\u002286\u0022 fill=\u0022url(#pot-rim)\u0022 stroke=\u0022#343b41\u0022 stroke-width=\u00222.5\u0022/\u003E\n  \u003Ccircle cx=\u0022120\u0022 cy=\u0022106\u0022 r=\u002279\u0022 fill=\u0022url(#pot-housing)\u0022 stroke=\u0022#8a949c\u0022 stroke-width=\u00221.4\u0022/\u003E\n  \u003Cpath d=\u0022M47,91 A75,75 0 0 1 156,40\u0022 fill=\u0022none\u0022 stroke=\u0022#ffffff\u0022 stroke-opacity=\u00220.8\u0022 stroke-width=\u00222\u0022 stroke-linecap=\u0022round\u0022/\u003E\n  \u003Cg transform=\u0022translate(120 106)\u0022\u003E\n    \u003Cuse href=\u0022#pot-crimp\u0022/\u003E\n    \u003Cuse href=\u0022#pot-crimp\u0022 transform=\u0022rotate(60)\u0022/\u003E\n    \u003Cuse href=\u0022#pot-crimp\u0022 transform=\u0022rotate(120)\u0022/\u003E\n    \u003Cuse href=\u0022#pot-crimp\u0022 transform=\u0022rotate(180)\u0022/\u003E\n    \u003Cuse href=\u0022#pot-crimp\u0022 transform=\u0022rotate(240)\u0022/\u003E\n    \u003Cuse href=\u0022#pot-crimp\u0022 transform=\u0022rotate(300)\u0022/\u003E\n  \u003C/g\u003E\n\u003C/svg\u003E\n",
   "customTextValue": "value",
   "valuePosition": {
-    "x": 114.92969,
-    "y": 45.98828
+    "x": 94.796875,
+    "y": 58.507812
   },
   "svgRotation": 0,
   "svgLocalPosition": {
@@ -32,8 +32,8 @@
         "$id": "4",
         "label": "Left",
         "localPosition": {
-          "x": 73.55859,
-          "y": 189.77734
+          "x": 51.67578,
+          "y": 190.15625
         },
         "owner": {
           "$ref": "1"
@@ -47,8 +47,8 @@
         "$id": "6",
         "label": "In",
         "localPosition": {
-          "x": 114.81641,
-          "y": 188.5625
+          "x": 94.19141,
+          "y": 191.39062
         },
         "owner": {
           "$ref": "1"
@@ -62,8 +62,8 @@
         "$id": "8",
         "label": "right",
         "localPosition": {
-          "x": 153.60156,
-          "y": 185.36328
+          "x": 133.3086,
+          "y": 192.32812
         },
         "owner": {
           "$ref": "1"
@@ -77,8 +77,8 @@
         "$id": "10",
         "label": "case",
         "localPosition": {
-          "x": 163.4414,
-          "y": 47.546875
+          "x": 147.03906,
+          "y": 43.253906
         },
         "owner": {
           "$ref": "1"

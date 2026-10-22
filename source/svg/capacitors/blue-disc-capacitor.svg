@@ -1,19 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-labelledby="cap-title cap-description">
-  <title id="cap-title">Modrý obalený diskový kondenzátor bez potlače</title>
-  <desc id="cap-description">Štylizovaná súčiastka pre gitarové schémy zapojenia podľa dodanej fotografie. Telo bez potlače a bez viditeľných textov, pripravené na doplnenie hodnoty. Priehľadné pozadie. Body pripojenia: (124, 292), (196, 292).</desc>
-  <defs>
-    <linearGradient id="cap-body" x1="0" y1="0" x2="0.75" y2="1">
-      <stop offset="0" stop-color="#35bbf5"/><stop offset="0.55" stop-color="#079cde"/><stop offset="1" stop-color="#0086c6"/>
-    </linearGradient>
-    <linearGradient id="cap-wire" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#92999d"/><stop offset="0.42" stop-color="#f1f3f2"/><stop offset="1" stop-color="#9ca3a7"/>
-    </linearGradient>
-  </defs>
-  <g><path id="terminal-1" d="M124 181 V292" fill="none" stroke="#5c6266" stroke-width="9" stroke-linecap="round"/><path d="M124 181 V292" fill="none" stroke="url(#cap-wire)" stroke-width="6" stroke-linecap="round"/>
-<path id="terminal-2" d="M196 181 V292" fill="none" stroke="#5c6266" stroke-width="9" stroke-linecap="round"/><path d="M196 181 V292" fill="none" stroke="url(#cap-wire)" stroke-width="6" stroke-linecap="round"/></g>
-  <g stroke-linecap="round" stroke-linejoin="round">
-    <path d="M88 105 C88 64 117 35 160 35 C203 35 232 64 232 105 C232 137 215 148 207 166 L204 183 Q198 193 189 184 Q160 174 131 184 Q122 193 116 183 L113 166 C105 148 88 137 88 105Z" fill="url(#cap-body)" stroke="#087bb5" stroke-width="2.4"/>
-    <path d="M101 94 Q110 49 151 47" fill="none" stroke="#9addfa" stroke-opacity="0.65" stroke-width="3"/>
-    <path d="M119 166 Q126 170 132 175 M188 175 Q194 170 201 166" fill="none" stroke="#007cb9" stroke-opacity="0.65" stroke-width="2"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 151 266" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;">
+    <g transform="matrix(1,0,0,1,-83,-32)">
+        <path id="terminal-1" d="M124,181L124,292" style="fill:none;fill-rule:nonzero;stroke:rgb(92,98,102);stroke-width:9px;"/>
+        <path d="M124,181L124,292" style="fill:none;fill-rule:nonzero;stroke:url(#_Linear1);stroke-width:6px;"/>
+        <path id="terminal-2" d="M196,181L196,292" style="fill:none;fill-rule:nonzero;stroke:rgb(92,98,102);stroke-width:9px;"/>
+        <path d="M196,181L196,292" style="fill:none;fill-rule:nonzero;stroke:url(#_Linear2);stroke-width:6px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-83,-32)">
+        <path d="M88,105C88,64 117,35 160,35C203,35 232,64 232,105C232,137 215,148 207,166L204,183C200,189.667 195,190 189,184C169.667,177.333 150.333,177.333 131,184C125,190 120,189.667 116,183L113,166C105,148 88,137 88,105Z" style="fill:url(#_Linear3);fill-rule:nonzero;stroke:rgb(8,123,181);stroke-width:2.4px;stroke-linejoin:round;"/>
+        <path d="M101,94C107,64 123.667,48.333 151,47" style="fill:none;fill-rule:nonzero;stroke:rgb(154,221,250);stroke-opacity:0.65;stroke-width:3px;stroke-linejoin:round;"/>
+        <path d="M119,166C123.667,168.667 128,171.667 132,175M188,175C192,171.667 196.333,168.667 201,166" style="fill:none;fill-rule:nonzero;stroke:rgb(0,124,185);stroke-opacity:0.65;stroke-width:2px;stroke-linejoin:round;"/>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.000002,0,0,0.000002,124,-19910)"><stop offset="0" style="stop-color:rgb(146,153,157);stop-opacity:1"/><stop offset="0.42" style="stop-color:rgb(241,243,242);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(156,163,167);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.000002,0,0,0.000002,196,-19910)"><stop offset="0" style="stop-color:rgb(146,153,157);stop-opacity:1"/><stop offset="0.42" style="stop-color:rgb(241,243,242);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(156,163,167);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear3" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(108,153.263158,-153.263158,108,88,35)"><stop offset="0" style="stop-color:rgb(53,187,245);stop-opacity:1"/><stop offset="0.55" style="stop-color:rgb(7,156,222);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,134,198);stop-opacity:1"/></linearGradient>
+    </defs>
 </svg>
