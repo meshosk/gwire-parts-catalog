@@ -4,6 +4,9 @@ Catalog data and SVG artwork for Gwire guitar wiring diagrams, maintained separa
 from the main application. The repository contains component definitions, saved
 wiring schemes, shared tags, and a local tag manager with an index builder.
 
+The [Gwire application](https://github.com/meshosk/gwire) uses this repository as
+its data source.
+
 ## Repository layout
 
 | Path | Contents |
