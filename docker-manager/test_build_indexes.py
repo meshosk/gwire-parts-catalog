@@ -96,3 +96,32 @@ class FilenameTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, 'circuit'):
                     build_indexes(self.root)
                 self.assertEqual(self.snapshot(), before)
+
+    def test_index_preserves_exact_scheme_attributes_for_multiple_files(self):
+        metadata = {
+            'name': '  Čistý SSS – Volume & Tone  ',
+            'description': 'Prvý riadok.\n  Druhý riadok s medzerami.  ',
+            'tags': ['Single Coil', ' SSS ', 'single coil', 'Single Coil'],
+        }
+        self.scheme.write_text(json.dumps({
+            'name': 'Do not use root metadata', 'description': 'Wrong description',
+            'tags': ['wrong'], 'schemeFormatVersion': 1,
+            'circuit': {**metadata, 'tags': {'$values': metadata['tags']},
+                        'parts': {'$values': [{'name': 'Pickup', 'tags': ['wrong part tag']}]}},
+        }, ensure_ascii=False))
+        nested = self.root / 'schemes' / 'Nested'
+        nested.mkdir()
+        empty = nested / 'Empty Scheme.scheme.json'
+        empty.write_text(json.dumps({
+            'circuit': {'name': '', 'description': '', 'tags': []},
+        }))
+        originals = {self.scheme: self.scheme.read_bytes(), empty: empty.read_bytes()}
+
+        self.assertEqual(build_indexes(self.root), {'parts': 1, 'schemes': 2})
+        entries = json.loads((self.root / 'schemes-index.json').read_text())
+        self.assertEqual(entries, [
+            {'file': 'Nested/empty-scheme.scheme.json', 'name': '', 'description': '', 'tags': []},
+            {'file': 'my-scheme.scheme.json', **metadata},
+        ])
+        for original, content in originals.items():
+            self.assertEqual(original.with_name(original.name.lower().replace(' ', '-')).read_bytes(), content)

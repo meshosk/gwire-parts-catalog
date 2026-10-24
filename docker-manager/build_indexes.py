@@ -53,6 +53,7 @@ def validate_renames(paths):
 
 
 def scheme_entry(path, directory):
+    """Map scheme attributes to the index without normalizing metadata values."""
     data = read_json(path)
     if not isinstance(data, dict):
         raise ValueError(f"{path}: scheme must be a JSON object")

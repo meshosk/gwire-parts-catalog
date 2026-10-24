@@ -128,6 +128,10 @@ Scheme metadata comes from `circuit.name`, `circuit.description`, and `circuit.t
 in exported scheme documents. Older files with these fields at the top level are
 also supported.
 Exported tags wrapped in `$values` are flattened into an array in the index.
+Values are copied exactly: names and descriptions retain their case, whitespace,
+and accents; tags retain their values, order, and duplicates. Empty attributes
+stay empty. Metadata is never inferred from filenames or individual components.
+Only `file` uses the normalized path relative to `schemes/`.
 Invalid scheme metadata is rejected before either index is written. Part files
 are indexed by filename; the builder does not validate their JSON contents.
 
