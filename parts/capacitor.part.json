@@ -1,0 +1,105 @@
+{
+  "$id": "1",
+  "stateGroups": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "label": "State",
+        "states": {
+          "$id": "4",
+          "$values": [
+            {
+              "$id": "5",
+              "label": "con",
+              "connectionGroups": {
+                "$id": "6",
+                "$values": [
+                  {
+                    "$id": "7",
+                    "connectedPints": {
+                      "$id": "8",
+                      "$values": [
+                        {
+                          "$id": "9",
+                          "label": "2",
+                          "localPosition": {
+                            "x": 65.26953,
+                            "y": 74.66016
+                          },
+                          "owner": {
+                            "$ref": "1"
+                          },
+                          "connectionPoints": {
+                            "$id": "10",
+                            "$values": []
+                          }
+                        },
+                        {
+                          "$id": "11",
+                          "label": "1",
+                          "localPosition": {
+                            "x": 31.910156,
+                            "y": 76.10547
+                          },
+                          "owner": {
+                            "$ref": "1"
+                          },
+                          "connectionPoints": {
+                            "$id": "12",
+                            "$values": []
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "activeState": {
+          "$ref": "5"
+        }
+      }
+    ]
+  },
+  "id": "28362770-7b62-4a67-80b8-ebf1492745b6",
+  "width": 96,
+  "height": 80,
+  "tags": {
+    "$id": "13",
+    "$values": [
+      "capacitor"
+    ]
+  },
+  "svgMarkup": "\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u0022320\u0022 height=\u0022320\u0022 viewBox=\u00220 0 320 320\u0022 role=\u0022img\u0022 aria-labelledby=\u0022cap-title cap-description\u0022\u003E\n  \u003Ctitle id=\u0022cap-title\u0022\u003EOran\u017Eov\u00FD diskov\u00FD kondenz\u00E1tor bez potla\u010De\u003C/title\u003E\n  \u003Cdesc id=\u0022cap-description\u0022\u003E\u0160tylizovan\u00E1 s\u00FA\u010Diastka pre gitarov\u00E9 sch\u00E9my zapojenia pod\u013Ea dodanej fotografie. Telo bez potla\u010De a bez vidite\u013En\u00FDch textov, pripraven\u00E9 na doplnenie hodnoty. Prieh\u013Eadn\u00E9 pozadie. Body pripojenia: (112, 292), (208, 292).\u003C/desc\u003E\n  \u003Cdefs\u003E\n    \u003ClinearGradient id=\u0022cap-body\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220.75\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#e58f53\u0022/\u003E\u003Cstop offset=\u00220.55\u0022 stop-color=\u0022#d47a40\u0022/\u003E\u003Cstop offset=\u00221\u0022 stop-color=\u0022#b86635\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022cap-wire\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022\u003E\n      \u003Cstop stop-color=\u0022#92999d\u0022/\u003E\u003Cstop offset=\u00220.42\u0022 stop-color=\u0022#f1f3f2\u0022/\u003E\u003Cstop offset=\u00221\u0022 stop-color=\u0022#9ca3a7\u0022/\u003E\n    \u003C/linearGradient\u003E\n  \u003C/defs\u003E\n  \u003Cg\u003E\u003Cpath id=\u0022terminal-1\u0022 d=\u0022M112 198 V292\u0022 fill=\u0022none\u0022 stroke=\u0022#5c6266\u0022 stroke-width=\u00229\u0022 stroke-linecap=\u0022round\u0022/\u003E\u003Cpath d=\u0022M112 198 V292\u0022 fill=\u0022none\u0022 stroke=\u0022url(#cap-wire)\u0022 stroke-width=\u00226\u0022 stroke-linecap=\u0022round\u0022/\u003E\n\u003Cpath id=\u0022terminal-2\u0022 d=\u0022M208 198 V292\u0022 fill=\u0022none\u0022 stroke=\u0022#5c6266\u0022 stroke-width=\u00229\u0022 stroke-linecap=\u0022round\u0022/\u003E\u003Cpath d=\u0022M208 198 V292\u0022 fill=\u0022none\u0022 stroke=\u0022url(#cap-wire)\u0022 stroke-width=\u00226\u0022 stroke-linecap=\u0022round\u0022/\u003E\u003C/g\u003E\n  \u003Cg stroke-linecap=\u0022round\u0022 stroke-linejoin=\u0022round\u0022\u003E\n    \u003Cpath d=\u0022M65 111 C65 59 106 25 160 25 C214 25 255 59 255 111 C255 150 234 171 219 181 Q211 188 214 204 Q208 212 202 202 C192 186 181 191 160 191 C139 191 128 186 118 202 Q112 212 106 204 Q109 188 101 181 C86 171 65 150 65 111Z\u0022 fill=\u0022url(#cap-body)\u0022 stroke=\u0022#a65d32\u0022 stroke-width=\u00222.4\u0022/\u003E\n    \u003Cpath d=\u0022M77 92 Q89 43 146 36\u0022 fill=\u0022none\u0022 stroke=\u0022#f3b98e\u0022 stroke-opacity=\u00220.65\u0022 stroke-width=\u00223\u0022/\u003E\n\u003C/g\u003E\n\u003C/svg\u003E\n",
+  "customTextValue": "value",
+  "valuePosition": {
+    "x": 46.242188,
+    "y": 6.2070312
+  },
+  "svgRotation": 0,
+  "svgLocalPosition": {
+    "x": 0,
+    "y": 0
+  },
+  "schemePosition": {
+    "x": 0,
+    "y": 0
+  },
+  "classType": "CircuitPart",
+  "name": "Capacitor",
+  "description": "",
+  "points": {
+    "$id": "14",
+    "$values": [
+      {
+        "$ref": "11"
+      },
+      {
+        "$ref": "9"
+      }
+    ]
+  }
+}
