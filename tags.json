@@ -5,6 +5,7 @@
   "blend",
   "button",
   "capacitor",
+  "classic",
   "fender",
   "hh",
   "hhh",
@@ -13,6 +14,7 @@
   "input",
   "input jack",
   "jack",
+  "legacy",
   "mono",
   "mono jack",
   "output jack",
@@ -35,5 +37,6 @@
   "toggle switch",
   "tone",
   "treble bleed",
+  "vintage",
   "volume"
 ]

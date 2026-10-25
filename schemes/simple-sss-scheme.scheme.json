@@ -1,0 +1,2878 @@
+{
+  "$id": "1",
+  "schemeFormatVersion": 1,
+  "circuit": {
+    "$id": "2",
+    "name": "Simple SSS scheme",
+    "description": "Classic ",
+    "tags": {
+      "$id": "3",
+      "$values": [
+        "sss",
+        "single coil"
+      ]
+    },
+    "parts": {
+      "$id": "4",
+      "$values": [
+        {
+          "$id": "5",
+          "$type": "circuitPart",
+          "stateGroups": {
+            "$id": "6",
+            "$values": [
+              {
+                "$id": "7",
+                "label": "State",
+                "states": {
+                  "$id": "8",
+                  "$values": [
+                    {
+                      "$id": "9",
+                      "label": "State 1",
+                      "connectionGroups": {
+                        "$id": "10",
+                        "$values": [
+                          {
+                            "$id": "11",
+                            "connectedPints": {
+                              "$id": "12",
+                              "$values": [
+                                {
+                                  "$id": "13",
+                                  "label": "Ground",
+                                  "localPosition": {
+                                    "x": 139.73828,
+                                    "y": 233.90625
+                                  },
+                                  "owner": {
+                                    "$ref": "5"
+                                  }
+                                },
+                                {
+                                  "$id": "14",
+                                  "label": "Source",
+                                  "localPosition": {
+                                    "x": 140.19531,
+                                    "y": 278.69922
+                                  },
+                                  "owner": {
+                                    "$ref": "5"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "activeState": {
+                  "$ref": "9"
+                }
+              }
+            ]
+          },
+          "id": "811a3317-f90b-49a3-b6ff-2d630657856e",
+          "width": 173,
+          "height": 515,
+          "tags": {
+            "$id": "15",
+            "$values": [
+              "single coil",
+              "pickup"
+            ]
+          },
+          "svgMarkup": "\u003C?xml version=\u00221.0\u0022 encoding=\u0022UTF-8\u0022?\u003E\n\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u0022480\u0022 height=\u0022160\u0022 viewBox=\u00220 0 480 160\u0022 role=\u0022img\u0022 aria-labelledby=\u0022strat-title strat-description\u0022\u003E\n  \u003Ctitle id=\u0022strat-title\u0022\u003EStratocaster single-coil pickup \u2014 top view\u003C/title\u003E\n  \u003Cdesc id=\u0022strat-description\u0022\u003EWhite pickup cover and white mounting ears with six flat exposed pole pieces. The black fiber base widens along the lower side, as seen from directly above. Transparent background.\u003C/desc\u003E\n  \u003Cdefs\u003E\n    \u003ClinearGradient id=\u0022strat-white\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#ffffff\u0022/\u003E\n      \u003Cstop offset=\u00220.7\u0022 stop-color=\u0022#f6f5f0\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#deddd6\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022strat-fiber\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#16171a\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#303135\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022strat-pole-metal\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#e7e5dd\u0022/\u003E\n      \u003Cstop offset=\u00220.5\u0022 stop-color=\u0022#c1c0b8\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#aaa9a3\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003Cg id=\u0022strat-pole\u0022\u003E\n      \u003Ccircle r=\u002210.7\u0022 fill=\u0022url(#strat-pole-metal)\u0022 stroke=\u0022#4b4944\u0022 stroke-width=\u00221.5\u0022/\u003E\n      \u003Cpath d=\u0022M-6,-6 L5,5 M-7,-2 L2,7 M-2,-7 L7,2\u0022 fill=\u0022none\u0022 stroke=\u0022#f3f0e7\u0022 stroke-opacity=\u00220.5\u0022 stroke-width=\u00220.65\u0022/\u003E\n    \u003C/g\u003E\n  \u003C/defs\u003E\n  \u003C!-- Asymmetric fiber flatwork, broadening below the cover. --\u003E\n  \u003Cpath d=\u0022M38,44 H442 A24,24 0 0 1 466,68 C466,83 456,94 441,98 L320,134 Q240,155 160,134 L39,98 C24,94 14,83 14,68 A24,24 0 0 1 38,44 Z\n           M44,68 A6,6 0 1 0 32,68 A6,6 0 1 0 44,68 Z\n           M448,68 A6,6 0 1 0 436,68 A6,6 0 1 0 448,68 Z\u0022\n        fill=\u0022url(#strat-fiber)\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#111215\u0022 stroke-width=\u00222\u0022/\u003E\n  \u003Cpath d=\u0022M71,105 L164,131 Q240,150 316,131 L409,105\u0022 fill=\u0022none\u0022 stroke=\u0022#55565a\u0022 stroke-width=\u00221\u0022/\u003E\n  \u003C!-- Mounting ears are part of the white cover flange, not black tabs. --\u003E\n  \u003Cpath d=\u0022M38,46 H442 A22,22 0 0 1 464,68 A22,22 0 0 1 442,90 H38 A22,22 0 0 1 16,68 A22,22 0 0 1 38,46 Z\n           M44,68 A6,6 0 1 0 32,68 A6,6 0 1 0 44,68 Z\n           M448,68 A6,6 0 1 0 436,68 A6,6 0 1 0 448,68 Z\u0022\n        fill=\u0022url(#strat-white)\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#bbb9b0\u0022 stroke-width=\u00221.5\u0022/\u003E\n  \u003Crect x=\u002263\u0022 y=\u002227\u0022 width=\u0022354\u0022 height=\u002282\u0022 rx=\u002241\u0022 fill=\u0022url(#strat-white)\u0022 stroke=\u0022#b9b7af\u0022 stroke-width=\u00221.5\u0022/\u003E\n  \u003Cpath d=\u0022M105,30 H375 A38,38 0 0 1 413,68\u0022 fill=\u0022none\u0022 stroke=\u0022#ffffff\u0022 stroke-width=\u00222\u0022/\u003E\n  \u003Cpath d=\u0022M68,78 Q75,105 105,106 H375 Q400,106 410,86\u0022 fill=\u0022none\u0022 stroke=\u0022#ceccc3\u0022 stroke-width=\u00221\u0022/\u003E\n  \u003Cg transform=\u0022translate(125 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(171 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(217 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(263 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(309 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(355 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003C!-- Small connection eyelets in the exposed flatwork. --\u003E\n  \u003Cg fill=\u0022#b79858\u0022 stroke=\u0022#17181a\u0022 stroke-width=\u00221\u0022\u003E\n    \u003Ccircle cx=\u0022221\u0022 cy=\u0022131\u0022 r=\u00223.4\u0022/\u003E\n    \u003Ccircle cx=\u0022259\u0022 cy=\u0022131\u0022 r=\u00223.4\u0022/\u003E\n  \u003C/g\u003E\n  \u003Cg fill=\u0022#d6d2c5\u0022\u003E\u003Ccircle cx=\u0022221\u0022 cy=\u0022131\u0022 r=\u00221.5\u0022/\u003E\u003Ccircle cx=\u0022259\u0022 cy=\u0022131\u0022 r=\u00221.5\u0022/\u003E\u003C/g\u003E\n\u003C/svg\u003E\n",
+          "customTextValue": null,
+          "valuePosition": {
+            "x": 120,
+            "y": 80
+          },
+          "svgRotation": -90,
+          "svgLocalPosition": {
+            "x": 0,
+            "y": 0.234375
+          },
+          "schemePosition": {
+            "x": 492.41794,
+            "y": -240.80008
+          },
+          "classType": "CircuitPart",
+          "name": "Singlecoil pickup",
+          "description": "",
+          "points": {
+            "$id": "16",
+            "$values": [
+              {
+                "$ref": "13"
+              },
+              {
+                "$ref": "14"
+              }
+            ]
+          }
+        },
+        {
+          "$id": "17",
+          "$type": "circuitPart",
+          "stateGroups": {
+            "$id": "18",
+            "$values": [
+              {
+                "$id": "19",
+                "label": "State",
+                "states": {
+                  "$id": "20",
+                  "$values": [
+                    {
+                      "$id": "21",
+                      "label": "State 1",
+                      "connectionGroups": {
+                        "$id": "22",
+                        "$values": [
+                          {
+                            "$id": "23",
+                            "connectedPints": {
+                              "$id": "24",
+                              "$values": [
+                                {
+                                  "$id": "25",
+                                  "label": "Ground",
+                                  "localPosition": {
+                                    "x": 139.73828,
+                                    "y": 233.90625
+                                  },
+                                  "owner": {
+                                    "$ref": "17"
+                                  }
+                                },
+                                {
+                                  "$id": "26",
+                                  "label": "Source",
+                                  "localPosition": {
+                                    "x": 140.19531,
+                                    "y": 278.69922
+                                  },
+                                  "owner": {
+                                    "$ref": "17"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "activeState": {
+                  "$ref": "21"
+                }
+              }
+            ]
+          },
+          "id": "811a3317-f90b-49a3-b6ff-2d630657856e",
+          "width": 173,
+          "height": 515,
+          "tags": {
+            "$id": "27",
+            "$values": [
+              "single coil",
+              "pickup"
+            ]
+          },
+          "svgMarkup": "\u003C?xml version=\u00221.0\u0022 encoding=\u0022UTF-8\u0022?\u003E\n\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u0022480\u0022 height=\u0022160\u0022 viewBox=\u00220 0 480 160\u0022 role=\u0022img\u0022 aria-labelledby=\u0022strat-title strat-description\u0022\u003E\n  \u003Ctitle id=\u0022strat-title\u0022\u003EStratocaster single-coil pickup \u2014 top view\u003C/title\u003E\n  \u003Cdesc id=\u0022strat-description\u0022\u003EWhite pickup cover and white mounting ears with six flat exposed pole pieces. The black fiber base widens along the lower side, as seen from directly above. Transparent background.\u003C/desc\u003E\n  \u003Cdefs\u003E\n    \u003ClinearGradient id=\u0022strat-white\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#ffffff\u0022/\u003E\n      \u003Cstop offset=\u00220.7\u0022 stop-color=\u0022#f6f5f0\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#deddd6\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022strat-fiber\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#16171a\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#303135\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022strat-pole-metal\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#e7e5dd\u0022/\u003E\n      \u003Cstop offset=\u00220.5\u0022 stop-color=\u0022#c1c0b8\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#aaa9a3\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003Cg id=\u0022strat-pole\u0022\u003E\n      \u003Ccircle r=\u002210.7\u0022 fill=\u0022url(#strat-pole-metal)\u0022 stroke=\u0022#4b4944\u0022 stroke-width=\u00221.5\u0022/\u003E\n      \u003Cpath d=\u0022M-6,-6 L5,5 M-7,-2 L2,7 M-2,-7 L7,2\u0022 fill=\u0022none\u0022 stroke=\u0022#f3f0e7\u0022 stroke-opacity=\u00220.5\u0022 stroke-width=\u00220.65\u0022/\u003E\n    \u003C/g\u003E\n  \u003C/defs\u003E\n  \u003C!-- Asymmetric fiber flatwork, broadening below the cover. --\u003E\n  \u003Cpath d=\u0022M38,44 H442 A24,24 0 0 1 466,68 C466,83 456,94 441,98 L320,134 Q240,155 160,134 L39,98 C24,94 14,83 14,68 A24,24 0 0 1 38,44 Z\n           M44,68 A6,6 0 1 0 32,68 A6,6 0 1 0 44,68 Z\n           M448,68 A6,6 0 1 0 436,68 A6,6 0 1 0 448,68 Z\u0022\n        fill=\u0022url(#strat-fiber)\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#111215\u0022 stroke-width=\u00222\u0022/\u003E\n  \u003Cpath d=\u0022M71,105 L164,131 Q240,150 316,131 L409,105\u0022 fill=\u0022none\u0022 stroke=\u0022#55565a\u0022 stroke-width=\u00221\u0022/\u003E\n  \u003C!-- Mounting ears are part of the white cover flange, not black tabs. --\u003E\n  \u003Cpath d=\u0022M38,46 H442 A22,22 0 0 1 464,68 A22,22 0 0 1 442,90 H38 A22,22 0 0 1 16,68 A22,22 0 0 1 38,46 Z\n           M44,68 A6,6 0 1 0 32,68 A6,6 0 1 0 44,68 Z\n           M448,68 A6,6 0 1 0 436,68 A6,6 0 1 0 448,68 Z\u0022\n        fill=\u0022url(#strat-white)\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#bbb9b0\u0022 stroke-width=\u00221.5\u0022/\u003E\n  \u003Crect x=\u002263\u0022 y=\u002227\u0022 width=\u0022354\u0022 height=\u002282\u0022 rx=\u002241\u0022 fill=\u0022url(#strat-white)\u0022 stroke=\u0022#b9b7af\u0022 stroke-width=\u00221.5\u0022/\u003E\n  \u003Cpath d=\u0022M105,30 H375 A38,38 0 0 1 413,68\u0022 fill=\u0022none\u0022 stroke=\u0022#ffffff\u0022 stroke-width=\u00222\u0022/\u003E\n  \u003Cpath d=\u0022M68,78 Q75,105 105,106 H375 Q400,106 410,86\u0022 fill=\u0022none\u0022 stroke=\u0022#ceccc3\u0022 stroke-width=\u00221\u0022/\u003E\n  \u003Cg transform=\u0022translate(125 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(171 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(217 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(263 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(309 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(355 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003C!-- Small connection eyelets in the exposed flatwork. --\u003E\n  \u003Cg fill=\u0022#b79858\u0022 stroke=\u0022#17181a\u0022 stroke-width=\u00221\u0022\u003E\n    \u003Ccircle cx=\u0022221\u0022 cy=\u0022131\u0022 r=\u00223.4\u0022/\u003E\n    \u003Ccircle cx=\u0022259\u0022 cy=\u0022131\u0022 r=\u00223.4\u0022/\u003E\n  \u003C/g\u003E\n  \u003Cg fill=\u0022#d6d2c5\u0022\u003E\u003Ccircle cx=\u0022221\u0022 cy=\u0022131\u0022 r=\u00221.5\u0022/\u003E\u003Ccircle cx=\u0022259\u0022 cy=\u0022131\u0022 r=\u00221.5\u0022/\u003E\u003C/g\u003E\n\u003C/svg\u003E\n",
+          "customTextValue": null,
+          "valuePosition": {
+            "x": 120,
+            "y": 80
+          },
+          "svgRotation": -90,
+          "svgLocalPosition": {
+            "x": 0,
+            "y": 0.234375
+          },
+          "schemePosition": {
+            "x": 828.9942,
+            "y": -221.432
+          },
+          "classType": "CircuitPart",
+          "name": "Singlecoil pickup",
+          "description": "",
+          "points": {
+            "$id": "28",
+            "$values": [
+              {
+                "$ref": "25"
+              },
+              {
+                "$ref": "26"
+              }
+            ]
+          }
+        },
+        {
+          "$id": "29",
+          "$type": "circuitPart",
+          "stateGroups": {
+            "$id": "30",
+            "$values": [
+              {
+                "$id": "31",
+                "label": "State",
+                "states": {
+                  "$id": "32",
+                  "$values": [
+                    {
+                      "$id": "33",
+                      "label": "State 1",
+                      "connectionGroups": {
+                        "$id": "34",
+                        "$values": [
+                          {
+                            "$id": "35",
+                            "connectedPints": {
+                              "$id": "36",
+                              "$values": [
+                                {
+                                  "$id": "37",
+                                  "label": "Ground",
+                                  "localPosition": {
+                                    "x": 139.73828,
+                                    "y": 233.90625
+                                  },
+                                  "owner": {
+                                    "$ref": "29"
+                                  }
+                                },
+                                {
+                                  "$id": "38",
+                                  "label": "Source",
+                                  "localPosition": {
+                                    "x": 140.19531,
+                                    "y": 278.69922
+                                  },
+                                  "owner": {
+                                    "$ref": "29"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "activeState": {
+                  "$ref": "33"
+                }
+              }
+            ]
+          },
+          "id": "811a3317-f90b-49a3-b6ff-2d630657856e",
+          "width": 173,
+          "height": 515,
+          "tags": {
+            "$id": "39",
+            "$values": [
+              "single coil",
+              "pickup"
+            ]
+          },
+          "svgMarkup": "\u003C?xml version=\u00221.0\u0022 encoding=\u0022UTF-8\u0022?\u003E\n\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u0022480\u0022 height=\u0022160\u0022 viewBox=\u00220 0 480 160\u0022 role=\u0022img\u0022 aria-labelledby=\u0022strat-title strat-description\u0022\u003E\n  \u003Ctitle id=\u0022strat-title\u0022\u003EStratocaster single-coil pickup \u2014 top view\u003C/title\u003E\n  \u003Cdesc id=\u0022strat-description\u0022\u003EWhite pickup cover and white mounting ears with six flat exposed pole pieces. The black fiber base widens along the lower side, as seen from directly above. Transparent background.\u003C/desc\u003E\n  \u003Cdefs\u003E\n    \u003ClinearGradient id=\u0022strat-white\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#ffffff\u0022/\u003E\n      \u003Cstop offset=\u00220.7\u0022 stop-color=\u0022#f6f5f0\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#deddd6\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022strat-fiber\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#16171a\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#303135\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022strat-pole-metal\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#e7e5dd\u0022/\u003E\n      \u003Cstop offset=\u00220.5\u0022 stop-color=\u0022#c1c0b8\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#aaa9a3\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003Cg id=\u0022strat-pole\u0022\u003E\n      \u003Ccircle r=\u002210.7\u0022 fill=\u0022url(#strat-pole-metal)\u0022 stroke=\u0022#4b4944\u0022 stroke-width=\u00221.5\u0022/\u003E\n      \u003Cpath d=\u0022M-6,-6 L5,5 M-7,-2 L2,7 M-2,-7 L7,2\u0022 fill=\u0022none\u0022 stroke=\u0022#f3f0e7\u0022 stroke-opacity=\u00220.5\u0022 stroke-width=\u00220.65\u0022/\u003E\n    \u003C/g\u003E\n  \u003C/defs\u003E\n  \u003C!-- Asymmetric fiber flatwork, broadening below the cover. --\u003E\n  \u003Cpath d=\u0022M38,44 H442 A24,24 0 0 1 466,68 C466,83 456,94 441,98 L320,134 Q240,155 160,134 L39,98 C24,94 14,83 14,68 A24,24 0 0 1 38,44 Z\n           M44,68 A6,6 0 1 0 32,68 A6,6 0 1 0 44,68 Z\n           M448,68 A6,6 0 1 0 436,68 A6,6 0 1 0 448,68 Z\u0022\n        fill=\u0022url(#strat-fiber)\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#111215\u0022 stroke-width=\u00222\u0022/\u003E\n  \u003Cpath d=\u0022M71,105 L164,131 Q240,150 316,131 L409,105\u0022 fill=\u0022none\u0022 stroke=\u0022#55565a\u0022 stroke-width=\u00221\u0022/\u003E\n  \u003C!-- Mounting ears are part of the white cover flange, not black tabs. --\u003E\n  \u003Cpath d=\u0022M38,46 H442 A22,22 0 0 1 464,68 A22,22 0 0 1 442,90 H38 A22,22 0 0 1 16,68 A22,22 0 0 1 38,46 Z\n           M44,68 A6,6 0 1 0 32,68 A6,6 0 1 0 44,68 Z\n           M448,68 A6,6 0 1 0 436,68 A6,6 0 1 0 448,68 Z\u0022\n        fill=\u0022url(#strat-white)\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#bbb9b0\u0022 stroke-width=\u00221.5\u0022/\u003E\n  \u003Crect x=\u002263\u0022 y=\u002227\u0022 width=\u0022354\u0022 height=\u002282\u0022 rx=\u002241\u0022 fill=\u0022url(#strat-white)\u0022 stroke=\u0022#b9b7af\u0022 stroke-width=\u00221.5\u0022/\u003E\n  \u003Cpath d=\u0022M105,30 H375 A38,38 0 0 1 413,68\u0022 fill=\u0022none\u0022 stroke=\u0022#ffffff\u0022 stroke-width=\u00222\u0022/\u003E\n  \u003Cpath d=\u0022M68,78 Q75,105 105,106 H375 Q400,106 410,86\u0022 fill=\u0022none\u0022 stroke=\u0022#ceccc3\u0022 stroke-width=\u00221\u0022/\u003E\n  \u003Cg transform=\u0022translate(125 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(171 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(217 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(263 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(309 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003Cg transform=\u0022translate(355 68)\u0022\u003E\u003Cuse href=\u0022#strat-pole\u0022/\u003E\u003C/g\u003E\n  \u003C!-- Small connection eyelets in the exposed flatwork. --\u003E\n  \u003Cg fill=\u0022#b79858\u0022 stroke=\u0022#17181a\u0022 stroke-width=\u00221\u0022\u003E\n    \u003Ccircle cx=\u0022221\u0022 cy=\u0022131\u0022 r=\u00223.4\u0022/\u003E\n    \u003Ccircle cx=\u0022259\u0022 cy=\u0022131\u0022 r=\u00223.4\u0022/\u003E\n  \u003C/g\u003E\n  \u003Cg fill=\u0022#d6d2c5\u0022\u003E\u003Ccircle cx=\u0022221\u0022 cy=\u0022131\u0022 r=\u00221.5\u0022/\u003E\u003Ccircle cx=\u0022259\u0022 cy=\u0022131\u0022 r=\u00221.5\u0022/\u003E\u003C/g\u003E\n\u003C/svg\u003E\n",
+          "customTextValue": null,
+          "valuePosition": {
+            "x": 120,
+            "y": 80
+          },
+          "svgRotation": -90,
+          "svgLocalPosition": {
+            "x": 0,
+            "y": 0.234375
+          },
+          "schemePosition": {
+            "x": 1159.3811,
+            "y": -237.56761
+          },
+          "classType": "CircuitPart",
+          "name": "Singlecoil pickup",
+          "description": "",
+          "points": {
+            "$id": "40",
+            "$values": [
+              {
+                "$ref": "37"
+              },
+              {
+                "$ref": "38"
+              }
+            ]
+          }
+        },
+        {
+          "$id": "41",
+          "$type": "circuitPart",
+          "stateGroups": {
+            "$id": "42",
+            "$values": [
+              {
+                "$id": "43",
+                "label": "State",
+                "states": {
+                  "$id": "44",
+                  "$values": []
+                },
+                "activeState": null
+              }
+            ]
+          },
+          "id": "d5b848db-d85f-421a-86fd-46720d24602a",
+          "width": 120,
+          "height": 130,
+          "tags": {
+            "$id": "45",
+            "$values": [
+              "input jack",
+              "jack"
+            ]
+          },
+          "svgMarkup": "\u003C?xml version=\u00221.0\u0022 encoding=\u0022UTF-8\u0022 standalone=\u0022no\u0022?\u003E\n\u003C!DOCTYPE svg PUBLIC \u0022-//W3C//DTD SVG 1.1//EN\u0022 \u0022http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\u0022\u003E\n\u003Csvg width=\u0022100%\u0022 height=\u0022100%\u0022 viewBox=\u00220 0 200 200\u0022 version=\u00221.1\u0022 xmlns=\u0022http://www.w3.org/2000/svg\u0022 xmlns:xlink=\u0022http://www.w3.org/1999/xlink\u0022 xml:space=\u0022preserve\u0022 xmlns:affinity=\u0022https://www.affinity.studio/\u0022 style=\u0022fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;\u0022\u003E\n    \u003Cpath d=\u0022M77.274,18.657C77.274,10.508 83.89,3.892 92.039,3.892C100.188,3.892 106.804,10.508 106.804,18.657L106.804,53.376C106.804,61.525 100.188,68.142 92.039,68.142C83.89,68.142 77.274,61.525 77.274,53.376L77.274,18.657Z\u0022 style=\u0022fill:rgb(167,167,167);stroke:black;stroke-width:4.17px;\u0022/\u003E\n    \u003Cpath d=\u0022M92.039,36.15C136.181,36.15 172.018,71.987 172.018,116.129C172.018,160.271 136.181,196.108 92.039,196.108C47.897,196.108 12.06,160.271 12.06,116.129C12.06,71.987 47.897,36.15 92.039,36.15ZM92.039,86.598C75.74,86.598 62.508,99.831 62.508,116.129C62.508,132.428 75.74,145.66 92.039,145.66C108.337,145.66 121.57,132.428 121.57,116.129C121.57,99.831 108.337,86.598 92.039,86.598Z\u0022 style=\u0022fill:rgb(200,140,92);stroke:black;stroke-width:4.17px;\u0022/\u003E\n    \u003Cpath d=\u0022M138.795,105.29C139.601,108.773 140.026,112.402 140.026,116.129C140.026,142.614 118.524,164.117 92.039,164.117C65.554,164.117 44.051,142.614 44.051,116.129C44.051,89.644 65.554,68.142 92.039,68.142C104.111,68.142 115.149,72.609 123.586,79.98L164.979,52.354C171.757,47.83 180.933,49.66 185.457,56.438C189.981,63.216 188.151,72.392 181.373,76.916L139.683,104.741C139.391,104.935 139.095,105.118 138.795,105.29ZM92.039,86.598C75.74,86.598 62.508,99.831 62.508,116.129C62.508,132.428 75.74,145.66 92.039,145.66C108.337,145.66 121.57,132.428 121.57,116.129C121.57,99.831 108.337,86.598 92.039,86.598Z\u0022 style=\u0022fill:rgb(167,167,167);stroke:black;stroke-width:4.17px;\u0022/\u003E\n    \u003Cg\u003E\n        \u003Cpath d=\u0022M173.018,56L173.018,65\u0022 style=\u0022fill:none;stroke:black;stroke-width:2.08px;\u0022/\u003E\n        \u003Cpath d=\u0022M170.018,71L176.018,71\u0022 style=\u0022fill:none;stroke:black;stroke-width:2.08px;\u0022/\u003E\n        \u003Cpath d=\u0022M168.518,68L177.518,68\u0022 style=\u0022fill:none;stroke:black;stroke-width:2.08px;\u0022/\u003E\n        \u003Cpath d=\u0022M166.018,65L180.018,65\u0022 style=\u0022fill:none;stroke:black;stroke-width:2.08px;\u0022/\u003E\n    \u003C/g\u003E\n\u003C/svg\u003E\n",
+          "customTextValue": null,
+          "valuePosition": {
+            "x": 120,
+            "y": 80
+          },
+          "svgRotation": 0,
+          "svgLocalPosition": {
+            "x": 3.5703125,
+            "y": 4.9257812
+          },
+          "schemePosition": {
+            "x": 1366.6603,
+            "y": 883.5704
+          },
+          "classType": "CircuitPart",
+          "name": "Mono jack socket",
+          "description": "",
+          "points": {
+            "$id": "46",
+            "$values": [
+              {
+                "$id": "47",
+                "label": "Line",
+                "localPosition": {
+                  "x": 59.84375,
+                  "y": 10.4609375
+                },
+                "owner": {
+                  "$ref": "41"
+                }
+              },
+              {
+                "$id": "48",
+                "label": "Ground",
+                "localPosition": {
+                  "x": 110.58594,
+                  "y": 46.984375
+                },
+                "owner": {
+                  "$ref": "41"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "49",
+          "$type": "circuitPart",
+          "stateGroups": {
+            "$id": "50",
+            "$values": [
+              {
+                "$id": "51",
+                "label": "State",
+                "states": {
+                  "$id": "52",
+                  "$values": [
+                    {
+                      "$id": "53",
+                      "label": "Full left",
+                      "connectionGroups": {
+                        "$id": "54",
+                        "$values": [
+                          {
+                            "$id": "55",
+                            "connectedPints": {
+                              "$id": "56",
+                              "$values": [
+                                {
+                                  "$id": "57",
+                                  "label": "Left",
+                                  "localPosition": {
+                                    "x": 33.710938,
+                                    "y": 172.82031
+                                  },
+                                  "owner": {
+                                    "$ref": "49"
+                                  }
+                                },
+                                {
+                                  "$id": "58",
+                                  "label": "Out",
+                                  "localPosition": {
+                                    "x": 74.296875,
+                                    "y": 178.15234
+                                  },
+                                  "owner": {
+                                    "$ref": "49"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "$id": "59",
+                      "label": "Mixed",
+                      "connectionGroups": {
+                        "$id": "60",
+                        "$values": [
+                          {
+                            "$id": "61",
+                            "connectedPints": {
+                              "$id": "62",
+                              "$values": [
+                                {
+                                  "$ref": "57"
+                                },
+                                {
+                                  "$ref": "58"
+                                },
+                                {
+                                  "$id": "63",
+                                  "label": "Rignt",
+                                  "localPosition": {
+                                    "x": 112.05078,
+                                    "y": 169.02734
+                                  },
+                                  "owner": {
+                                    "$ref": "49"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "$id": "64",
+                      "label": "Full right",
+                      "connectionGroups": {
+                        "$id": "65",
+                        "$values": [
+                          {
+                            "$id": "66",
+                            "connectedPints": {
+                              "$id": "67",
+                              "$values": [
+                                {
+                                  "$ref": "58"
+                                },
+                                {
+                                  "$ref": "63"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "activeState": {
+                  "$ref": "53"
+                }
+              }
+            ]
+          },
+          "id": "7c9e2eb9-b7e3-42d4-8eff-9483582e8ffb",
+          "width": 146,
+          "height": 183,
+          "tags": {
+            "$id": "68",
+            "$values": [
+              "potentiometer",
+              "pot",
+              "volume",
+              "tone"
+            ]
+          },
+          "svgMarkup": "\u003C?xml version=\u00221.0\u0022 encoding=\u0022UTF-8\u0022 standalone=\u0022no\u0022?\u003E\n\u003C!DOCTYPE svg PUBLIC \u0022-//W3C//DTD SVG 1.1//EN\u0022 \u0022http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\u0022\u003E\n\u003Csvg width=\u0022100%\u0022 height=\u0022100%\u0022 viewBox=\u00220 0 179 232\u0022 version=\u00221.1\u0022 xmlns=\u0022http://www.w3.org/2000/svg\u0022 xmlns:xlink=\u0022http://www.w3.org/1999/xlink\u0022 xml:space=\u0022preserve\u0022 xmlns:affinity=\u0022https://www.affinity.studio/\u0022 style=\u0022fill-rule:evenodd;clip-rule:evenodd;\u0022\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Cpath d=\u0022M186,164C191.519,164 196,168.481 196,174L196,197C196,202.519 191.519,207 186,207L54,207C48.481,207 44,202.519 44,197L44,174C44,168.481 48.481,164 54,164L186,164Z\u0022 style=\u0022fill:rgb(158,99,63);stroke:rgb(76,51,39);stroke-width:2px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Cpath d=\u0022M51,199L189,199\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(193,138,96);stroke-width:1.5px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,39,-16)\u0022\u003E\n        \u003Cg id=\u0022pot-lug\u0022\u003E\n            \u003Cpath d=\u0022M-10,194L10,194L10,239C10,243 8,245 4,245L-4,245C-8,245 -10,243 -10,239L-10,194ZM-4,222L-4,234C-4,236.194 -2.194,238 0,238C2.194,238 4,236.194 4,234L4,222C4,219.806 2.194,218 0,218C-2.194,218 -4,219.806 -4,222Z\u0022 style=\u0022fill:url(#_Linear1);stroke:rgb(64,71,76);stroke-width:1.8px;stroke-linejoin:round;\u0022/\u003E\n            \u003Cpath d=\u0022M-6,207L6,207\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(116,125,131);stroke-width:1.2px;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,89,-16)\u0022\u003E\n        \u003Cg id=\u0022pot-lug1\u0022 affinity:id=\u0022pot-lug\u0022\u003E\n            \u003Cpath d=\u0022M-10,194L10,194L10,239C10,243 8,245 4,245L-4,245C-8,245 -10,243 -10,239L-10,194ZM-4,222L-4,234C-4,236.194 -2.194,238 0,238C2.194,238 4,236.194 4,234L4,222C4,219.806 2.194,218 0,218C-2.194,218 -4,219.806 -4,222Z\u0022 style=\u0022fill:url(#_Linear2);stroke:rgb(64,71,76);stroke-width:1.8px;stroke-linejoin:round;\u0022/\u003E\n            \u003Cpath d=\u0022M-6,207L6,207\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(116,125,131);stroke-width:1.2px;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,139,-16)\u0022\u003E\n        \u003Cg id=\u0022pot-lug2\u0022 affinity:id=\u0022pot-lug\u0022\u003E\n            \u003Cpath d=\u0022M-10,194L10,194L10,239C10,243 8,245 4,245L-4,245C-8,245 -10,243 -10,239L-10,194ZM-4,222L-4,234C-4,236.194 -2.194,238 0,238C2.194,238 4,236.194 4,234L4,222C4,219.806 2.194,218 0,218C-2.194,218 -4,219.806 -4,222Z\u0022 style=\u0022fill:url(#_Linear3);stroke:rgb(64,71,76);stroke-width:1.8px;stroke-linejoin:round;\u0022/\u003E\n            \u003Cpath d=\u0022M-6,207L6,207\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(116,125,131);stroke-width:1.2px;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Ccircle cx=\u002270\u0022 cy=\u0022197\u0022 r=\u00224\u0022 style=\u0022fill:rgb(210,180,122);stroke:rgb(100,72,46);stroke-width:1.2px;\u0022/\u003E\n        \u003Ccircle cx=\u0022120\u0022 cy=\u0022197\u0022 r=\u00224\u0022 style=\u0022fill:rgb(210,180,122);stroke:rgb(100,72,46);stroke-width:1.2px;\u0022/\u003E\n        \u003Ccircle cx=\u0022170\u0022 cy=\u0022197\u0022 r=\u00224\u0022 style=\u0022fill:rgb(210,180,122);stroke:rgb(100,72,46);stroke-width:1.2px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Ccircle cx=\u0022120\u0022 cy=\u0022106\u0022 r=\u002286\u0022 style=\u0022fill:url(#_Linear4);stroke:rgb(52,59,65);stroke-width:2.5px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Ccircle cx=\u0022120\u0022 cy=\u0022106\u0022 r=\u002279\u0022 style=\u0022fill:url(#_Linear5);stroke:rgb(138,148,156);stroke-width:1.4px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Cpath d=\u0022M47,91C54.122,56.237 84.989,31.052 120.474,31.052C132.873,31.052 145.08,34.127 156,40\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:white;stroke-opacity:0.8;stroke-width:2px;stroke-linecap:round;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,89,90)\u0022\u003E\n        \u003Cg id=\u0022pot-crimp\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear6);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp1\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(0.5,0.866025,-0.866025,0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear7);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp2\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(-0.5,0.866025,-0.866025,-0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear8);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp3\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(-1,-0,0,-1,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear9);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp4\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(-0.5,-0.866025,0.866025,-0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear10);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp5\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(0.5,-0.866025,0.866025,0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear11);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cdefs\u003E\n        \u003ClinearGradient id=\u0022_Linear1\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(20,0,0,20,-10,194)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(168,175,179);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(241,242,238);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(146,155,159);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear2\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(20,0,0,20,-10,194)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(168,175,179);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(241,242,238);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(146,155,159);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear3\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(20,0,0,20,-10,194)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(168,175,179);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(241,242,238);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(146,155,159);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear4\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(34.4,172,-172,34.4,34,20)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear5\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(158,158,-158,158,41,27)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(238,240,241);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.35\u0022 style=\u0022stop-color:rgb(205,210,214);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.7\u0022 style=\u0022stop-color:rgb(167,175,181);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(217,221,224);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear6\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear7\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear8\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear9\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear10\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear11\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n    \u003C/defs\u003E\n\u003C/svg\u003E\n",
+          "customTextValue": "value",
+          "valuePosition": {
+            "x": 73.16016,
+            "y": 47.01172
+          },
+          "svgRotation": 0,
+          "svgLocalPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "schemePosition": {
+            "x": 1118.0217,
+            "y": 381.08563
+          },
+          "classType": "CircuitPart",
+          "name": "Potentiometer",
+          "description": "",
+          "points": {
+            "$id": "69",
+            "$values": [
+              {
+                "$ref": "57"
+              },
+              {
+                "$ref": "58"
+              },
+              {
+                "$ref": "63"
+              },
+              {
+                "$id": "70",
+                "label": "Ground",
+                "localPosition": {
+                  "x": 121.81641,
+                  "y": 21.703125
+                },
+                "owner": {
+                  "$ref": "49"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "71",
+          "$type": "circuitPart",
+          "stateGroups": {
+            "$id": "72",
+            "$values": [
+              {
+                "$id": "73",
+                "label": "State",
+                "states": {
+                  "$id": "74",
+                  "$values": [
+                    {
+                      "$id": "75",
+                      "label": "Full left",
+                      "connectionGroups": {
+                        "$id": "76",
+                        "$values": [
+                          {
+                            "$id": "77",
+                            "connectedPints": {
+                              "$id": "78",
+                              "$values": [
+                                {
+                                  "$id": "79",
+                                  "label": "Left",
+                                  "localPosition": {
+                                    "x": 33.710938,
+                                    "y": 172.82031
+                                  },
+                                  "owner": {
+                                    "$ref": "71"
+                                  }
+                                },
+                                {
+                                  "$id": "80",
+                                  "label": "Out",
+                                  "localPosition": {
+                                    "x": 74.296875,
+                                    "y": 178.15234
+                                  },
+                                  "owner": {
+                                    "$ref": "71"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "$id": "81",
+                      "label": "Mixed",
+                      "connectionGroups": {
+                        "$id": "82",
+                        "$values": [
+                          {
+                            "$id": "83",
+                            "connectedPints": {
+                              "$id": "84",
+                              "$values": [
+                                {
+                                  "$ref": "79"
+                                },
+                                {
+                                  "$ref": "80"
+                                },
+                                {
+                                  "$id": "85",
+                                  "label": "Rignt",
+                                  "localPosition": {
+                                    "x": 112.05078,
+                                    "y": 169.02734
+                                  },
+                                  "owner": {
+                                    "$ref": "71"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "$id": "86",
+                      "label": "Full right",
+                      "connectionGroups": {
+                        "$id": "87",
+                        "$values": [
+                          {
+                            "$id": "88",
+                            "connectedPints": {
+                              "$id": "89",
+                              "$values": [
+                                {
+                                  "$ref": "80"
+                                },
+                                {
+                                  "$ref": "85"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "activeState": {
+                  "$ref": "75"
+                }
+              }
+            ]
+          },
+          "id": "7c9e2eb9-b7e3-42d4-8eff-9483582e8ffb",
+          "width": 146,
+          "height": 183,
+          "tags": {
+            "$id": "90",
+            "$values": [
+              "potentiometer",
+              "pot",
+              "volume",
+              "tone"
+            ]
+          },
+          "svgMarkup": "\u003C?xml version=\u00221.0\u0022 encoding=\u0022UTF-8\u0022 standalone=\u0022no\u0022?\u003E\n\u003C!DOCTYPE svg PUBLIC \u0022-//W3C//DTD SVG 1.1//EN\u0022 \u0022http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\u0022\u003E\n\u003Csvg width=\u0022100%\u0022 height=\u0022100%\u0022 viewBox=\u00220 0 179 232\u0022 version=\u00221.1\u0022 xmlns=\u0022http://www.w3.org/2000/svg\u0022 xmlns:xlink=\u0022http://www.w3.org/1999/xlink\u0022 xml:space=\u0022preserve\u0022 xmlns:affinity=\u0022https://www.affinity.studio/\u0022 style=\u0022fill-rule:evenodd;clip-rule:evenodd;\u0022\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Cpath d=\u0022M186,164C191.519,164 196,168.481 196,174L196,197C196,202.519 191.519,207 186,207L54,207C48.481,207 44,202.519 44,197L44,174C44,168.481 48.481,164 54,164L186,164Z\u0022 style=\u0022fill:rgb(158,99,63);stroke:rgb(76,51,39);stroke-width:2px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Cpath d=\u0022M51,199L189,199\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(193,138,96);stroke-width:1.5px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,39,-16)\u0022\u003E\n        \u003Cg id=\u0022pot-lug\u0022\u003E\n            \u003Cpath d=\u0022M-10,194L10,194L10,239C10,243 8,245 4,245L-4,245C-8,245 -10,243 -10,239L-10,194ZM-4,222L-4,234C-4,236.194 -2.194,238 0,238C2.194,238 4,236.194 4,234L4,222C4,219.806 2.194,218 0,218C-2.194,218 -4,219.806 -4,222Z\u0022 style=\u0022fill:url(#_Linear1);stroke:rgb(64,71,76);stroke-width:1.8px;stroke-linejoin:round;\u0022/\u003E\n            \u003Cpath d=\u0022M-6,207L6,207\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(116,125,131);stroke-width:1.2px;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,89,-16)\u0022\u003E\n        \u003Cg id=\u0022pot-lug1\u0022 affinity:id=\u0022pot-lug\u0022\u003E\n            \u003Cpath d=\u0022M-10,194L10,194L10,239C10,243 8,245 4,245L-4,245C-8,245 -10,243 -10,239L-10,194ZM-4,222L-4,234C-4,236.194 -2.194,238 0,238C2.194,238 4,236.194 4,234L4,222C4,219.806 2.194,218 0,218C-2.194,218 -4,219.806 -4,222Z\u0022 style=\u0022fill:url(#_Linear2);stroke:rgb(64,71,76);stroke-width:1.8px;stroke-linejoin:round;\u0022/\u003E\n            \u003Cpath d=\u0022M-6,207L6,207\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(116,125,131);stroke-width:1.2px;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,139,-16)\u0022\u003E\n        \u003Cg id=\u0022pot-lug2\u0022 affinity:id=\u0022pot-lug\u0022\u003E\n            \u003Cpath d=\u0022M-10,194L10,194L10,239C10,243 8,245 4,245L-4,245C-8,245 -10,243 -10,239L-10,194ZM-4,222L-4,234C-4,236.194 -2.194,238 0,238C2.194,238 4,236.194 4,234L4,222C4,219.806 2.194,218 0,218C-2.194,218 -4,219.806 -4,222Z\u0022 style=\u0022fill:url(#_Linear3);stroke:rgb(64,71,76);stroke-width:1.8px;stroke-linejoin:round;\u0022/\u003E\n            \u003Cpath d=\u0022M-6,207L6,207\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(116,125,131);stroke-width:1.2px;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Ccircle cx=\u002270\u0022 cy=\u0022197\u0022 r=\u00224\u0022 style=\u0022fill:rgb(210,180,122);stroke:rgb(100,72,46);stroke-width:1.2px;\u0022/\u003E\n        \u003Ccircle cx=\u0022120\u0022 cy=\u0022197\u0022 r=\u00224\u0022 style=\u0022fill:rgb(210,180,122);stroke:rgb(100,72,46);stroke-width:1.2px;\u0022/\u003E\n        \u003Ccircle cx=\u0022170\u0022 cy=\u0022197\u0022 r=\u00224\u0022 style=\u0022fill:rgb(210,180,122);stroke:rgb(100,72,46);stroke-width:1.2px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Ccircle cx=\u0022120\u0022 cy=\u0022106\u0022 r=\u002286\u0022 style=\u0022fill:url(#_Linear4);stroke:rgb(52,59,65);stroke-width:2.5px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Ccircle cx=\u0022120\u0022 cy=\u0022106\u0022 r=\u002279\u0022 style=\u0022fill:url(#_Linear5);stroke:rgb(138,148,156);stroke-width:1.4px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Cpath d=\u0022M47,91C54.122,56.237 84.989,31.052 120.474,31.052C132.873,31.052 145.08,34.127 156,40\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:white;stroke-opacity:0.8;stroke-width:2px;stroke-linecap:round;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,89,90)\u0022\u003E\n        \u003Cg id=\u0022pot-crimp\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear6);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp1\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(0.5,0.866025,-0.866025,0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear7);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp2\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(-0.5,0.866025,-0.866025,-0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear8);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp3\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(-1,-0,0,-1,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear9);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp4\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(-0.5,-0.866025,0.866025,-0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear10);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp5\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(0.5,-0.866025,0.866025,0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear11);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cdefs\u003E\n        \u003ClinearGradient id=\u0022_Linear1\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(20,0,0,20,-10,194)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(168,175,179);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(241,242,238);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(146,155,159);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear2\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(20,0,0,20,-10,194)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(168,175,179);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(241,242,238);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(146,155,159);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear3\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(20,0,0,20,-10,194)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(168,175,179);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(241,242,238);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(146,155,159);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear4\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(34.4,172,-172,34.4,34,20)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear5\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(158,158,-158,158,41,27)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(238,240,241);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.35\u0022 style=\u0022stop-color:rgb(205,210,214);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.7\u0022 style=\u0022stop-color:rgb(167,175,181);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(217,221,224);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear6\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear7\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear8\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear9\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear10\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear11\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n    \u003C/defs\u003E\n\u003C/svg\u003E\n",
+          "customTextValue": "value",
+          "valuePosition": {
+            "x": 73.16016,
+            "y": 47.01172
+          },
+          "svgRotation": 0,
+          "svgLocalPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "schemePosition": {
+            "x": 999.9691,
+            "y": 617.44763
+          },
+          "classType": "CircuitPart",
+          "name": "Potentiometer",
+          "description": "",
+          "points": {
+            "$id": "91",
+            "$values": [
+              {
+                "$ref": "79"
+              },
+              {
+                "$ref": "80"
+              },
+              {
+                "$ref": "85"
+              },
+              {
+                "$id": "92",
+                "label": "Ground",
+                "localPosition": {
+                  "x": 121.81641,
+                  "y": 21.703125
+                },
+                "owner": {
+                  "$ref": "71"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "93",
+          "$type": "circuitPart",
+          "stateGroups": {
+            "$id": "94",
+            "$values": [
+              {
+                "$id": "95",
+                "label": "State",
+                "states": {
+                  "$id": "96",
+                  "$values": [
+                    {
+                      "$id": "97",
+                      "label": "Full left",
+                      "connectionGroups": {
+                        "$id": "98",
+                        "$values": [
+                          {
+                            "$id": "99",
+                            "connectedPints": {
+                              "$id": "100",
+                              "$values": [
+                                {
+                                  "$id": "101",
+                                  "label": "Left",
+                                  "localPosition": {
+                                    "x": 33.710938,
+                                    "y": 172.82031
+                                  },
+                                  "owner": {
+                                    "$ref": "93"
+                                  }
+                                },
+                                {
+                                  "$id": "102",
+                                  "label": "Out",
+                                  "localPosition": {
+                                    "x": 74.296875,
+                                    "y": 178.15234
+                                  },
+                                  "owner": {
+                                    "$ref": "93"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "$id": "103",
+                      "label": "Mixed",
+                      "connectionGroups": {
+                        "$id": "104",
+                        "$values": [
+                          {
+                            "$id": "105",
+                            "connectedPints": {
+                              "$id": "106",
+                              "$values": [
+                                {
+                                  "$ref": "101"
+                                },
+                                {
+                                  "$ref": "102"
+                                },
+                                {
+                                  "$id": "107",
+                                  "label": "Rignt",
+                                  "localPosition": {
+                                    "x": 112.05078,
+                                    "y": 169.02734
+                                  },
+                                  "owner": {
+                                    "$ref": "93"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "$id": "108",
+                      "label": "Full right",
+                      "connectionGroups": {
+                        "$id": "109",
+                        "$values": [
+                          {
+                            "$id": "110",
+                            "connectedPints": {
+                              "$id": "111",
+                              "$values": [
+                                {
+                                  "$ref": "102"
+                                },
+                                {
+                                  "$ref": "107"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "activeState": {
+                  "$ref": "97"
+                }
+              }
+            ]
+          },
+          "id": "7c9e2eb9-b7e3-42d4-8eff-9483582e8ffb",
+          "width": 146,
+          "height": 183,
+          "tags": {
+            "$id": "112",
+            "$values": [
+              "potentiometer",
+              "pot",
+              "volume",
+              "tone"
+            ]
+          },
+          "svgMarkup": "\u003C?xml version=\u00221.0\u0022 encoding=\u0022UTF-8\u0022 standalone=\u0022no\u0022?\u003E\n\u003C!DOCTYPE svg PUBLIC \u0022-//W3C//DTD SVG 1.1//EN\u0022 \u0022http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\u0022\u003E\n\u003Csvg width=\u0022100%\u0022 height=\u0022100%\u0022 viewBox=\u00220 0 179 232\u0022 version=\u00221.1\u0022 xmlns=\u0022http://www.w3.org/2000/svg\u0022 xmlns:xlink=\u0022http://www.w3.org/1999/xlink\u0022 xml:space=\u0022preserve\u0022 xmlns:affinity=\u0022https://www.affinity.studio/\u0022 style=\u0022fill-rule:evenodd;clip-rule:evenodd;\u0022\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Cpath d=\u0022M186,164C191.519,164 196,168.481 196,174L196,197C196,202.519 191.519,207 186,207L54,207C48.481,207 44,202.519 44,197L44,174C44,168.481 48.481,164 54,164L186,164Z\u0022 style=\u0022fill:rgb(158,99,63);stroke:rgb(76,51,39);stroke-width:2px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Cpath d=\u0022M51,199L189,199\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(193,138,96);stroke-width:1.5px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,39,-16)\u0022\u003E\n        \u003Cg id=\u0022pot-lug\u0022\u003E\n            \u003Cpath d=\u0022M-10,194L10,194L10,239C10,243 8,245 4,245L-4,245C-8,245 -10,243 -10,239L-10,194ZM-4,222L-4,234C-4,236.194 -2.194,238 0,238C2.194,238 4,236.194 4,234L4,222C4,219.806 2.194,218 0,218C-2.194,218 -4,219.806 -4,222Z\u0022 style=\u0022fill:url(#_Linear1);stroke:rgb(64,71,76);stroke-width:1.8px;stroke-linejoin:round;\u0022/\u003E\n            \u003Cpath d=\u0022M-6,207L6,207\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(116,125,131);stroke-width:1.2px;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,89,-16)\u0022\u003E\n        \u003Cg id=\u0022pot-lug1\u0022 affinity:id=\u0022pot-lug\u0022\u003E\n            \u003Cpath d=\u0022M-10,194L10,194L10,239C10,243 8,245 4,245L-4,245C-8,245 -10,243 -10,239L-10,194ZM-4,222L-4,234C-4,236.194 -2.194,238 0,238C2.194,238 4,236.194 4,234L4,222C4,219.806 2.194,218 0,218C-2.194,218 -4,219.806 -4,222Z\u0022 style=\u0022fill:url(#_Linear2);stroke:rgb(64,71,76);stroke-width:1.8px;stroke-linejoin:round;\u0022/\u003E\n            \u003Cpath d=\u0022M-6,207L6,207\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(116,125,131);stroke-width:1.2px;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,139,-16)\u0022\u003E\n        \u003Cg id=\u0022pot-lug2\u0022 affinity:id=\u0022pot-lug\u0022\u003E\n            \u003Cpath d=\u0022M-10,194L10,194L10,239C10,243 8,245 4,245L-4,245C-8,245 -10,243 -10,239L-10,194ZM-4,222L-4,234C-4,236.194 -2.194,238 0,238C2.194,238 4,236.194 4,234L4,222C4,219.806 2.194,218 0,218C-2.194,218 -4,219.806 -4,222Z\u0022 style=\u0022fill:url(#_Linear3);stroke:rgb(64,71,76);stroke-width:1.8px;stroke-linejoin:round;\u0022/\u003E\n            \u003Cpath d=\u0022M-6,207L6,207\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(116,125,131);stroke-width:1.2px;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Ccircle cx=\u002270\u0022 cy=\u0022197\u0022 r=\u00224\u0022 style=\u0022fill:rgb(210,180,122);stroke:rgb(100,72,46);stroke-width:1.2px;\u0022/\u003E\n        \u003Ccircle cx=\u0022120\u0022 cy=\u0022197\u0022 r=\u00224\u0022 style=\u0022fill:rgb(210,180,122);stroke:rgb(100,72,46);stroke-width:1.2px;\u0022/\u003E\n        \u003Ccircle cx=\u0022170\u0022 cy=\u0022197\u0022 r=\u00224\u0022 style=\u0022fill:rgb(210,180,122);stroke:rgb(100,72,46);stroke-width:1.2px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Ccircle cx=\u0022120\u0022 cy=\u0022106\u0022 r=\u002286\u0022 style=\u0022fill:url(#_Linear4);stroke:rgb(52,59,65);stroke-width:2.5px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Ccircle cx=\u0022120\u0022 cy=\u0022106\u0022 r=\u002279\u0022 style=\u0022fill:url(#_Linear5);stroke:rgb(138,148,156);stroke-width:1.4px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Cpath d=\u0022M47,91C54.122,56.237 84.989,31.052 120.474,31.052C132.873,31.052 145.08,34.127 156,40\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:white;stroke-opacity:0.8;stroke-width:2px;stroke-linecap:round;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,89,90)\u0022\u003E\n        \u003Cg id=\u0022pot-crimp\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear6);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp1\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(0.5,0.866025,-0.866025,0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear7);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp2\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(-0.5,0.866025,-0.866025,-0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear8);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp3\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(-1,-0,0,-1,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear9);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp4\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(-0.5,-0.866025,0.866025,-0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear10);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp5\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(0.5,-0.866025,0.866025,0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear11);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cdefs\u003E\n        \u003ClinearGradient id=\u0022_Linear1\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(20,0,0,20,-10,194)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(168,175,179);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(241,242,238);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(146,155,159);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear2\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(20,0,0,20,-10,194)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(168,175,179);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(241,242,238);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(146,155,159);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear3\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(20,0,0,20,-10,194)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(168,175,179);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(241,242,238);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(146,155,159);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear4\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(34.4,172,-172,34.4,34,20)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear5\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(158,158,-158,158,41,27)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(238,240,241);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.35\u0022 style=\u0022stop-color:rgb(205,210,214);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.7\u0022 style=\u0022stop-color:rgb(167,175,181);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(217,221,224);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear6\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear7\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear8\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear9\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear10\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear11\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n    \u003C/defs\u003E\n\u003C/svg\u003E\n",
+          "customTextValue": "value",
+          "valuePosition": {
+            "x": 73.16016,
+            "y": 47.01172
+          },
+          "svgRotation": 0,
+          "svgLocalPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "schemePosition": {
+            "x": 785.7498,
+            "y": 785.4842
+          },
+          "classType": "CircuitPart",
+          "name": "Potentiometer",
+          "description": "",
+          "points": {
+            "$id": "113",
+            "$values": [
+              {
+                "$ref": "101"
+              },
+              {
+                "$ref": "102"
+              },
+              {
+                "$ref": "107"
+              },
+              {
+                "$id": "114",
+                "label": "Ground",
+                "localPosition": {
+                  "x": 121.81641,
+                  "y": 21.703125
+                },
+                "owner": {
+                  "$ref": "93"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "115",
+          "$type": "circuitPart",
+          "stateGroups": {
+            "$id": "116",
+            "$values": [
+              {
+                "$id": "117",
+                "label": "State",
+                "states": {
+                  "$id": "118",
+                  "$values": [
+                    {
+                      "$id": "119",
+                      "label": "Position 1",
+                      "connectionGroups": {
+                        "$id": "120",
+                        "$values": [
+                          {
+                            "$id": "121",
+                            "connectedPints": {
+                              "$id": "122",
+                              "$values": [
+                                {
+                                  "$id": "123",
+                                  "label": "A1",
+                                  "localPosition": {
+                                    "x": 20.988281,
+                                    "y": 107.00781
+                                  },
+                                  "owner": {
+                                    "$ref": "115"
+                                  }
+                                },
+                                {
+                                  "$id": "124",
+                                  "label": "A",
+                                  "localPosition": {
+                                    "x": 23.648438,
+                                    "y": 231.50781
+                                  },
+                                  "owner": {
+                                    "$ref": "115"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "$id": "125",
+                            "connectedPints": {
+                              "$id": "126",
+                              "$values": [
+                                {
+                                  "$id": "127",
+                                  "label": "B",
+                                  "localPosition": {
+                                    "x": 128.09375,
+                                    "y": 86.1875
+                                  },
+                                  "owner": {
+                                    "$ref": "115"
+                                  }
+                                },
+                                {
+                                  "$id": "128",
+                                  "label": "B1",
+                                  "localPosition": {
+                                    "x": 127.58594,
+                                    "y": 127.83203
+                                  },
+                                  "owner": {
+                                    "$ref": "115"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "$id": "129",
+                      "label": "Position 2",
+                      "connectionGroups": {
+                        "$id": "130",
+                        "$values": [
+                          {
+                            "$id": "131",
+                            "connectedPints": {
+                              "$id": "132",
+                              "$values": [
+                                {
+                                  "$ref": "123"
+                                },
+                                {
+                                  "$ref": "124"
+                                },
+                                {
+                                  "$id": "133",
+                                  "label": "A2",
+                                  "localPosition": {
+                                    "x": 22.367188,
+                                    "y": 147.58984
+                                  },
+                                  "owner": {
+                                    "$ref": "115"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "$id": "134",
+                            "connectedPints": {
+                              "$id": "135",
+                              "$values": [
+                                {
+                                  "$ref": "127"
+                                },
+                                {
+                                  "$ref": "128"
+                                },
+                                {
+                                  "$id": "136",
+                                  "label": "B2",
+                                  "localPosition": {
+                                    "x": 126.77734,
+                                    "y": 169.8125
+                                  },
+                                  "owner": {
+                                    "$ref": "115"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "$id": "137",
+                      "label": "Position 3",
+                      "connectionGroups": {
+                        "$id": "138",
+                        "$values": [
+                          {
+                            "$id": "139",
+                            "connectedPints": {
+                              "$id": "140",
+                              "$values": [
+                                {
+                                  "$ref": "124"
+                                },
+                                {
+                                  "$ref": "133"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "$id": "141",
+                            "connectedPints": {
+                              "$id": "142",
+                              "$values": [
+                                {
+                                  "$ref": "127"
+                                },
+                                {
+                                  "$ref": "136"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "$id": "143",
+                      "label": "Position 4",
+                      "connectionGroups": {
+                        "$id": "144",
+                        "$values": [
+                          {
+                            "$id": "145",
+                            "connectedPints": {
+                              "$id": "146",
+                              "$values": [
+                                {
+                                  "$ref": "124"
+                                },
+                                {
+                                  "$ref": "133"
+                                },
+                                {
+                                  "$id": "147",
+                                  "label": "A3",
+                                  "localPosition": {
+                                    "x": 22.878906,
+                                    "y": 189.77734
+                                  },
+                                  "owner": {
+                                    "$ref": "115"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "$id": "148",
+                            "connectedPints": {
+                              "$id": "149",
+                              "$values": [
+                                {
+                                  "$ref": "127"
+                                },
+                                {
+                                  "$ref": "136"
+                                },
+                                {
+                                  "$id": "150",
+                                  "label": "B3",
+                                  "localPosition": {
+                                    "x": 127.40234,
+                                    "y": 211.67188
+                                  },
+                                  "owner": {
+                                    "$ref": "115"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "$id": "151",
+                      "label": "Position 5",
+                      "connectionGroups": {
+                        "$id": "152",
+                        "$values": [
+                          {
+                            "$id": "153",
+                            "connectedPints": {
+                              "$id": "154",
+                              "$values": [
+                                {
+                                  "$ref": "124"
+                                },
+                                {
+                                  "$ref": "147"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "$id": "155",
+                            "connectedPints": {
+                              "$id": "156",
+                              "$values": [
+                                {
+                                  "$ref": "127"
+                                },
+                                {
+                                  "$ref": "150"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "activeState": {
+                  "$ref": "143"
+                }
+              }
+            ]
+          },
+          "id": "d329d498-5284-4046-8abe-7038d338f04c",
+          "width": 153,
+          "height": 335,
+          "tags": {
+            "$id": "157",
+            "$values": [
+              "5 way",
+              "switch"
+            ]
+          },
+          "svgMarkup": "\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u0022440\u0022 height=\u0022210\u0022 viewBox=\u00220 0 440 210\u0022 role=\u0022img\u0022 aria-labelledby=\u0022selector-title selector-description\u0022\u003E\n  \u003Ctitle id=\u0022selector-title\u0022\u003E5-polohov\u00FD gitarov\u00FD prep\u00EDna\u010D \u2014 poh\u013Ead zospodu\u003C/title\u003E\n  \u003Cdesc id=\u0022selector-description\u0022\u003E\u0160tylizovan\u00FD spodn\u00FD poh\u013Ead na otvoren\u00FD gitarov\u00FD blade prep\u00EDna\u010D. Dve oddelen\u00E9 rady po \u0161tyroch sp\u00E1jkovac\u00EDch o\u010Dk\u00E1ch, izola\u010Dn\u00E9 do\u0161ti\u010Dky a kovov\u00FD r\u00E1m. Ovl\u00E1dacia p\u00E1\u010Dka je na odvr\u00E1tenej strane. Prieh\u013Eadn\u00E9 pozadie a otvory. Body pripojenia A1 a\u017E A4: (112,36), (168,36), (224,36), (280,36); B1 a\u017E B4: (140,174), (196,174), (252,174), (308,174). Identifik\u00E1tory kontaktov neur\u010Duj\u00FA ich elektrick\u00FA funkciu.\u003C/desc\u003E\n  \u003Cdefs\u003E\n    \u003Cg id=\u0022selector-bottom-lug\u0022\u003E\n      \u003Cpath d=\u0022M-10 39 V-4 Q-10 -12 -2 -12 H2 Q10 -12 10 -4 V39 Z M-4 -3 V4 A4 4 0 0 0 4 4 V-3 A4 4 0 0 0 -4 -3Z\u0022 fill=\u0022#bfc2c4\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00222.2\u0022 stroke-linejoin=\u0022round\u0022/\u003E\n    \u003C/g\u003E\n  \u003C/defs\u003E\n  \u003C!-- Mounting strap lies behind the switch mechanism. --\u003E\n  \u003Cpath d=\u0022M31 84 H409 Q421 84 421 96 V114 Q421 126 409 126 H31 Q19 126 19 114 V96 Q19 84 31 84Z M47 105 A7 7 0 1 0 33 105 A7 7 0 1 0 47 105Z M407 105 A7 7 0 1 0 393 105 A7 7 0 1 0 407 105Z\u0022 fill=\u0022#a7a7a7\u0022 fill-rule=\u0022evenodd\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00222.4\u0022/\u003E\n  \u003C!-- Solder tabs extend outward from the two insulating wafers. --\u003E\n  \u003Cg id=\u0022terminal-A1\u0022 transform=\u0022translate(112 36)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-A2\u0022 transform=\u0022translate(168 36)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-A3\u0022 transform=\u0022translate(224 36)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-A4\u0022 transform=\u0022translate(280 36)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-B1\u0022 transform=\u0022translate(140 174) scale(1 -1)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-B2\u0022 transform=\u0022translate(196 174) scale(1 -1)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-B3\u0022 transform=\u0022translate(252 174) scale(1 -1)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003Cg id=\u0022terminal-B4\u0022 transform=\u0022translate(308 174) scale(1 -1)\u0022\u003E\u003Cuse href=\u0022#selector-bottom-lug\u0022/\u003E\u003C/g\u003E\n  \u003C!-- Parallel phenolic terminal boards, seen edge-on from underneath. --\u003E\n  \u003Cg fill=\u0022#c88c5c\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00222.3\u0022 stroke-linejoin=\u0022round\u0022\u003E\n    \u003Crect x=\u002282\u0022 y=\u002265\u0022 width=\u0022276\u0022 height=\u002224\u0022 rx=\u00224\u0022/\u003E\n    \u003Crect x=\u002282\u0022 y=\u0022121\u0022 width=\u0022276\u0022 height=\u002224\u0022 rx=\u00224\u0022/\u003E\n  \u003C/g\u003E\n  \u003Cg fill=\u0022#a7a7a7\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00221.6\u0022\u003E\n    \u003Ccircle cx=\u0022112\u0022 cy=\u002277\u0022 r=\u00224\u0022/\u003E\u003Ccircle cx=\u0022168\u0022 cy=\u002277\u0022 r=\u00224\u0022/\u003E\n    \u003Ccircle cx=\u0022224\u0022 cy=\u002277\u0022 r=\u00224\u0022/\u003E\u003Ccircle cx=\u0022280\u0022 cy=\u002277\u0022 r=\u00224\u0022/\u003E\n    \u003Ccircle cx=\u0022140\u0022 cy=\u0022133\u0022 r=\u00224\u0022/\u003E\u003Ccircle cx=\u0022196\u0022 cy=\u0022133\u0022 r=\u00224\u0022/\u003E\n    \u003Ccircle cx=\u0022252\u0022 cy=\u0022133\u0022 r=\u00224\u0022/\u003E\u003Ccircle cx=\u0022308\u0022 cy=\u0022133\u0022 r=\u00224\u0022/\u003E\n  \u003C/g\u003E\n  \u003C!-- Lower metal cage; the player-facing lever is hidden on the far side. --\u003E\n  \u003Crect x=\u002277\u0022 y=\u002288\u0022 width=\u0022286\u0022 height=\u002234\u0022 rx=\u00225\u0022 fill=\u0022#d0d1d2\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00222.4\u0022/\u003E\n  \u003Cpath d=\u0022M105 95 H335 V115 H105Z\u0022 fill=\u0022#777b7e\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00221.7\u0022/\u003E\n  \u003Cpath d=\u0022M119 99 H321 V111 H119Z\u0022 fill=\u0022#45494c\u0022/\u003E\n  \u003Cpath d=\u0022M204 95 H236 V115 H204Z\u0022 fill=\u0022#a7a7a7\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00221.8\u0022/\u003E\n  \u003Cg fill=\u0022#a7a7a7\u0022 stroke=\u0022#303238\u0022 stroke-width=\u00221.5\u0022\u003E\n    \u003Ccircle cx=\u002291\u0022 cy=\u0022105\u0022 r=\u00224\u0022/\u003E\u003Ccircle cx=\u0022349\u0022 cy=\u0022105\u0022 r=\u00224\u0022/\u003E\n  \u003C/g\u003E\n\u003C/svg\u003E\n",
+          "customTextValue": null,
+          "valuePosition": {
+            "x": 120,
+            "y": 80
+          },
+          "svgRotation": 90,
+          "svgLocalPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "schemePosition": {
+            "x": 715.6545,
+            "y": 328.92633
+          },
+          "classType": "CircuitPart",
+          "name": "5way switch",
+          "description": "",
+          "points": {
+            "$id": "158",
+            "$values": [
+              {
+                "$ref": "123"
+              },
+              {
+                "$ref": "133"
+              },
+              {
+                "$ref": "147"
+              },
+              {
+                "$ref": "124"
+              },
+              {
+                "$ref": "127"
+              },
+              {
+                "$ref": "128"
+              },
+              {
+                "$ref": "136"
+              },
+              {
+                "$ref": "150"
+              }
+            ]
+          }
+        },
+        {
+          "$id": "159",
+          "$type": "cable",
+          "color": "#000000",
+          "bendPoints": {
+            "$id": "160",
+            "$values": [
+              {
+                "x": 1449.6914,
+                "y": 56.45681,
+                "isRounded": true
+              }
+            ]
+          },
+          "classType": "CablePart",
+          "name": "Cable 1",
+          "description": "",
+          "points": {
+            "$id": "161",
+            "$values": [
+              {
+                "$id": "162",
+                "label": "",
+                "localPosition": {
+                  "x": 1299.1194,
+                  "y": -3.6613617
+                },
+                "owner": {
+                  "$ref": "159"
+                }
+              },
+              {
+                "$id": "163",
+                "label": "",
+                "localPosition": {
+                  "x": 1477.2462,
+                  "y": 930.55475
+                },
+                "owner": {
+                  "$ref": "159"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "164",
+          "$type": "cable",
+          "color": "#000000",
+          "bendPoints": {
+            "$id": "165",
+            "$values": []
+          },
+          "classType": "CablePart",
+          "name": "Cable 2",
+          "description": "",
+          "points": {
+            "$id": "166",
+            "$values": [
+              {
+                "$id": "167",
+                "label": "",
+                "localPosition": {
+                  "x": 968.7325,
+                  "y": 12.474243
+                },
+                "owner": {
+                  "$ref": "164"
+                }
+              },
+              {
+                "$id": "168",
+                "label": "",
+                "localPosition": {
+                  "x": 1299.1194,
+                  "y": -3.6613617
+                },
+                "owner": {
+                  "$ref": "164"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "169",
+          "$type": "cable",
+          "color": "#000000",
+          "bendPoints": {
+            "$id": "170",
+            "$values": []
+          },
+          "classType": "CablePart",
+          "name": "Cable 3",
+          "description": "",
+          "points": {
+            "$id": "171",
+            "$values": [
+              {
+                "$id": "172",
+                "label": "",
+                "localPosition": {
+                  "x": 632.15625,
+                  "y": -6.8938293
+                },
+                "owner": {
+                  "$ref": "169"
+                }
+              },
+              {
+                "$id": "173",
+                "label": "",
+                "localPosition": {
+                  "x": 968.7325,
+                  "y": 12.474243
+                },
+                "owner": {
+                  "$ref": "169"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "174",
+          "$type": "cable",
+          "color": "#b6d228",
+          "bendPoints": {
+            "$id": "175",
+            "$values": [
+              {
+                "x": 655.4973,
+                "y": 467.09723,
+                "isRounded": true
+              }
+            ]
+          },
+          "classType": "CablePart",
+          "name": "Cable 4",
+          "description": "",
+          "points": {
+            "$id": "176",
+            "$values": [
+              {
+                "$id": "177",
+                "label": "",
+                "localPosition": {
+                  "x": 738.5334,
+                  "y": 518.7037
+                },
+                "owner": {
+                  "$ref": "174"
+                }
+              },
+              {
+                "$id": "178",
+                "label": "",
+                "localPosition": {
+                  "x": 632.6133,
+                  "y": 37.89914
+                },
+                "owner": {
+                  "$ref": "174"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "179",
+          "$type": "cable",
+          "color": "#b6d228",
+          "bendPoints": {
+            "$id": "180",
+            "$values": [
+              {
+                "x": 630.683,
+                "y": 376.13672,
+                "isRounded": true
+              }
+            ]
+          },
+          "classType": "CablePart",
+          "name": "Cable 5",
+          "description": "",
+          "points": {
+            "$id": "181",
+            "$values": [
+              {
+                "$id": "182",
+                "label": "",
+                "localPosition": {
+                  "x": 738.02167,
+                  "y": 476.51617
+                },
+                "owner": {
+                  "$ref": "179"
+                }
+              },
+              {
+                "$id": "183",
+                "label": "",
+                "localPosition": {
+                  "x": 969.1895,
+                  "y": 57.267212
+                },
+                "owner": {
+                  "$ref": "179"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "184",
+          "$type": "cable",
+          "color": "#b6d228",
+          "bendPoints": {
+            "$id": "185",
+            "$values": [
+              {
+                "x": 680.3642,
+                "y": 344.6329,
+                "isRounded": true
+              },
+              {
+                "x": 1080.8201,
+                "y": 292.2966,
+                "isRounded": true
+              }
+            ]
+          },
+          "classType": "CablePart",
+          "name": "Cable 6",
+          "description": "",
+          "points": {
+            "$id": "186",
+            "$values": [
+              {
+                "$id": "187",
+                "label": "",
+                "localPosition": {
+                  "x": 736.64276,
+                  "y": 435.93414
+                },
+                "owner": {
+                  "$ref": "184"
+                }
+              },
+              {
+                "$id": "188",
+                "label": "",
+                "localPosition": {
+                  "x": 1299.5764,
+                  "y": 41.131607
+                },
+                "owner": {
+                  "$ref": "184"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "189",
+          "$type": "cable",
+          "color": "#e6a433",
+          "bendPoints": {
+            "$id": "190",
+            "$values": []
+          },
+          "classType": "CablePart",
+          "name": "Cable 7",
+          "description": "",
+          "points": {
+            "$id": "191",
+            "$values": [
+              {
+                "$id": "192",
+                "label": "",
+                "localPosition": {
+                  "x": 739.3029,
+                  "y": 560.43414
+                },
+                "owner": {
+                  "$ref": "189"
+                }
+              },
+              {
+                "$id": "193",
+                "label": "",
+                "localPosition": {
+                  "x": 843.7482,
+                  "y": 415.11383
+                },
+                "owner": {
+                  "$ref": "189"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "194",
+          "$type": "cable",
+          "color": "#e6a433",
+          "bendPoints": {
+            "$id": "195",
+            "$values": []
+          },
+          "classType": "CablePart",
+          "name": "Cable 8",
+          "description": "",
+          "points": {
+            "$id": "196",
+            "$values": [
+              {
+                "$id": "197",
+                "label": "",
+                "localPosition": {
+                  "x": 843.7482,
+                  "y": 415.11383
+                },
+                "owner": {
+                  "$ref": "194"
+                }
+              },
+              {
+                "$id": "198",
+                "label": "",
+                "localPosition": {
+                  "x": 1151.7327,
+                  "y": 553.90594
+                },
+                "owner": {
+                  "$ref": "194"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "199",
+          "$type": "cable",
+          "color": "#e6a433",
+          "bendPoints": {
+            "$id": "200",
+            "$values": []
+          },
+          "classType": "CablePart",
+          "name": "Cable 9",
+          "description": "",
+          "points": {
+            "$id": "201",
+            "$values": [
+              {
+                "$id": "202",
+                "label": "",
+                "localPosition": {
+                  "x": 1426.504,
+                  "y": 894.0313
+                },
+                "owner": {
+                  "$ref": "199"
+                }
+              },
+              {
+                "$id": "203",
+                "label": "",
+                "localPosition": {
+                  "x": 1192.3186,
+                  "y": 559.238
+                },
+                "owner": {
+                  "$ref": "199"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "204",
+          "$type": "cable",
+          "color": "#0fff1e",
+          "bendPoints": {
+            "$id": "205",
+            "$values": []
+          },
+          "classType": "CablePart",
+          "name": "Cable 10",
+          "description": "",
+          "points": {
+            "$id": "206",
+            "$values": [
+              {
+                "$id": "207",
+                "label": "",
+                "localPosition": {
+                  "x": 842.4318,
+                  "y": 498.73883
+                },
+                "owner": {
+                  "$ref": "204"
+                }
+              },
+              {
+                "$id": "208",
+                "label": "",
+                "localPosition": {
+                  "x": 843.2404,
+                  "y": 456.75836
+                },
+                "owner": {
+                  "$ref": "204"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "209",
+          "$type": "cable",
+          "color": "#0fff1f",
+          "bendPoints": {
+            "$id": "210",
+            "$values": [
+              {
+                "x": 943.7837,
+                "y": 1032.3491,
+                "isRounded": true
+              },
+              {
+                "x": 1014.3401,
+                "y": 852.0942,
+                "isRounded": true
+              },
+              {
+                "x": 935.726,
+                "y": 527.5965,
+                "isRounded": true
+              }
+            ]
+          },
+          "classType": "CablePart",
+          "name": "Cable 11",
+          "description": "",
+          "points": {
+            "$id": "211",
+            "$values": [
+              {
+                "$id": "212",
+                "label": "",
+                "localPosition": {
+                  "x": 860.0467,
+                  "y": 963.63654
+                },
+                "owner": {
+                  "$ref": "209"
+                }
+              },
+              {
+                "$id": "213",
+                "label": "",
+                "localPosition": {
+                  "x": 842.4318,
+                  "y": 498.73883
+                },
+                "owner": {
+                  "$ref": "209"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "214",
+          "$type": "circuitPart",
+          "stateGroups": {
+            "$id": "215",
+            "$values": [
+              {
+                "$id": "216",
+                "label": "State",
+                "states": {
+                  "$id": "217",
+                  "$values": [
+                    {
+                      "$id": "218",
+                      "label": "con",
+                      "connectionGroups": {
+                        "$id": "219",
+                        "$values": [
+                          {
+                            "$id": "220",
+                            "connectedPints": {
+                              "$id": "221",
+                              "$values": [
+                                {
+                                  "$id": "222",
+                                  "label": "2",
+                                  "localPosition": {
+                                    "x": 65.26953,
+                                    "y": 74.66016
+                                  },
+                                  "owner": {
+                                    "$ref": "214"
+                                  }
+                                },
+                                {
+                                  "$id": "223",
+                                  "label": "1",
+                                  "localPosition": {
+                                    "x": 31.910156,
+                                    "y": 76.10547
+                                  },
+                                  "owner": {
+                                    "$ref": "214"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "activeState": {
+                  "$ref": "218"
+                }
+              }
+            ]
+          },
+          "id": "28362770-7b62-4a67-80b8-ebf1492745b6",
+          "width": 96,
+          "height": 80,
+          "tags": {
+            "$id": "224",
+            "$values": [
+              "capacitor"
+            ]
+          },
+          "svgMarkup": "\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u0022320\u0022 height=\u0022320\u0022 viewBox=\u00220 0 320 320\u0022 role=\u0022img\u0022 aria-labelledby=\u0022cap-title cap-description\u0022\u003E\n  \u003Ctitle id=\u0022cap-title\u0022\u003EOran\u017Eov\u00FD diskov\u00FD kondenz\u00E1tor bez potla\u010De\u003C/title\u003E\n  \u003Cdesc id=\u0022cap-description\u0022\u003E\u0160tylizovan\u00E1 s\u00FA\u010Diastka pre gitarov\u00E9 sch\u00E9my zapojenia pod\u013Ea dodanej fotografie. Telo bez potla\u010De a bez vidite\u013En\u00FDch textov, pripraven\u00E9 na doplnenie hodnoty. Prieh\u013Eadn\u00E9 pozadie. Body pripojenia: (112, 292), (208, 292).\u003C/desc\u003E\n  \u003Cdefs\u003E\n    \u003ClinearGradient id=\u0022cap-body\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220.75\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#e58f53\u0022/\u003E\u003Cstop offset=\u00220.55\u0022 stop-color=\u0022#d47a40\u0022/\u003E\u003Cstop offset=\u00221\u0022 stop-color=\u0022#b86635\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022cap-wire\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022\u003E\n      \u003Cstop stop-color=\u0022#92999d\u0022/\u003E\u003Cstop offset=\u00220.42\u0022 stop-color=\u0022#f1f3f2\u0022/\u003E\u003Cstop offset=\u00221\u0022 stop-color=\u0022#9ca3a7\u0022/\u003E\n    \u003C/linearGradient\u003E\n  \u003C/defs\u003E\n  \u003Cg\u003E\u003Cpath id=\u0022terminal-1\u0022 d=\u0022M112 198 V292\u0022 fill=\u0022none\u0022 stroke=\u0022#5c6266\u0022 stroke-width=\u00229\u0022 stroke-linecap=\u0022round\u0022/\u003E\u003Cpath d=\u0022M112 198 V292\u0022 fill=\u0022none\u0022 stroke=\u0022url(#cap-wire)\u0022 stroke-width=\u00226\u0022 stroke-linecap=\u0022round\u0022/\u003E\n\u003Cpath id=\u0022terminal-2\u0022 d=\u0022M208 198 V292\u0022 fill=\u0022none\u0022 stroke=\u0022#5c6266\u0022 stroke-width=\u00229\u0022 stroke-linecap=\u0022round\u0022/\u003E\u003Cpath d=\u0022M208 198 V292\u0022 fill=\u0022none\u0022 stroke=\u0022url(#cap-wire)\u0022 stroke-width=\u00226\u0022 stroke-linecap=\u0022round\u0022/\u003E\u003C/g\u003E\n  \u003Cg stroke-linecap=\u0022round\u0022 stroke-linejoin=\u0022round\u0022\u003E\n    \u003Cpath d=\u0022M65 111 C65 59 106 25 160 25 C214 25 255 59 255 111 C255 150 234 171 219 181 Q211 188 214 204 Q208 212 202 202 C192 186 181 191 160 191 C139 191 128 186 118 202 Q112 212 106 204 Q109 188 101 181 C86 171 65 150 65 111Z\u0022 fill=\u0022url(#cap-body)\u0022 stroke=\u0022#a65d32\u0022 stroke-width=\u00222.4\u0022/\u003E\n    \u003Cpath d=\u0022M77 92 Q89 43 146 36\u0022 fill=\u0022none\u0022 stroke=\u0022#f3b98e\u0022 stroke-opacity=\u00220.65\u0022 stroke-width=\u00223\u0022/\u003E\n\u003C/g\u003E\n\u003C/svg\u003E\n",
+          "customTextValue": "value",
+          "valuePosition": {
+            "x": 46.242188,
+            "y": 6.2070312
+          },
+          "svgRotation": 0,
+          "svgLocalPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "schemePosition": {
+            "x": 700.2368,
+            "y": 679.91486
+          },
+          "classType": "CircuitPart",
+          "name": "Capacitor",
+          "description": "",
+          "points": {
+            "$id": "225",
+            "$values": [
+              {
+                "$ref": "223"
+              },
+              {
+                "$ref": "222"
+              }
+            ]
+          }
+        },
+        {
+          "$id": "226",
+          "$type": "cable",
+          "color": "#0fff1e",
+          "bendPoints": {
+            "$id": "227",
+            "$values": [
+              {
+                "x": 727.2029,
+                "y": 920.1525,
+                "isRounded": true
+              }
+            ]
+          },
+          "classType": "CablePart",
+          "name": "Cable 12",
+          "description": "",
+          "points": {
+            "$id": "228",
+            "$values": [
+              {
+                "$id": "229",
+                "label": "",
+                "localPosition": {
+                  "x": 732.147,
+                  "y": 756.0203
+                },
+                "owner": {
+                  "$ref": "226"
+                }
+              },
+              {
+                "$id": "230",
+                "label": "",
+                "localPosition": {
+                  "x": 819.46075,
+                  "y": 958.3045
+                },
+                "owner": {
+                  "$ref": "226"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "231",
+          "$type": "cable",
+          "color": "#000000",
+          "bendPoints": {
+            "$id": "232",
+            "$values": [
+              {
+                "x": 883.5686,
+                "y": 730.1663,
+                "isRounded": true
+              }
+            ]
+          },
+          "classType": "CablePart",
+          "name": "Cable 13",
+          "description": "",
+          "points": {
+            "$id": "233",
+            "$values": [
+              {
+                "$id": "234",
+                "label": "",
+                "localPosition": {
+                  "x": 907.5662,
+                  "y": 807.1873
+                },
+                "owner": {
+                  "$ref": "231"
+                }
+              },
+              {
+                "$id": "235",
+                "label": "",
+                "localPosition": {
+                  "x": 765.50635,
+                  "y": 754.575
+                },
+                "owner": {
+                  "$ref": "231"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "236",
+          "$type": "circuitPart",
+          "stateGroups": {
+            "$id": "237",
+            "$values": [
+              {
+                "$id": "238",
+                "label": "State",
+                "states": {
+                  "$id": "239",
+                  "$values": [
+                    {
+                      "$id": "240",
+                      "label": "con",
+                      "connectionGroups": {
+                        "$id": "241",
+                        "$values": [
+                          {
+                            "$id": "242",
+                            "connectedPints": {
+                              "$id": "243",
+                              "$values": [
+                                {
+                                  "$id": "244",
+                                  "label": "2",
+                                  "localPosition": {
+                                    "x": 65.26953,
+                                    "y": 74.66016
+                                  },
+                                  "owner": {
+                                    "$ref": "236"
+                                  }
+                                },
+                                {
+                                  "$id": "245",
+                                  "label": "1",
+                                  "localPosition": {
+                                    "x": 31.910156,
+                                    "y": 76.10547
+                                  },
+                                  "owner": {
+                                    "$ref": "236"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "activeState": {
+                  "$ref": "240"
+                }
+              }
+            ]
+          },
+          "id": "28362770-7b62-4a67-80b8-ebf1492745b6",
+          "width": 96,
+          "height": 80,
+          "tags": {
+            "$id": "246",
+            "$values": [
+              "capacitor"
+            ]
+          },
+          "svgMarkup": "\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u0022320\u0022 height=\u0022320\u0022 viewBox=\u00220 0 320 320\u0022 role=\u0022img\u0022 aria-labelledby=\u0022cap-title cap-description\u0022\u003E\n  \u003Ctitle id=\u0022cap-title\u0022\u003EOran\u017Eov\u00FD diskov\u00FD kondenz\u00E1tor bez potla\u010De\u003C/title\u003E\n  \u003Cdesc id=\u0022cap-description\u0022\u003E\u0160tylizovan\u00E1 s\u00FA\u010Diastka pre gitarov\u00E9 sch\u00E9my zapojenia pod\u013Ea dodanej fotografie. Telo bez potla\u010De a bez vidite\u013En\u00FDch textov, pripraven\u00E9 na doplnenie hodnoty. Prieh\u013Eadn\u00E9 pozadie. Body pripojenia: (112, 292), (208, 292).\u003C/desc\u003E\n  \u003Cdefs\u003E\n    \u003ClinearGradient id=\u0022cap-body\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220.75\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#e58f53\u0022/\u003E\u003Cstop offset=\u00220.55\u0022 stop-color=\u0022#d47a40\u0022/\u003E\u003Cstop offset=\u00221\u0022 stop-color=\u0022#b86635\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022cap-wire\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022\u003E\n      \u003Cstop stop-color=\u0022#92999d\u0022/\u003E\u003Cstop offset=\u00220.42\u0022 stop-color=\u0022#f1f3f2\u0022/\u003E\u003Cstop offset=\u00221\u0022 stop-color=\u0022#9ca3a7\u0022/\u003E\n    \u003C/linearGradient\u003E\n  \u003C/defs\u003E\n  \u003Cg\u003E\u003Cpath id=\u0022terminal-1\u0022 d=\u0022M112 198 V292\u0022 fill=\u0022none\u0022 stroke=\u0022#5c6266\u0022 stroke-width=\u00229\u0022 stroke-linecap=\u0022round\u0022/\u003E\u003Cpath d=\u0022M112 198 V292\u0022 fill=\u0022none\u0022 stroke=\u0022url(#cap-wire)\u0022 stroke-width=\u00226\u0022 stroke-linecap=\u0022round\u0022/\u003E\n\u003Cpath id=\u0022terminal-2\u0022 d=\u0022M208 198 V292\u0022 fill=\u0022none\u0022 stroke=\u0022#5c6266\u0022 stroke-width=\u00229\u0022 stroke-linecap=\u0022round\u0022/\u003E\u003Cpath d=\u0022M208 198 V292\u0022 fill=\u0022none\u0022 stroke=\u0022url(#cap-wire)\u0022 stroke-width=\u00226\u0022 stroke-linecap=\u0022round\u0022/\u003E\u003C/g\u003E\n  \u003Cg stroke-linecap=\u0022round\u0022 stroke-linejoin=\u0022round\u0022\u003E\n    \u003Cpath d=\u0022M65 111 C65 59 106 25 160 25 C214 25 255 59 255 111 C255 150 234 171 219 181 Q211 188 214 204 Q208 212 202 202 C192 186 181 191 160 191 C139 191 128 186 118 202 Q112 212 106 204 Q109 188 101 181 C86 171 65 150 65 111Z\u0022 fill=\u0022url(#cap-body)\u0022 stroke=\u0022#a65d32\u0022 stroke-width=\u00222.4\u0022/\u003E\n    \u003Cpath d=\u0022M77 92 Q89 43 146 36\u0022 fill=\u0022none\u0022 stroke=\u0022#f3b98e\u0022 stroke-opacity=\u00220.65\u0022 stroke-width=\u00223\u0022/\u003E\n\u003C/g\u003E\n\u003C/svg\u003E\n",
+          "customTextValue": "value",
+          "valuePosition": {
+            "x": 46.242188,
+            "y": 6.2070312
+          },
+          "svgRotation": 0,
+          "svgLocalPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "schemePosition": {
+            "x": 953.18646,
+            "y": 522.04175
+          },
+          "classType": "CircuitPart",
+          "name": "Capacitor",
+          "description": "",
+          "points": {
+            "$id": "247",
+            "$values": [
+              {
+                "$ref": "245"
+              },
+              {
+                "$ref": "244"
+              }
+            ]
+          }
+        },
+        {
+          "$id": "248",
+          "$type": "cable",
+          "color": "#ff47f9",
+          "bendPoints": {
+            "$id": "249",
+            "$values": [
+              {
+                "x": 1011.0822,
+                "y": 891.56287,
+                "isRounded": true
+              }
+            ]
+          },
+          "classType": "CablePart",
+          "name": "Cable 14",
+          "description": "",
+          "points": {
+            "$id": "250",
+            "$values": [
+              {
+                "$id": "251",
+                "label": "",
+                "localPosition": {
+                  "x": 1074.266,
+                  "y": 795.6
+                },
+                "owner": {
+                  "$ref": "248"
+                }
+              },
+              {
+                "$id": "252",
+                "label": "",
+                "localPosition": {
+                  "x": 843.0568,
+                  "y": 540.5982
+                },
+                "owner": {
+                  "$ref": "248"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "253",
+          "$type": "cable",
+          "color": "#ff46fa",
+          "bendPoints": {
+            "$id": "254",
+            "$values": [
+              {
+                "x": 994.4689,
+                "y": 773.91675,
+                "isRounded": true
+              }
+            ]
+          },
+          "classType": "CablePart",
+          "name": "Cable 15",
+          "description": "",
+          "points": {
+            "$id": "255",
+            "$values": [
+              {
+                "$id": "256",
+                "label": "",
+                "localPosition": {
+                  "x": 985.0966,
+                  "y": 598.1472
+                },
+                "owner": {
+                  "$ref": "253"
+                }
+              },
+              {
+                "$id": "257",
+                "label": "",
+                "localPosition": {
+                  "x": 1033.68,
+                  "y": 790.26794
+                },
+                "owner": {
+                  "$ref": "253"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "258",
+          "$type": "cable",
+          "color": "#000000",
+          "bendPoints": {
+            "$id": "259",
+            "$values": []
+          },
+          "classType": "CablePart",
+          "name": "Cable 16",
+          "description": "",
+          "points": {
+            "$id": "260",
+            "$values": [
+              {
+                "$id": "261",
+                "label": "",
+                "localPosition": {
+                  "x": 1121.7855,
+                  "y": 639.15076
+                },
+                "owner": {
+                  "$ref": "258"
+                }
+              },
+              {
+                "$id": "262",
+                "label": "",
+                "localPosition": {
+                  "x": 1018.456,
+                  "y": 596.7019
+                },
+                "owner": {
+                  "$ref": "258"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "263",
+          "$type": "cable",
+          "color": "#000000",
+          "bendPoints": {
+            "$id": "264",
+            "$values": [
+              {
+                "x": 1596.3649,
+                "y": 731.0386,
+                "isRounded": true
+              }
+            ]
+          },
+          "classType": "CablePart",
+          "name": "Cable 17",
+          "description": "",
+          "points": {
+            "$id": "265",
+            "$values": [
+              {
+                "$id": "266",
+                "label": "",
+                "localPosition": {
+                  "x": 1121.7855,
+                  "y": 639.15076
+                },
+                "owner": {
+                  "$ref": "263"
+                }
+              },
+              {
+                "$id": "267",
+                "label": "",
+                "localPosition": {
+                  "x": 1477.2462,
+                  "y": 930.55475
+                },
+                "owner": {
+                  "$ref": "263"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$id": "268",
+          "$type": "cable",
+          "color": "#000000",
+          "bendPoints": {
+            "$id": "269",
+            "$values": [
+              {
+                "x": 1592.0334,
+                "y": 826.4171,
+                "isRounded": true
+              }
+            ]
+          },
+          "classType": "CablePart",
+          "name": "Cable 18",
+          "description": "",
+          "points": {
+            "$id": "270",
+            "$values": [
+              {
+                "$id": "271",
+                "label": "",
+                "localPosition": {
+                  "x": 907.5662,
+                  "y": 807.1873
+                },
+                "owner": {
+                  "$ref": "268"
+                }
+              },
+              {
+                "$id": "272",
+                "label": "",
+                "localPosition": {
+                  "x": 1477.2462,
+                  "y": 930.55475
+                },
+                "owner": {
+                  "$ref": "268"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "connections": {
+    "$id": "273",
+    "$values": [
+      {
+        "$id": "274",
+        "from": {
+          "$ref": "13"
+        },
+        "to": {
+          "$ref": "172"
+        }
+      },
+      {
+        "$id": "275",
+        "from": {
+          "$ref": "14"
+        },
+        "to": {
+          "$ref": "178"
+        }
+      },
+      {
+        "$id": "276",
+        "from": {
+          "$ref": "25"
+        },
+        "to": {
+          "$ref": "167"
+        }
+      },
+      {
+        "$id": "277",
+        "from": {
+          "$ref": "25"
+        },
+        "to": {
+          "$ref": "173"
+        }
+      },
+      {
+        "$id": "278",
+        "from": {
+          "$ref": "26"
+        },
+        "to": {
+          "$ref": "183"
+        }
+      },
+      {
+        "$id": "279",
+        "from": {
+          "$ref": "37"
+        },
+        "to": {
+          "$ref": "162"
+        }
+      },
+      {
+        "$id": "280",
+        "from": {
+          "$ref": "37"
+        },
+        "to": {
+          "$ref": "168"
+        }
+      },
+      {
+        "$id": "281",
+        "from": {
+          "$ref": "38"
+        },
+        "to": {
+          "$ref": "188"
+        }
+      },
+      {
+        "$id": "282",
+        "from": {
+          "$ref": "47"
+        },
+        "to": {
+          "$ref": "202"
+        }
+      },
+      {
+        "$id": "283",
+        "from": {
+          "$ref": "48"
+        },
+        "to": {
+          "$ref": "163"
+        }
+      },
+      {
+        "$id": "284",
+        "from": {
+          "$ref": "48"
+        },
+        "to": {
+          "$ref": "267"
+        }
+      },
+      {
+        "$id": "285",
+        "from": {
+          "$ref": "48"
+        },
+        "to": {
+          "$ref": "272"
+        }
+      },
+      {
+        "$id": "286",
+        "from": {
+          "$ref": "57"
+        },
+        "to": {
+          "$ref": "198"
+        }
+      },
+      {
+        "$id": "287",
+        "from": {
+          "$ref": "58"
+        },
+        "to": {
+          "$ref": "203"
+        }
+      },
+      {
+        "$id": "288",
+        "from": {
+          "$ref": "79"
+        },
+        "to": {
+          "$ref": "257"
+        }
+      },
+      {
+        "$id": "289",
+        "from": {
+          "$ref": "80"
+        },
+        "to": {
+          "$ref": "251"
+        }
+      },
+      {
+        "$id": "290",
+        "from": {
+          "$ref": "92"
+        },
+        "to": {
+          "$ref": "261"
+        }
+      },
+      {
+        "$id": "291",
+        "from": {
+          "$ref": "92"
+        },
+        "to": {
+          "$ref": "266"
+        }
+      },
+      {
+        "$id": "292",
+        "from": {
+          "$ref": "101"
+        },
+        "to": {
+          "$ref": "230"
+        }
+      },
+      {
+        "$id": "293",
+        "from": {
+          "$ref": "102"
+        },
+        "to": {
+          "$ref": "212"
+        }
+      },
+      {
+        "$id": "294",
+        "from": {
+          "$ref": "114"
+        },
+        "to": {
+          "$ref": "234"
+        }
+      },
+      {
+        "$id": "295",
+        "from": {
+          "$ref": "114"
+        },
+        "to": {
+          "$ref": "271"
+        }
+      },
+      {
+        "$id": "296",
+        "from": {
+          "$ref": "123"
+        },
+        "to": {
+          "$ref": "187"
+        }
+      },
+      {
+        "$id": "297",
+        "from": {
+          "$ref": "133"
+        },
+        "to": {
+          "$ref": "182"
+        }
+      },
+      {
+        "$id": "298",
+        "from": {
+          "$ref": "147"
+        },
+        "to": {
+          "$ref": "177"
+        }
+      },
+      {
+        "$id": "299",
+        "from": {
+          "$ref": "124"
+        },
+        "to": {
+          "$ref": "192"
+        }
+      },
+      {
+        "$id": "300",
+        "from": {
+          "$ref": "127"
+        },
+        "to": {
+          "$ref": "193"
+        }
+      },
+      {
+        "$id": "301",
+        "from": {
+          "$ref": "127"
+        },
+        "to": {
+          "$ref": "197"
+        }
+      },
+      {
+        "$id": "302",
+        "from": {
+          "$ref": "128"
+        },
+        "to": {
+          "$ref": "208"
+        }
+      },
+      {
+        "$id": "303",
+        "from": {
+          "$ref": "136"
+        },
+        "to": {
+          "$ref": "207"
+        }
+      },
+      {
+        "$id": "304",
+        "from": {
+          "$ref": "136"
+        },
+        "to": {
+          "$ref": "213"
+        }
+      },
+      {
+        "$id": "305",
+        "from": {
+          "$ref": "150"
+        },
+        "to": {
+          "$ref": "252"
+        }
+      },
+      {
+        "$id": "306",
+        "from": {
+          "$ref": "162"
+        },
+        "to": {
+          "$ref": "37"
+        }
+      },
+      {
+        "$id": "307",
+        "from": {
+          "$ref": "163"
+        },
+        "to": {
+          "$ref": "48"
+        }
+      },
+      {
+        "$id": "308",
+        "from": {
+          "$ref": "167"
+        },
+        "to": {
+          "$ref": "25"
+        }
+      },
+      {
+        "$id": "309",
+        "from": {
+          "$ref": "168"
+        },
+        "to": {
+          "$ref": "37"
+        }
+      },
+      {
+        "$id": "310",
+        "from": {
+          "$ref": "172"
+        },
+        "to": {
+          "$ref": "13"
+        }
+      },
+      {
+        "$id": "311",
+        "from": {
+          "$ref": "173"
+        },
+        "to": {
+          "$ref": "25"
+        }
+      },
+      {
+        "$id": "312",
+        "from": {
+          "$ref": "177"
+        },
+        "to": {
+          "$ref": "147"
+        }
+      },
+      {
+        "$id": "313",
+        "from": {
+          "$ref": "178"
+        },
+        "to": {
+          "$ref": "14"
+        }
+      },
+      {
+        "$id": "314",
+        "from": {
+          "$ref": "182"
+        },
+        "to": {
+          "$ref": "133"
+        }
+      },
+      {
+        "$id": "315",
+        "from": {
+          "$ref": "183"
+        },
+        "to": {
+          "$ref": "26"
+        }
+      },
+      {
+        "$id": "316",
+        "from": {
+          "$ref": "187"
+        },
+        "to": {
+          "$ref": "123"
+        }
+      },
+      {
+        "$id": "317",
+        "from": {
+          "$ref": "188"
+        },
+        "to": {
+          "$ref": "38"
+        }
+      },
+      {
+        "$id": "318",
+        "from": {
+          "$ref": "192"
+        },
+        "to": {
+          "$ref": "124"
+        }
+      },
+      {
+        "$id": "319",
+        "from": {
+          "$ref": "193"
+        },
+        "to": {
+          "$ref": "127"
+        }
+      },
+      {
+        "$id": "320",
+        "from": {
+          "$ref": "197"
+        },
+        "to": {
+          "$ref": "127"
+        }
+      },
+      {
+        "$id": "321",
+        "from": {
+          "$ref": "198"
+        },
+        "to": {
+          "$ref": "57"
+        }
+      },
+      {
+        "$id": "322",
+        "from": {
+          "$ref": "202"
+        },
+        "to": {
+          "$ref": "47"
+        }
+      },
+      {
+        "$id": "323",
+        "from": {
+          "$ref": "203"
+        },
+        "to": {
+          "$ref": "58"
+        }
+      },
+      {
+        "$id": "324",
+        "from": {
+          "$ref": "207"
+        },
+        "to": {
+          "$ref": "136"
+        }
+      },
+      {
+        "$id": "325",
+        "from": {
+          "$ref": "208"
+        },
+        "to": {
+          "$ref": "128"
+        }
+      },
+      {
+        "$id": "326",
+        "from": {
+          "$ref": "212"
+        },
+        "to": {
+          "$ref": "102"
+        }
+      },
+      {
+        "$id": "327",
+        "from": {
+          "$ref": "213"
+        },
+        "to": {
+          "$ref": "136"
+        }
+      },
+      {
+        "$id": "328",
+        "from": {
+          "$ref": "223"
+        },
+        "to": {
+          "$ref": "229"
+        }
+      },
+      {
+        "$id": "329",
+        "from": {
+          "$ref": "222"
+        },
+        "to": {
+          "$ref": "235"
+        }
+      },
+      {
+        "$id": "330",
+        "from": {
+          "$ref": "229"
+        },
+        "to": {
+          "$ref": "223"
+        }
+      },
+      {
+        "$id": "331",
+        "from": {
+          "$ref": "230"
+        },
+        "to": {
+          "$ref": "101"
+        }
+      },
+      {
+        "$id": "332",
+        "from": {
+          "$ref": "234"
+        },
+        "to": {
+          "$ref": "114"
+        }
+      },
+      {
+        "$id": "333",
+        "from": {
+          "$ref": "235"
+        },
+        "to": {
+          "$ref": "222"
+        }
+      },
+      {
+        "$id": "334",
+        "from": {
+          "$ref": "245"
+        },
+        "to": {
+          "$ref": "256"
+        }
+      },
+      {
+        "$id": "335",
+        "from": {
+          "$ref": "244"
+        },
+        "to": {
+          "$ref": "262"
+        }
+      },
+      {
+        "$id": "336",
+        "from": {
+          "$ref": "251"
+        },
+        "to": {
+          "$ref": "80"
+        }
+      },
+      {
+        "$id": "337",
+        "from": {
+          "$ref": "252"
+        },
+        "to": {
+          "$ref": "150"
+        }
+      },
+      {
+        "$id": "338",
+        "from": {
+          "$ref": "256"
+        },
+        "to": {
+          "$ref": "245"
+        }
+      },
+      {
+        "$id": "339",
+        "from": {
+          "$ref": "257"
+        },
+        "to": {
+          "$ref": "79"
+        }
+      },
+      {
+        "$id": "340",
+        "from": {
+          "$ref": "261"
+        },
+        "to": {
+          "$ref": "92"
+        }
+      },
+      {
+        "$id": "341",
+        "from": {
+          "$ref": "262"
+        },
+        "to": {
+          "$ref": "244"
+        }
+      },
+      {
+        "$id": "342",
+        "from": {
+          "$ref": "266"
+        },
+        "to": {
+          "$ref": "92"
+        }
+      },
+      {
+        "$id": "343",
+        "from": {
+          "$ref": "267"
+        },
+        "to": {
+          "$ref": "48"
+        }
+      },
+      {
+        "$id": "344",
+        "from": {
+          "$ref": "271"
+        },
+        "to": {
+          "$ref": "114"
+        }
+      },
+      {
+        "$id": "345",
+        "from": {
+          "$ref": "272"
+        },
+        "to": {
+          "$ref": "48"
+        }
+      }
+    ]
+  }
+}

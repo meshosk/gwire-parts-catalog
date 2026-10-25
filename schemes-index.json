@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "file": "simple-sss-scheme.scheme.json",
+    "name": "Simple SSS scheme",
+    "description": "Classic ",
+    "tags": [
+      "sss",
+      "single coil"
+    ]
+  }
+]
