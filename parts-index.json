@@ -1,7 +1,6 @@
 [
-  "5-way-strat-switch.part.json",
-  "fender-s1-switch.part.json",
+  "5way-switch.part.json",
   "mono-jack-socket.part.json",
-  "pot.part.json",
+  "potentiometer.part.json",
   "singlecoil-pickup.part.json"
 ]

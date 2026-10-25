@@ -1,0 +1,187 @@
+{
+  "$id": "1",
+  "stateGroups": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "label": "State",
+        "states": {
+          "$id": "4",
+          "$values": [
+            {
+              "$id": "5",
+              "label": "Full left",
+              "connectionGroups": {
+                "$id": "6",
+                "$values": [
+                  {
+                    "$id": "7",
+                    "connectedPints": {
+                      "$id": "8",
+                      "$values": [
+                        {
+                          "$id": "9",
+                          "label": "Left",
+                          "localPosition": {
+                            "x": 33.710938,
+                            "y": 172.82031
+                          },
+                          "owner": {
+                            "$ref": "1"
+                          },
+                          "connectionPoints": {
+                            "$id": "10",
+                            "$values": []
+                          }
+                        },
+                        {
+                          "$id": "11",
+                          "label": "Out",
+                          "localPosition": {
+                            "x": 74.296875,
+                            "y": 178.15234
+                          },
+                          "owner": {
+                            "$ref": "1"
+                          },
+                          "connectionPoints": {
+                            "$id": "12",
+                            "$values": []
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "$id": "13",
+              "label": "Mixed",
+              "connectionGroups": {
+                "$id": "14",
+                "$values": [
+                  {
+                    "$id": "15",
+                    "connectedPints": {
+                      "$id": "16",
+                      "$values": [
+                        {
+                          "$ref": "9"
+                        },
+                        {
+                          "$ref": "11"
+                        },
+                        {
+                          "$id": "17",
+                          "label": "Rignt",
+                          "localPosition": {
+                            "x": 112.05078,
+                            "y": 169.02734
+                          },
+                          "owner": {
+                            "$ref": "1"
+                          },
+                          "connectionPoints": {
+                            "$id": "18",
+                            "$values": []
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "$id": "19",
+              "label": "Full right",
+              "connectionGroups": {
+                "$id": "20",
+                "$values": [
+                  {
+                    "$id": "21",
+                    "connectedPints": {
+                      "$id": "22",
+                      "$values": [
+                        {
+                          "$ref": "11"
+                        },
+                        {
+                          "$ref": "17"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "activeState": {
+          "$ref": "5"
+        }
+      }
+    ]
+  },
+  "id": "7c9e2eb9-b7e3-42d4-8eff-9483582e8ffb",
+  "width": 146,
+  "height": 183,
+  "tags": {
+    "$id": "23",
+    "$values": [
+      "potentiometer",
+      "pot",
+      "volume",
+      "tone"
+    ]
+  },
+  "svgMarkup": "\u003C?xml version=\u00221.0\u0022 encoding=\u0022UTF-8\u0022 standalone=\u0022no\u0022?\u003E\n\u003C!DOCTYPE svg PUBLIC \u0022-//W3C//DTD SVG 1.1//EN\u0022 \u0022http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\u0022\u003E\n\u003Csvg width=\u0022100%\u0022 height=\u0022100%\u0022 viewBox=\u00220 0 179 232\u0022 version=\u00221.1\u0022 xmlns=\u0022http://www.w3.org/2000/svg\u0022 xmlns:xlink=\u0022http://www.w3.org/1999/xlink\u0022 xml:space=\u0022preserve\u0022 xmlns:affinity=\u0022https://www.affinity.studio/\u0022 style=\u0022fill-rule:evenodd;clip-rule:evenodd;\u0022\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Cpath d=\u0022M186,164C191.519,164 196,168.481 196,174L196,197C196,202.519 191.519,207 186,207L54,207C48.481,207 44,202.519 44,197L44,174C44,168.481 48.481,164 54,164L186,164Z\u0022 style=\u0022fill:rgb(158,99,63);stroke:rgb(76,51,39);stroke-width:2px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Cpath d=\u0022M51,199L189,199\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(193,138,96);stroke-width:1.5px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,39,-16)\u0022\u003E\n        \u003Cg id=\u0022pot-lug\u0022\u003E\n            \u003Cpath d=\u0022M-10,194L10,194L10,239C10,243 8,245 4,245L-4,245C-8,245 -10,243 -10,239L-10,194ZM-4,222L-4,234C-4,236.194 -2.194,238 0,238C2.194,238 4,236.194 4,234L4,222C4,219.806 2.194,218 0,218C-2.194,218 -4,219.806 -4,222Z\u0022 style=\u0022fill:url(#_Linear1);stroke:rgb(64,71,76);stroke-width:1.8px;stroke-linejoin:round;\u0022/\u003E\n            \u003Cpath d=\u0022M-6,207L6,207\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(116,125,131);stroke-width:1.2px;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,89,-16)\u0022\u003E\n        \u003Cg id=\u0022pot-lug1\u0022 affinity:id=\u0022pot-lug\u0022\u003E\n            \u003Cpath d=\u0022M-10,194L10,194L10,239C10,243 8,245 4,245L-4,245C-8,245 -10,243 -10,239L-10,194ZM-4,222L-4,234C-4,236.194 -2.194,238 0,238C2.194,238 4,236.194 4,234L4,222C4,219.806 2.194,218 0,218C-2.194,218 -4,219.806 -4,222Z\u0022 style=\u0022fill:url(#_Linear2);stroke:rgb(64,71,76);stroke-width:1.8px;stroke-linejoin:round;\u0022/\u003E\n            \u003Cpath d=\u0022M-6,207L6,207\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(116,125,131);stroke-width:1.2px;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,139,-16)\u0022\u003E\n        \u003Cg id=\u0022pot-lug2\u0022 affinity:id=\u0022pot-lug\u0022\u003E\n            \u003Cpath d=\u0022M-10,194L10,194L10,239C10,243 8,245 4,245L-4,245C-8,245 -10,243 -10,239L-10,194ZM-4,222L-4,234C-4,236.194 -2.194,238 0,238C2.194,238 4,236.194 4,234L4,222C4,219.806 2.194,218 0,218C-2.194,218 -4,219.806 -4,222Z\u0022 style=\u0022fill:url(#_Linear3);stroke:rgb(64,71,76);stroke-width:1.8px;stroke-linejoin:round;\u0022/\u003E\n            \u003Cpath d=\u0022M-6,207L6,207\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:rgb(116,125,131);stroke-width:1.2px;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Ccircle cx=\u002270\u0022 cy=\u0022197\u0022 r=\u00224\u0022 style=\u0022fill:rgb(210,180,122);stroke:rgb(100,72,46);stroke-width:1.2px;\u0022/\u003E\n        \u003Ccircle cx=\u0022120\u0022 cy=\u0022197\u0022 r=\u00224\u0022 style=\u0022fill:rgb(210,180,122);stroke:rgb(100,72,46);stroke-width:1.2px;\u0022/\u003E\n        \u003Ccircle cx=\u0022170\u0022 cy=\u0022197\u0022 r=\u00224\u0022 style=\u0022fill:rgb(210,180,122);stroke:rgb(100,72,46);stroke-width:1.2px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Ccircle cx=\u0022120\u0022 cy=\u0022106\u0022 r=\u002286\u0022 style=\u0022fill:url(#_Linear4);stroke:rgb(52,59,65);stroke-width:2.5px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Ccircle cx=\u0022120\u0022 cy=\u0022106\u0022 r=\u002279\u0022 style=\u0022fill:url(#_Linear5);stroke:rgb(138,148,156);stroke-width:1.4px;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,-31,-16)\u0022\u003E\n        \u003Cpath d=\u0022M47,91C54.122,56.237 84.989,31.052 120.474,31.052C132.873,31.052 145.08,34.127 156,40\u0022 style=\u0022fill:none;fill-rule:nonzero;stroke:white;stroke-opacity:0.8;stroke-width:2px;stroke-linecap:round;\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022matrix(1,0,0,1,89,90)\u0022\u003E\n        \u003Cg id=\u0022pot-crimp\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear6);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp1\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(0.5,0.866025,-0.866025,0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear7);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp2\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(-0.5,0.866025,-0.866025,-0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear8);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp3\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(-1,-0,0,-1,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear9);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp4\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(-0.5,-0.866025,0.866025,-0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear10);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n        \u003Cg id=\u0022pot-crimp5\u0022 affinity:id=\u0022pot-crimp\u0022 transform=\u0022matrix(0.5,-0.866025,0.866025,0.5,0,0)\u0022\u003E\n            \u003Cpath d=\u0022M-8,-82L8,-82L7,-73L-7,-73L-8,-82Z\u0022 style=\u0022fill:url(#_Linear11);fill-rule:nonzero;stroke:rgb(116,126,134);stroke-width:1.1px;stroke-linejoin:round;\u0022/\u003E\n        \u003C/g\u003E\n    \u003C/g\u003E\n    \u003Cdefs\u003E\n        \u003ClinearGradient id=\u0022_Linear1\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(20,0,0,20,-10,194)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(168,175,179);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(241,242,238);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(146,155,159);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear2\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(20,0,0,20,-10,194)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(168,175,179);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(241,242,238);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(146,155,159);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear3\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(20,0,0,20,-10,194)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(168,175,179);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(241,242,238);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(146,155,159);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear4\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(34.4,172,-172,34.4,34,20)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear5\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(158,158,-158,158,41,27)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(238,240,241);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.35\u0022 style=\u0022stop-color:rgb(205,210,214);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.7\u0022 style=\u0022stop-color:rgb(167,175,181);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(217,221,224);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear6\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear7\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear8\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear9\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear10\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n        \u003ClinearGradient id=\u0022_Linear11\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022 gradientUnits=\u0022userSpaceOnUse\u0022 gradientTransform=\u0022matrix(3.2,9,-9,3.2,-8,-82)\u0022\u003E\u003Cstop offset=\u00220\u0022 style=\u0022stop-color:rgb(247,248,249);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.45\u0022 style=\u0022stop-color:rgb(146,156,164);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00220.75\u0022 style=\u0022stop-color:rgb(224,228,231);stop-opacity:1\u0022/\u003E\u003Cstop offset=\u00221\u0022 style=\u0022stop-color:rgb(121,132,142);stop-opacity:1\u0022/\u003E\u003C/linearGradient\u003E\n    \u003C/defs\u003E\n\u003C/svg\u003E\n",
+  "customTextValue": "value",
+  "valuePosition": {
+    "x": 73.16016,
+    "y": 47.01172
+  },
+  "svgRotation": 0,
+  "svgLocalPosition": {
+    "x": 0,
+    "y": 0
+  },
+  "schemePosition": {
+    "x": 0,
+    "y": 0
+  },
+  "classType": "CircuitPart",
+  "name": "Potentiometer",
+  "description": "",
+  "points": {
+    "$id": "24",
+    "$values": [
+      {
+        "$ref": "9"
+      },
+      {
+        "$ref": "11"
+      },
+      {
+        "$ref": "17"
+      },
+      {
+        "$id": "25",
+        "label": "Ground",
+        "localPosition": {
+          "x": 121.81641,
+          "y": 21.703125
+        },
+        "owner": {
+          "$ref": "1"
+        },
+        "connectionPoints": {
+          "$id": "26",
+          "$values": []
+        }
+      }
+    ]
+  }
+}
