@@ -1,0 +1,105 @@
+{
+  "$id": "1",
+  "stateGroups": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "label": "State",
+        "states": {
+          "$id": "4",
+          "$values": [
+            {
+              "$id": "5",
+              "label": "State 1",
+              "connectionGroups": {
+                "$id": "6",
+                "$values": [
+                  {
+                    "$id": "7",
+                    "connectedPints": {
+                      "$id": "8",
+                      "$values": [
+                        {
+                          "$id": "9",
+                          "label": "Point 2",
+                          "localPosition": {
+                            "x": 134.4414,
+                            "y": 33.722656
+                          },
+                          "owner": {
+                            "$ref": "1"
+                          },
+                          "connectionPoints": {
+                            "$id": "10",
+                            "$values": []
+                          }
+                        },
+                        {
+                          "$id": "11",
+                          "label": "Point 1",
+                          "localPosition": {
+                            "x": 5.71875,
+                            "y": 32.859375
+                          },
+                          "owner": {
+                            "$ref": "1"
+                          },
+                          "connectionPoints": {
+                            "$id": "12",
+                            "$values": []
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "activeState": {
+          "$ref": "5"
+        }
+      }
+    ]
+  },
+  "id": "102f0b4e-8e41-47b1-8928-c4f6477802b4",
+  "width": 130,
+  "height": 68,
+  "tags": {
+    "$id": "13",
+    "$values": [
+      "resistor"
+    ]
+  },
+  "svgMarkup": "\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u0022440\u0022 height=\u0022160\u0022 viewBox=\u00220 0 440 160\u0022 role=\u0022img\u0022 aria-labelledby=\u0022resistor-title resistor-description\u0022\u003E\n  \u003Ctitle id=\u0022resistor-title\u0022\u003EAxi\u00E1lny rezistor bez p\u00E1sikov\u003C/title\u003E\n  \u003Cdesc id=\u0022resistor-description\u0022\u003EB\u00E9\u017Eov\u00E9 telo rezistora s dvoma strieborn\u00FDmi v\u00FDvodmi, bez farebn\u00FDch p\u00E1sikov a bez vidite\u013En\u00E9ho textu. Stred tela je vo\u013En\u00FD na doplnenie hodnoty. Prieh\u013Eadn\u00E9 pozadie. Body pripojenia: (20, 80), (420, 80). Odpor\u00FA\u010Dan\u00E9 miesto pre centrovan\u00FD text: (220, 80).\u003C/desc\u003E\n  \u003Cdefs\u003E\n    \u003ClinearGradient id=\u0022resistor-body\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop offset=\u00220\u0022 stop-color=\u0022#ead6ac\u0022/\u003E\n      \u003Cstop offset=\u00220.35\u0022 stop-color=\u0022#f2e2c2\u0022/\u003E\n      \u003Cstop offset=\u00220.7\u0022 stop-color=\u0022#ddc398\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#bda17a\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022resistor-wire\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop stop-color=\u0022#92999d\u0022/\u003E\n      \u003Cstop offset=\u00220.42\u0022 stop-color=\u0022#f1f3f2\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#9ca3a7\u0022/\u003E\n    \u003C/linearGradient\u003E\n  \u003C/defs\u003E\n  \u003Cg fill=\u0022none\u0022 stroke-linecap=\u0022round\u0022\u003E\n    \u003Cpath id=\u0022terminal-1\u0022 d=\u0022M20 80 H130\u0022 stroke=\u0022#5c6266\u0022 stroke-width=\u00228\u0022/\u003E\n    \u003Cpath id=\u0022terminal-2\u0022 d=\u0022M310 80 H420\u0022 stroke=\u0022#5c6266\u0022 stroke-width=\u00228\u0022/\u003E\n    \u003Cpath d=\u0022M20 80 H130 M310 80 H420\u0022 stroke=\u0022url(#resistor-wire)\u0022 stroke-width=\u00225.5\u0022/\u003E\n  \u003C/g\u003E\n  \u003C!-- Slightly flared ends give the unmarked body a familiar resistor silhouette. --\u003E\n  \u003Cpath d=\u0022M132 44 C120 44 114 54 114 66 V94 C114 106 120 116 132 116 H146 C158 116 160 108 174 108 H266 C280 108 282 116 294 116 H308 C320 116 326 106 326 94 V66 C326 54 320 44 308 44 H294 C282 44 280 52 266 52 H174 C160 52 158 44 146 44Z\u0022 fill=\u0022url(#resistor-body)\u0022 stroke=\u0022#897252\u0022 stroke-width=\u00222.4\u0022 stroke-linejoin=\u0022round\u0022/\u003E\n  \u003Cpath d=\u0022M127 60 Q128 55 135 55 H145 Q158 63 174 63 H266 Q282 63 295 55 H305\u0022 fill=\u0022none\u0022 stroke=\u0022#fff4dc\u0022 stroke-opacity=\u00220.65\u0022 stroke-width=\u00222.5\u0022 stroke-linecap=\u0022round\u0022/\u003E\n\u003C/svg\u003E\n",
+  "customTextValue": "value",
+  "valuePosition": {
+    "x": 73.62891,
+    "y": 56.83203
+  },
+  "svgRotation": 0,
+  "svgLocalPosition": {
+    "x": 9.246094,
+    "y": -0.69140625
+  },
+  "schemePosition": {
+    "x": 0,
+    "y": 0
+  },
+  "classType": "CircuitPart",
+  "name": "Resistor",
+  "description": "Base resistor",
+  "points": {
+    "$id": "14",
+    "$values": [
+      {
+        "$ref": "11"
+      },
+      {
+        "$ref": "9"
+      }
+    ]
+  }
+}

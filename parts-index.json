@@ -4,6 +4,7 @@
   "gwire-created-logo.part.json",
   "mono-jack-socket.part.json",
   "potentiometer.part.json",
+  "resistor.part.json",
   "singlecoil-pickup.part.json",
   "text.part.json",
   "treble-bleed-circuit.part.json"
