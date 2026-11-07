@@ -1,0 +1,49 @@
+{
+  "$id": "1",
+  "stateGroups": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "label": "State",
+        "states": {
+          "$id": "4",
+          "$values": []
+        },
+        "activeState": null
+      }
+    ]
+  },
+  "id": "f49c46ec-bb69-4498-93ee-a6cd1432ace2",
+  "width": 147,
+  "height": 69,
+  "tags": {
+    "$id": "5",
+    "$values": [
+      "text",
+      "label"
+    ]
+  },
+  "svgMarkup": "",
+  "customTextValue": "value",
+  "valuePosition": {
+    "x": 77.53906,
+    "y": 21.417969
+  },
+  "svgRotation": 0,
+  "svgLocalPosition": {
+    "x": 0.47265625,
+    "y": 1.0390625
+  },
+  "schemePosition": {
+    "x": 0,
+    "y": 0
+  },
+  "classType": "CircuitPart",
+  "name": "Text",
+  "description": "Just text element. You can use it to add only text information in the schema.",
+  "points": {
+    "$id": "6",
+    "$values": []
+  }
+}

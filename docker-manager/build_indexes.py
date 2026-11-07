@@ -3,8 +3,10 @@
 
 import argparse
 import json
+import os
 from pathlib import Path
 import sys
+import tempfile
 from urllib.parse import unquote, urlsplit
 
 
@@ -50,6 +52,31 @@ def validate_renames(paths):
         destinations[destination] = source
         if source != destination and destination.exists() and not source.samefile(destination):
             raise ValueError(f"Cannot rename {source}: {destination} already exists")
+
+
+def rename_catalog_file(source, destination):
+    """Use an intermediate name for case-only renames on shared volumes."""
+    if source == destination:
+        return
+    if source.name.casefold() != destination.name.casefold():
+        source.rename(destination)
+        return
+    # Some case-insensitive mounts treat a direct case-only rename as a no-op.
+    fd, name = tempfile.mkstemp(prefix=".reindex-", suffix=".tmp", dir=source.parent)
+    os.close(fd)
+    temporary = Path(name)
+    try:
+        source.replace(temporary)
+    except OSError:
+        temporary.unlink()
+        raise
+    try:
+        temporary.replace(destination)
+    except OSError:
+        # Restore the source if the second step fails. If restoration also fails,
+        # leave the temporary file intact so the catalog data can be recovered.
+        temporary.replace(source)
+        raise
 
 
 def scheme_entry(path, directory):
@@ -106,8 +133,7 @@ def build_indexes(root):
     # Validate all input and collisions before renaming files or writing indexes.
     for source in files:
         destination = normalized_path(source)
-        if source != destination:
-            source.rename(destination)
+        rename_catalog_file(source, destination)
     for destination, entries in ((parts_index, parts), (schemes_index, schemes)):
         destination.write_text(
             json.dumps(entries, ensure_ascii=False, indent=2) + "\n",

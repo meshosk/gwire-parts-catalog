@@ -1,7 +1,9 @@
 [
   "5way-switch.part.json",
   "capacitor.part.json",
+  "gwire-created-logo.part.json",
   "mono-jack-socket.part.json",
   "potentiometer.part.json",
-  "singlecoil-pickup.part.json"
+  "singlecoil-pickup.part.json",
+  "text.part.json"
 ]
