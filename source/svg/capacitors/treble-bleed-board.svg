@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600" role="img" aria-labelledby="tb-title tb-description">
+  <title id="tb-title">Treble bleed plošný spoj</title>
+  <desc id="tb-description">Pohľad zhora na čierny plošný spoj podľa referenčnej fotografie. Dva SMD rezistory, jeden kondenzátor, zlatá horná plocha s polkruhovým výrezom a dva spodné spájkovacie kontakty. Priehľadné pozadie. Body pripojenia na spodných kontaktoch: (122, 520), (278, 520).</desc>
+  <defs>
+    <linearGradient id="tb-substrate" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d4cfaf"/>
+      <stop offset="0.45" stop-color="#9b9c80"/>
+      <stop offset="1" stop-color="#c3c2a1"/>
+    </linearGradient>
+    <linearGradient id="tb-mask" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#353638"/>
+      <stop offset="0.5" stop-color="#252729"/>
+      <stop offset="1" stop-color="#303233"/>
+    </linearGradient>
+    <linearGradient id="tb-gold" x1="0" y1="0" x2="0.85" y2="1">
+      <stop stop-color="#e1af45"/>
+      <stop offset="0.2" stop-color="#ffe7a0"/>
+      <stop offset="0.52" stop-color="#f6d579"/>
+      <stop offset="0.8" stop-color="#ffe5a0"/>
+      <stop offset="1" stop-color="#c99432"/>
+    </linearGradient>
+    <linearGradient id="tb-solder" x1="0" y1="0" x2="0.2" y2="1">
+      <stop stop-color="#888b87"/>
+      <stop offset="0.25" stop-color="#f5f2df"/>
+      <stop offset="0.5" stop-color="#babcb3"/>
+      <stop offset="0.7" stop-color="#e2e0cf"/>
+      <stop offset="1" stop-color="#747773"/>
+    </linearGradient>
+    <linearGradient id="tb-ceramic" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#9f9e91"/>
+      <stop offset="0.35" stop-color="#d8d7cd"/>
+      <stop offset="1" stop-color="#b8b8ac"/>
+    </linearGradient>
+    <path id="tb-outline" d="M40 32 H146 A54 54 0 0 0 254 32 H360 Q366 32 366 38 V562 Q366 568 360 568 H307 A29 29 0 0 0 249 568 H151 A29 29 0 0 0 93 568 H40 Q34 568 34 562 V38 Q34 32 40 32 Z"/>
+    <clipPath id="tb-clip"><use href="#tb-outline"/></clipPath>
+    <g id="tb-smd-pads">
+      <rect x="-25" y="-49" width="50" height="100" rx="5" fill="#111516" stroke="#e5eee9" stroke-width="6"/>
+      <rect x="-16" y="-38" width="32" height="24" rx="2" fill="url(#tb-gold)" stroke="#825d20"/>
+      <rect x="-16" y="15" width="32" height="24" rx="2" fill="url(#tb-gold)" stroke="#825d20"/>
+    </g>
+    <g id="tb-smd-resistor">
+      <use href="#tb-smd-pads"/>
+      <rect x="-14" y="-32" width="28" height="66" rx="2" fill="#111314" stroke="#55584e" stroke-width="1.2"/>
+      <path d="M-14-30 H14 V-20 Q0-16-14-20 Z M-14 21 Q0 18 14 21 V33 H-14 Z" fill="url(#tb-solder)" stroke="#8c8c7c" stroke-width="0.7"/>
+      <path d="M-11-27 Q0-31 11-27 M-11 28 Q0 24 11 28" fill="none" stroke="#fff9df" stroke-width="1.5"/>
+    </g>
+  </defs>
+
+  <!-- All cutouts are transparent, including those in the gold contacts. -->
+  <use href="#tb-outline" fill="url(#tb-substrate)" stroke="#b5b69d" stroke-width="1.5"/>
+  <g clip-path="url(#tb-clip)">
+    <rect x="40" y="37" width="320" height="522" rx="3" fill="url(#tb-mask)"/>
+    <path d="M41 37 H359 V109 H41 Z" fill="url(#tb-gold)" stroke="#bd923a" stroke-width="1.5"/>
+    <path d="M43 39 H357 M43 106 H357" fill="none" stroke="#fff0bd" stroke-opacity="0.6" stroke-width="1.5"/>
+
+    <!-- Subtle traces under the dark solder mask. -->
+    <g fill="none" stroke="#16191a" stroke-width="15" stroke-linejoin="round">
+      <path d="M122 230 H278"/>
+      <path d="M122 286 V518"/>
+      <path d="M200 286 V368 H278 V518"/>
+      <path d="M278 286 V518"/>
+    </g>
+    <g fill="none" stroke="#454137" stroke-opacity="0.65" stroke-width="12" stroke-linejoin="round">
+      <path d="M122 230 H278"/>
+      <path d="M122 286 V518"/>
+      <path d="M200 286 V368 H278 V518"/>
+      <path d="M278 286 V518"/>
+    </g>
+
+    <!-- White silkscreen and component outlines. -->
+    <g fill="#e5efec" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+      <text x="200" y="158" font-size="19" font-weight="700" letter-spacing="1.6">TREBLE BLEED</text>
+      <path d="M145 172 H255" fill="none" stroke="#e5efec" stroke-width="1.5" opacity="0.6"/>
+      <text transform="translate(108 342) rotate(90)" font-size="24" font-weight="700">R2</text>
+      <text transform="translate(186 342) rotate(90)" font-size="24" font-weight="700">R1</text>
+      <text transform="translate(264 342) rotate(90)" font-size="24" font-weight="700">C1</text>
+      <text x="200" y="436" font-size="29" font-weight="700" letter-spacing="1">MY-TB01</text>
+      <text x="160" y="478" font-size="24" font-weight="700" letter-spacing="2">REV A</text>
+    </g>
+
+    <use href="#tb-smd-resistor" transform="translate(122 258)"/>
+    <use href="#tb-smd-resistor" transform="translate(200 258)"/>
+    <g fill="#e4e1c9" font-family="monospace" font-size="11" text-anchor="middle">
+      <text transform="translate(118 258) rotate(90)">2002</text>
+      <text transform="translate(196 258) rotate(90)">1503</text>
+    </g>
+    <g transform="translate(278 258)">
+      <use href="#tb-smd-pads"/>
+      <rect x="-14" y="-32" width="28" height="66" rx="2" fill="url(#tb-ceramic)" stroke="#7b7d75"/>
+      <path d="M-14-31 H14 V-19 Q0-16-14-19 Z M-14 20 Q0 17 14 20 V33 H-14 Z" fill="url(#tb-solder)" stroke="#8c8c7c" stroke-width="0.7"/>
+      <path d="M-11-27 Q0-31 11-27 M-11 28 Q0 24 11 28" fill="none" stroke="#fff9df" stroke-width="1.5"/>
+    </g>
+
+    <!-- Two castellated solder contacts along the bottom edge. -->
+    <g stroke="#161a18" stroke-width="5" stroke-linejoin="round">
+      <path id="terminal-1" d="M77 500 H167 V568 H77 Z" fill="url(#tb-gold)"/>
+      <path id="terminal-2" d="M233 500 H323 V568 H233 Z" fill="url(#tb-gold)"/>
+    </g>
+    <g fill="none" stroke="#a57420" stroke-width="3">
+      <path d="M92 568 A30 30 0 0 1 152 568"/>
+      <path d="M248 568 A30 30 0 0 1 308 568"/>
+    </g>
+    <path d="M80 503 H164 M236 503 H320" fill="none" stroke="#fff0bc" stroke-width="2"/>
+    <path d="M40 558 H88 M156 558 H244 M312 558 H360" stroke="#b8b995" stroke-width="2" opacity="0.7"/>
+  </g>
+  <use href="#tb-outline" fill="none" stroke="#a7a88e" stroke-width="1.5"/>
+</svg>
