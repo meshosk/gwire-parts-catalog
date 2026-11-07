@@ -1,0 +1,107 @@
+{
+  "$id": "1",
+  "stateGroups": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "label": "State",
+        "states": {
+          "$id": "4",
+          "$values": [
+            {
+              "$id": "5",
+              "label": "State 1",
+              "connectionGroups": {
+                "$id": "6",
+                "$values": [
+                  {
+                    "$id": "7",
+                    "connectedPints": {
+                      "$id": "8",
+                      "$values": [
+                        {
+                          "$id": "9",
+                          "label": "Point 2",
+                          "localPosition": {
+                            "x": 74.37109,
+                            "y": 155.8164
+                          },
+                          "owner": {
+                            "$ref": "1"
+                          },
+                          "connectionPoints": {
+                            "$id": "10",
+                            "$values": []
+                          }
+                        },
+                        {
+                          "$id": "11",
+                          "label": "Point 1",
+                          "localPosition": {
+                            "x": 31.386719,
+                            "y": 155.89453
+                          },
+                          "owner": {
+                            "$ref": "1"
+                          },
+                          "connectionPoints": {
+                            "$id": "12",
+                            "$values": []
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "activeState": {
+          "$ref": "5"
+        }
+      }
+    ]
+  },
+  "id": "f1abb6a8-a0f8-46fa-ac3f-fdd6999b37cd",
+  "width": 106,
+  "height": 169,
+  "tags": {
+    "$id": "13",
+    "$values": [
+      "fender",
+      "treble bleed",
+      "circuit"
+    ]
+  },
+  "svgMarkup": "\u003Csvg xmlns=\u0022http://www.w3.org/2000/svg\u0022 width=\u0022400\u0022 height=\u0022600\u0022 viewBox=\u00220 0 400 600\u0022 role=\u0022img\u0022 aria-labelledby=\u0022tb-title tb-description\u0022\u003E\n  \u003Ctitle id=\u0022tb-title\u0022\u003ETreble bleed plo\u0161n\u00FD spoj\u003C/title\u003E\n  \u003Cdesc id=\u0022tb-description\u0022\u003EPoh\u013Ead zhora na \u010Dierny plo\u0161n\u00FD spoj pod\u013Ea referen\u010Dnej fotografie. Dva SMD rezistory, jeden kondenz\u00E1tor, zlat\u00E1 horn\u00E1 plocha s polkruhov\u00FDm v\u00FDrezom a dva spodn\u00E9 sp\u00E1jkovacie kontakty. Prieh\u013Eadn\u00E9 pozadie. Body pripojenia na spodn\u00FDch kontaktoch: (122, 520), (278, 520).\u003C/desc\u003E\n  \u003Cdefs\u003E\n    \u003ClinearGradient id=\u0022tb-substrate\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop stop-color=\u0022#d4cfaf\u0022/\u003E\n      \u003Cstop offset=\u00220.45\u0022 stop-color=\u0022#9b9c80\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#c3c2a1\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022tb-mask\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop stop-color=\u0022#353638\u0022/\u003E\n      \u003Cstop offset=\u00220.5\u0022 stop-color=\u0022#252729\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#303233\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022tb-gold\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220.85\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop stop-color=\u0022#e1af45\u0022/\u003E\n      \u003Cstop offset=\u00220.2\u0022 stop-color=\u0022#ffe7a0\u0022/\u003E\n      \u003Cstop offset=\u00220.52\u0022 stop-color=\u0022#f6d579\u0022/\u003E\n      \u003Cstop offset=\u00220.8\u0022 stop-color=\u0022#ffe5a0\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#c99432\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022tb-solder\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00220.2\u0022 y2=\u00221\u0022\u003E\n      \u003Cstop stop-color=\u0022#888b87\u0022/\u003E\n      \u003Cstop offset=\u00220.25\u0022 stop-color=\u0022#f5f2df\u0022/\u003E\n      \u003Cstop offset=\u00220.5\u0022 stop-color=\u0022#babcb3\u0022/\u003E\n      \u003Cstop offset=\u00220.7\u0022 stop-color=\u0022#e2e0cf\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#747773\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003ClinearGradient id=\u0022tb-ceramic\u0022 x1=\u00220\u0022 y1=\u00220\u0022 x2=\u00221\u0022 y2=\u00220\u0022\u003E\n      \u003Cstop stop-color=\u0022#9f9e91\u0022/\u003E\n      \u003Cstop offset=\u00220.35\u0022 stop-color=\u0022#d8d7cd\u0022/\u003E\n      \u003Cstop offset=\u00221\u0022 stop-color=\u0022#b8b8ac\u0022/\u003E\n    \u003C/linearGradient\u003E\n    \u003Cpath id=\u0022tb-outline\u0022 d=\u0022M40 32 H146 A54 54 0 0 0 254 32 H360 Q366 32 366 38 V562 Q366 568 360 568 H307 A29 29 0 0 0 249 568 H151 A29 29 0 0 0 93 568 H40 Q34 568 34 562 V38 Q34 32 40 32 Z\u0022/\u003E\n    \u003CclipPath id=\u0022tb-clip\u0022\u003E\u003Cuse href=\u0022#tb-outline\u0022/\u003E\u003C/clipPath\u003E\n    \u003Cg id=\u0022tb-smd-pads\u0022\u003E\n      \u003Crect x=\u0022-25\u0022 y=\u0022-49\u0022 width=\u002250\u0022 height=\u0022100\u0022 rx=\u00225\u0022 fill=\u0022#111516\u0022 stroke=\u0022#e5eee9\u0022 stroke-width=\u00226\u0022/\u003E\n      \u003Crect x=\u0022-16\u0022 y=\u0022-38\u0022 width=\u002232\u0022 height=\u002224\u0022 rx=\u00222\u0022 fill=\u0022url(#tb-gold)\u0022 stroke=\u0022#825d20\u0022/\u003E\n      \u003Crect x=\u0022-16\u0022 y=\u002215\u0022 width=\u002232\u0022 height=\u002224\u0022 rx=\u00222\u0022 fill=\u0022url(#tb-gold)\u0022 stroke=\u0022#825d20\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg id=\u0022tb-smd-resistor\u0022\u003E\n      \u003Cuse href=\u0022#tb-smd-pads\u0022/\u003E\n      \u003Crect x=\u0022-14\u0022 y=\u0022-32\u0022 width=\u002228\u0022 height=\u002266\u0022 rx=\u00222\u0022 fill=\u0022#111314\u0022 stroke=\u0022#55584e\u0022 stroke-width=\u00221.2\u0022/\u003E\n      \u003Cpath d=\u0022M-14-30 H14 V-20 Q0-16-14-20 Z M-14 21 Q0 18 14 21 V33 H-14 Z\u0022 fill=\u0022url(#tb-solder)\u0022 stroke=\u0022#8c8c7c\u0022 stroke-width=\u00220.7\u0022/\u003E\n      \u003Cpath d=\u0022M-11-27 Q0-31 11-27 M-11 28 Q0 24 11 28\u0022 fill=\u0022none\u0022 stroke=\u0022#fff9df\u0022 stroke-width=\u00221.5\u0022/\u003E\n    \u003C/g\u003E\n  \u003C/defs\u003E\n\n  \u003C!-- All cutouts are transparent, including those in the gold contacts. --\u003E\n  \u003Cuse href=\u0022#tb-outline\u0022 fill=\u0022url(#tb-substrate)\u0022 stroke=\u0022#b5b69d\u0022 stroke-width=\u00221.5\u0022/\u003E\n  \u003Cg clip-path=\u0022url(#tb-clip)\u0022\u003E\n    \u003Crect x=\u002240\u0022 y=\u002237\u0022 width=\u0022320\u0022 height=\u0022522\u0022 rx=\u00223\u0022 fill=\u0022url(#tb-mask)\u0022/\u003E\n    \u003Cpath d=\u0022M41 37 H359 V109 H41 Z\u0022 fill=\u0022url(#tb-gold)\u0022 stroke=\u0022#bd923a\u0022 stroke-width=\u00221.5\u0022/\u003E\n    \u003Cpath d=\u0022M43 39 H357 M43 106 H357\u0022 fill=\u0022none\u0022 stroke=\u0022#fff0bd\u0022 stroke-opacity=\u00220.6\u0022 stroke-width=\u00221.5\u0022/\u003E\n\n    \u003C!-- Subtle traces under the dark solder mask. --\u003E\n    \u003Cg fill=\u0022none\u0022 stroke=\u0022#16191a\u0022 stroke-width=\u002215\u0022 stroke-linejoin=\u0022round\u0022\u003E\n      \u003Cpath d=\u0022M122 230 H278\u0022/\u003E\n      \u003Cpath d=\u0022M122 286 V518\u0022/\u003E\n      \u003Cpath d=\u0022M200 286 V368 H278 V518\u0022/\u003E\n      \u003Cpath d=\u0022M278 286 V518\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg fill=\u0022none\u0022 stroke=\u0022#454137\u0022 stroke-opacity=\u00220.65\u0022 stroke-width=\u002212\u0022 stroke-linejoin=\u0022round\u0022\u003E\n      \u003Cpath d=\u0022M122 230 H278\u0022/\u003E\n      \u003Cpath d=\u0022M122 286 V518\u0022/\u003E\n      \u003Cpath d=\u0022M200 286 V368 H278 V518\u0022/\u003E\n      \u003Cpath d=\u0022M278 286 V518\u0022/\u003E\n    \u003C/g\u003E\n\n    \u003C!-- White silkscreen and component outlines. --\u003E\n    \u003Cg fill=\u0022#e5efec\u0022 font-family=\u0022Arial, Helvetica, sans-serif\u0022 text-anchor=\u0022middle\u0022\u003E\n      \u003Ctext x=\u0022200\u0022 y=\u0022158\u0022 font-size=\u002219\u0022 font-weight=\u0022700\u0022 letter-spacing=\u00221.6\u0022\u003ETREBLE BLEED\u003C/text\u003E\n      \u003Cpath d=\u0022M145 172 H255\u0022 fill=\u0022none\u0022 stroke=\u0022#e5efec\u0022 stroke-width=\u00221.5\u0022 opacity=\u00220.6\u0022/\u003E\n      \u003Ctext transform=\u0022translate(108 342) rotate(90)\u0022 font-size=\u002224\u0022 font-weight=\u0022700\u0022\u003ER2\u003C/text\u003E\n      \u003Ctext transform=\u0022translate(186 342) rotate(90)\u0022 font-size=\u002224\u0022 font-weight=\u0022700\u0022\u003ER1\u003C/text\u003E\n      \u003Ctext transform=\u0022translate(264 342) rotate(90)\u0022 font-size=\u002224\u0022 font-weight=\u0022700\u0022\u003EC1\u003C/text\u003E\n      \u003Ctext x=\u0022200\u0022 y=\u0022436\u0022 font-size=\u002229\u0022 font-weight=\u0022700\u0022 letter-spacing=\u00221\u0022\u003EMY-TB01\u003C/text\u003E\n      \u003Ctext x=\u0022160\u0022 y=\u0022478\u0022 font-size=\u002224\u0022 font-weight=\u0022700\u0022 letter-spacing=\u00222\u0022\u003EREV A\u003C/text\u003E\n    \u003C/g\u003E\n\n    \u003Cuse href=\u0022#tb-smd-resistor\u0022 transform=\u0022translate(122 258)\u0022/\u003E\n    \u003Cuse href=\u0022#tb-smd-resistor\u0022 transform=\u0022translate(200 258)\u0022/\u003E\n    \u003Cg fill=\u0022#e4e1c9\u0022 font-family=\u0022monospace\u0022 font-size=\u002211\u0022 text-anchor=\u0022middle\u0022\u003E\n      \u003Ctext transform=\u0022translate(118 258) rotate(90)\u0022\u003E2002\u003C/text\u003E\n      \u003Ctext transform=\u0022translate(196 258) rotate(90)\u0022\u003E1503\u003C/text\u003E\n    \u003C/g\u003E\n    \u003Cg transform=\u0022translate(278 258)\u0022\u003E\n      \u003Cuse href=\u0022#tb-smd-pads\u0022/\u003E\n      \u003Crect x=\u0022-14\u0022 y=\u0022-32\u0022 width=\u002228\u0022 height=\u002266\u0022 rx=\u00222\u0022 fill=\u0022url(#tb-ceramic)\u0022 stroke=\u0022#7b7d75\u0022/\u003E\n      \u003Cpath d=\u0022M-14-31 H14 V-19 Q0-16-14-19 Z M-14 20 Q0 17 14 20 V33 H-14 Z\u0022 fill=\u0022url(#tb-solder)\u0022 stroke=\u0022#8c8c7c\u0022 stroke-width=\u00220.7\u0022/\u003E\n      \u003Cpath d=\u0022M-11-27 Q0-31 11-27 M-11 28 Q0 24 11 28\u0022 fill=\u0022none\u0022 stroke=\u0022#fff9df\u0022 stroke-width=\u00221.5\u0022/\u003E\n    \u003C/g\u003E\n\n    \u003C!-- Two castellated solder contacts along the bottom edge. --\u003E\n    \u003Cg stroke=\u0022#161a18\u0022 stroke-width=\u00225\u0022 stroke-linejoin=\u0022round\u0022\u003E\n      \u003Cpath id=\u0022terminal-1\u0022 d=\u0022M77 500 H167 V568 H77 Z\u0022 fill=\u0022url(#tb-gold)\u0022/\u003E\n      \u003Cpath id=\u0022terminal-2\u0022 d=\u0022M233 500 H323 V568 H233 Z\u0022 fill=\u0022url(#tb-gold)\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cg fill=\u0022none\u0022 stroke=\u0022#a57420\u0022 stroke-width=\u00223\u0022\u003E\n      \u003Cpath d=\u0022M92 568 A30 30 0 0 1 152 568\u0022/\u003E\n      \u003Cpath d=\u0022M248 568 A30 30 0 0 1 308 568\u0022/\u003E\n    \u003C/g\u003E\n    \u003Cpath d=\u0022M80 503 H164 M236 503 H320\u0022 fill=\u0022none\u0022 stroke=\u0022#fff0bc\u0022 stroke-width=\u00222\u0022/\u003E\n    \u003Cpath d=\u0022M40 558 H88 M156 558 H244 M312 558 H360\u0022 stroke=\u0022#b8b995\u0022 stroke-width=\u00222\u0022 opacity=\u00220.7\u0022/\u003E\n  \u003C/g\u003E\n  \u003Cuse href=\u0022#tb-outline\u0022 fill=\u0022none\u0022 stroke=\u0022#a7a88e\u0022 stroke-width=\u00221.5\u0022/\u003E\n\u003C/svg\u003E\n",
+  "customTextValue": null,
+  "valuePosition": {
+    "x": 120,
+    "y": 80
+  },
+  "svgRotation": 0,
+  "svgLocalPosition": {
+    "x": 0,
+    "y": 0
+  },
+  "schemePosition": {
+    "x": 0,
+    "y": 0
+  },
+  "classType": "CircuitPart",
+  "name": "Treble bleed circuit",
+  "description": "A treble bleed creates a \u0022bypass lane\u0022 that lets high frequencies skip around the volume control as you turn it down. Your overall volume drops, but your clarity and sparkle remain intact. It has zero effect on your tone when the volume knob is turned all the way up.",
+  "points": {
+    "$id": "14",
+    "$values": [
+      {
+        "$ref": "11"
+      },
+      {
+        "$ref": "9"
+      }
+    ]
+  }
+}
