@@ -40,7 +40,7 @@ def catalog_files(directory):
 
 
 def normalized_path(path):
-    return path.with_name(path.name.lower().replace(" ", "-"))
+    return path.with_name(path.name.lower().replace(" ", "-").replace(",", "-"))
 
 
 def validate_renames(paths):

@@ -21,7 +21,7 @@ Click **Rebuild indexes** to regenerate the parts and schemes indexes from the l
 Scheme metadata (`name`, `description`, `tags`) is read from the exported `circuit` object, or from the top level in older files. Tags support both plain arrays and `$values` wrappers.
 
 Rebuilding also renames JSON files in the parts and schemes directories to lowercase
-with spaces replaced by hyphens. Indexes use these new filenames; metadata stays
+with spaces and commas replaced by hyphens. Indexes use these new filenames; metadata stays
 unchanged. Filename collisions stop the rebuild before files or indexes are changed.
 Case-only renames use a temporary filename so they also work on case-insensitive
 filesystems and shared Docker volumes.

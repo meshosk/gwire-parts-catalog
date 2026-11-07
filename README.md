@@ -101,7 +101,7 @@ paths resolve inside the catalog root. It recursively scans all `*.json` files i
 the configured part and scheme directories, sorts their relative paths, and
 replaces both indexes, removing stale entries. Standalone SVG files are not indexed.
 
-During each rebuild, JSON filenames are renamed to lowercase with spaces replaced
+During each rebuild, JSON filenames are renamed to lowercase with spaces and commas replaced
 by hyphens (for example, `Singlecoil Pickup.part.json` becomes
 `singlecoil-pickup.part.json`). Directory names and metadata inside JSON files stay
 unchanged. Both indexes use the renamed files. Filename collisions and invalid

@@ -1,11 +1,27 @@
 [
   {
-    "file": "simple-sss-scheme.scheme.json",
-    "name": "Simple SSS scheme",
-    "description": "Classic ",
+    "file": "sss-3-way-selector-switch--middle-pickup-volume.scheme.json",
+    "name": "SSS 3-Way Selector Switch, Middle Pickup Volume",
+    "description": "Think of this wiring as a telecaster with a blend knob for the middle volume. It gives you the neck and bridge option on position 2, and lets you dial in how quacky you want the middle pickup to sound when blended with neck or middle. ",
+    "tags": [
+      "telecaster",
+      "stratocaster",
+      "single coil",
+      "sss",
+      "middle",
+      "blend"
+    ]
+  },
+  {
+    "file": "sss-5-way-switch-scheme-2-tone--1-volume.scheme.json",
+    "name": "SSS 5-way switch scheme 2 tone, 1 volume",
+    "description": "This is common 5 switch scheme with one volume pot, bridge/middle pickup tone and neck pickup tone.",
     "tags": [
       "sss",
-      "single coil"
+      "single coil",
+      "5 way",
+      "classic",
+      "stratocaster"
     ]
   }
 ]
