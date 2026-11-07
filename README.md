@@ -2,7 +2,7 @@
 
 Catalog data and SVG artwork for Gwire guitar wiring diagrams, maintained separately
 from the main application. The repository contains component definitions, saved
-wiring schemes, shared tags, and a local tag manager with an index builder.
+wiring schemes, shared tags, and a local catalog manager with an index builder.
 
 The [Gwire application](https://github.com/meshosk/gwire) uses this repository as
 its data source.
@@ -18,7 +18,7 @@ its data source.
 | `parts-index.json` | Generated list of part filenames relative to `parts/`. |
 | `schemes-index.json` | Generated list of scheme filenames and metadata relative to `schemes/`. |
 | `tags.json` | Shared tag vocabulary as a JSON array of strings. |
-| `docker-tag/` | Tag manager, index builder, Docker configuration, and tests. |
+| `docker-manager/` | Catalog metadata editor, index builder, and Docker configuration. |
 
 ## Updating the catalog
 
@@ -36,7 +36,7 @@ its data source.
 The index builder normalizes catalog filenames and regenerates index files. It does not convert SVG artwork
 into parts or modify component definitions.
 
-## Tag manager
+## Catalog manager
 
 Run these commands from the repository root. Docker requires Compose and a running
 daemon. The image builds from `python:3.13-slim`; the app uses Python’s standard
@@ -44,8 +44,12 @@ library and local HTML/CSS/JavaScript, without npm or pip dependencies.
 
 ```sh
 LOCAL_UID="$(id -u)" LOCAL_GID="$(id -g)" \
-  docker compose -f docker-tag/docker-compose.yml up --build -d
+  docker compose -f docker-manager/docker-compose.yml up --build -d
 ```
+
+The **Parts** (`/parts`) and **Schemes** (`/schemes`) pages list catalog items with
+search and individual edit pages for names, descriptions and tags. Save each item,
+then rebuild indexes to refresh catalog listings. Other exported data is preserved.
 
 Open [localhost:8080](http://localhost:8080). The repository is mounted at `/catalog`
 and the container runs with your user and group IDs so saved changes are written
@@ -63,32 +67,32 @@ error. It is independent of pending tag edits.
 Stop the container with:
 
 ```sh
-docker compose -f docker-tag/docker-compose.yml down
+docker compose -f docker-manager/docker-compose.yml down
 ```
 
 Alternatively, run locally with Python 3.9+:
 
 ```sh
-python3 docker-tag/server.py --host 127.0.0.1 --port 8080
+python3 docker-manager/server.py --host 127.0.0.1 --port 8080
 ```
 
 The server defaults to `tags.json` in the repository root. Use `--tags` to select
 another file. Without `--host`, it listens on `0.0.0.0`; the Docker configuration
 publishes port 8080. The app has no authentication and is intended for trusted
-local use. See [the tag manager README](docker-tag/README.md) for details.
+local use. See [the tag manager README](docker-manager/README.md) for details.
 
 ## Rebuilding indexes
 
 Run locally with Python 3.9+, without starting the tag manager:
 
 ```sh
-python3 docker-tag/build_indexes.py
+python3 docker-manager/build_indexes.py
 ```
 
 Or use the running Docker service:
 
 ```sh
-docker compose -f docker-tag/docker-compose.yml exec tags python /app/build_indexes.py --root /catalog
+docker compose -f docker-manager/docker-compose.yml exec tags python /app/build_indexes.py --root /catalog
 ```
 
 The builder reads `index.json` and uses local files; it does not fetch the configured
@@ -137,14 +141,3 @@ stay empty. Metadata is never inferred from filenames or individual components.
 Only `file` uses the normalized path relative to `schemes/`.
 Invalid scheme metadata is rejected before either index is written. Part files
 are indexed by filename; the builder does not validate their JSON contents.
-
-## Tests
-
-The tag manager tests use temporary catalog data:
-
-```sh
-python3 -m unittest discover -s docker-tag -p 'test_*.py' -v
-node --test docker-tag/test_search.cjs docker-tag/test_ui.cjs
-```
-
-The JavaScript tests use Node.js’s built-in test runner and require no npm install.

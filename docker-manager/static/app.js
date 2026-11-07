@@ -26,9 +26,6 @@ function matchScore(tag, query) {
   return scores.reduce((a, b) => a + b, 0);
 }
 
-// Also export the exact search used by the browser for dependency-free tests.
-if (typeof module !== "undefined") module.exports = {normalize, distance, matchScore};
-
 if (typeof document !== "undefined") {
   const $ = id => document.getElementById(id);
   let tags = [], revision = null, editing = null, dirty = false, saving = false;
