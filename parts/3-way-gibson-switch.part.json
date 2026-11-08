@@ -1,0 +1,186 @@
+{
+  "$id": "1",
+  "stateGroups": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "label": "State",
+        "states": {
+          "$id": "4",
+          "$values": [
+            {
+              "$id": "5",
+              "label": "Rythm - neck",
+              "connectionGroups": {
+                "$id": "6",
+                "$values": [
+                  {
+                    "$id": "7",
+                    "connectedPints": {
+                      "$id": "8",
+                      "$values": [
+                        {
+                          "$id": "9",
+                          "label": "out",
+                          "localPosition": {
+                            "x": 63.859375,
+                            "y": 195.96185
+                          },
+                          "owner": {
+                            "$ref": "1"
+                          },
+                          "connectionPoints": {
+                            "$id": "10",
+                            "$values": []
+                          }
+                        },
+                        {
+                          "$id": "11",
+                          "label": "neck",
+                          "localPosition": {
+                            "x": 104.27173,
+                            "y": 194.25366
+                          },
+                          "owner": {
+                            "$ref": "1"
+                          },
+                          "connectionPoints": {
+                            "$id": "12",
+                            "$values": []
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "$id": "13",
+              "label": "Middle",
+              "connectionGroups": {
+                "$id": "14",
+                "$values": [
+                  {
+                    "$id": "15",
+                    "connectedPints": {
+                      "$id": "16",
+                      "$values": [
+                        {
+                          "$ref": "9"
+                        },
+                        {
+                          "$ref": "11"
+                        },
+                        {
+                          "$id": "17",
+                          "label": "bidge",
+                          "localPosition": {
+                            "x": 20.546875,
+                            "y": 195.71875
+                          },
+                          "owner": {
+                            "$ref": "1"
+                          },
+                          "connectionPoints": {
+                            "$id": "18",
+                            "$values": []
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "$id": "19",
+              "label": "Trebble - bridge",
+              "connectionGroups": {
+                "$id": "20",
+                "$values": [
+                  {
+                    "$id": "21",
+                    "connectedPints": {
+                      "$id": "22",
+                      "$values": [
+                        {
+                          "$ref": "9"
+                        },
+                        {
+                          "$ref": "17"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "activeState": {
+          "$ref": "19"
+        }
+      }
+    ]
+  },
+  "id": "0e9277a7-31ed-4f88-9180-5cf652ff6b2e",
+  "width": 126,
+  "height": 207,
+  "tags": {
+    "$id": "23",
+    "$values": [
+      "switch",
+      "gibson",
+      "3 way"
+    ]
+  },
+  "svgMarkup": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"520\" viewBox=\"0 0 300 520\" role=\"img\" aria-labelledby=\"lp-title lp-description\">\n  <title id=\"lp-title\">Les Paul prepínač — priamy pohľad zospodu</title>\n  <desc id=\"lp-description\">Priamy pohľad zospodu podľa dodanej skice, bez perspektívy, montážneho krúžku a vodičov. Úzke obdĺžnikové hnedé telo s rovnobežnými izolačnými vrstvami. Dlhý kovový zemniaci kontakt prechádza stredom a vyčnieva hore. Štyri spodné kontaktné pliešky sa rozbiehajú do troch pripájacích miest; dva stredné sa zbiehajú do spoločného očka. Priehľadné pozadie a otvory očiek. Body pripojenia: terminal-ground (150, 48), terminal-left (51, 481), terminal-common (150, 481), terminal-right (249, 481).</desc>\n  <defs>\n    <linearGradient id=\"lp-phenolic\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"0\">\n      <stop stop-color=\"#9b6429\"/><stop offset=\"0.18\" stop-color=\"#d59e4a\"/><stop offset=\"0.5\" stop-color=\"#bc8334\"/><stop offset=\"0.8\" stop-color=\"#d49b46\"/><stop offset=\"1\" stop-color=\"#996127\"/>\n    </linearGradient>\n    <linearGradient id=\"lp-wafer\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"0\">\n      <stop stop-color=\"#b47b2f\"/><stop offset=\"0.4\" stop-color=\"#dbab58\"/><stop offset=\"1\" stop-color=\"#b17b31\"/>\n    </linearGradient>\n    <linearGradient id=\"lp-steel\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"0\">\n      <stop stop-color=\"#909b9b\"/><stop offset=\"0.25\" stop-color=\"#dce1d8\"/><stop offset=\"0.5\" stop-color=\"#f0f1e5\"/><stop offset=\"0.76\" stop-color=\"#c1cac3\"/><stop offset=\"1\" stop-color=\"#8d999a\"/>\n    </linearGradient>\n    <linearGradient id=\"lp-leaf\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"0\">\n      <stop stop-color=\"#8a989b\"/><stop offset=\"0.4\" stop-color=\"#e2e8df\"/><stop offset=\"1\" stop-color=\"#a3b0af\"/>\n    </linearGradient>\n  </defs>\n\n  <!-- Four straight contact leaves, fanned out below the insulating stack. -->\n  <g fill=\"url(#lp-leaf)\" stroke=\"#7c898a\" stroke-width=\"1.2\" stroke-linejoin=\"round\">\n    <path id=\"contact-leaf-left\" d=\"M94 378 H103 L62 469 L52 473 Z\"/>\n    <path id=\"contact-leaf-center-left\" d=\"M118 378 H127 L154 474 L145 477 Z\"/>\n    <path id=\"contact-leaf-center-right\" d=\"M173 378 H182 L155 477 L146 474 Z\"/>\n    <path id=\"contact-leaf-right\" d=\"M197 378 H206 L248 473 L238 469 Z\"/>\n  </g>\n  <g fill=\"none\" stroke=\"#f4f7ed\" stroke-opacity=\"0.7\" stroke-width=\"1.2\">\n    <path d=\"M98 395 L59 465 M123 395 L147 465 M177 395 L153 465 M202 395 L241 465\"/>\n  </g>\n\n  <!-- Rectangular wafer stack: strictly parallel edges, no perspective. -->\n  <g id=\"insulating-stack\">\n    <rect x=\"79\" y=\"153\" width=\"142\" height=\"241\" rx=\"1.5\" fill=\"url(#lp-phenolic)\" stroke=\"#92642e\" stroke-width=\"1.8\"/>\n    <g fill=\"url(#lp-wafer)\" stroke=\"#b38948\" stroke-width=\"0.8\">\n      <rect x=\"82\" y=\"155\" width=\"18\" height=\"237\"/>\n      <rect x=\"106\" y=\"155\" width=\"18\" height=\"237\"/>\n      <rect x=\"130\" y=\"155\" width=\"14\" height=\"237\"/>\n      <rect x=\"156\" y=\"155\" width=\"14\" height=\"237\"/>\n      <rect x=\"176\" y=\"155\" width=\"18\" height=\"237\"/>\n      <rect x=\"200\" y=\"155\" width=\"18\" height=\"237\"/>\n    </g>\n    <g fill=\"#a6a78a\" stroke=\"#888d79\" stroke-width=\"0.65\">\n      <rect x=\"100\" y=\"154\" width=\"5\" height=\"239\"/>\n      <rect x=\"124\" y=\"154\" width=\"5\" height=\"239\"/>\n      <rect x=\"171\" y=\"154\" width=\"5\" height=\"239\"/>\n      <rect x=\"195\" y=\"154\" width=\"5\" height=\"239\"/>\n    </g>\n    <g fill=\"none\" stroke=\"#f1ce86\" stroke-opacity=\"0.5\" stroke-width=\"1\">\n      <path d=\"M84 158 V389 M108 158 V389 M132 158 V389 M158 158 V389 M178 158 V389 M202 158 V389\"/>\n      <path d=\"M82 155 H218\"/>\n    </g>\n  </g>\n\n  <!-- Long frame/ground strip runs down the center, as in the supplied sketch. -->\n  <path id=\"terminal-ground\" d=\"M140 394 V43 Q140 33 150 33 Q160 33 160 43 V394 Z M144 45 V51 A6 6 0 0 0 156 51 V45 A6 6 0 0 0 144 45 Z\" fill=\"url(#lp-steel)\" fill-rule=\"evenodd\" stroke=\"#8b9590\" stroke-width=\"1.3\" stroke-linejoin=\"round\"/>\n  <path d=\"M143 68 V389\" fill=\"none\" stroke=\"#fffef0\" stroke-opacity=\"0.65\" stroke-width=\"1.4\"/>\n\n  <!-- Three exposed solder eyes. The center eye joins the two inner leaves. -->\n  <g fill=\"url(#lp-steel)\" fill-rule=\"evenodd\" stroke=\"#78898b\" stroke-width=\"1.3\">\n    <path id=\"terminal-left\" d=\"M40 477 Q40 469 48 469 H54 Q62 469 62 477 V485 Q62 493 54 493 H48 Q40 493 40 485 Z M45 479 V483 A6 6 0 0 0 57 483 V479 A6 6 0 0 0 45 479 Z\"/>\n    <path id=\"terminal-common\" d=\"M139 477 Q139 469 147 469 H153 Q161 469 161 477 V485 Q161 493 153 493 H147 Q139 493 139 485 Z M144 479 V483 A6 6 0 0 0 156 483 V479 A6 6 0 0 0 144 479 Z\"/>\n    <path id=\"terminal-right\" d=\"M238 477 Q238 469 246 469 H252 Q260 469 260 477 V485 Q260 493 252 493 H246 Q238 493 238 485 Z M243 479 V483 A6 6 0 0 0 255 483 V479 A6 6 0 0 0 243 479 Z\"/>\n  </g>\n</svg>\n",
+  "customTextValue": null,
+  "valuePosition": {
+    "x": 120,
+    "y": 80
+  },
+  "svgRotation": 0,
+  "svgLocalPosition": {
+    "x": 0.125,
+    "y": 0.12109375
+  },
+  "schemePosition": {
+    "x": 0,
+    "y": 0
+  },
+  "classType": "CircuitPart",
+  "name": "3 way gibson switch",
+  "description": "The standard Gibson 3-way toggle switch selects the warm neck pickup in the \"Rhythm\" position and the bright bridge pickup in the \"Treble\" position. When set to the middle, it blends both pickups together into a parallel circuit.",
+  "points": {
+    "$id": "24",
+    "$values": [
+      {
+        "$ref": "17"
+      },
+      {
+        "$ref": "9"
+      },
+      {
+        "$ref": "11"
+      },
+      {
+        "$id": "25",
+        "label": "groud",
+        "localPosition": {
+          "x": 65.671875,
+          "y": 16.816406
+        },
+        "owner": {
+          "$ref": "1"
+        },
+        "connectionPoints": {
+          "$id": "26",
+          "$values": []
+        }
+      }
+    ]
+  }
+}
