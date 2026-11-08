@@ -44,7 +44,7 @@
   },
   "classType": "CircuitPart",
   "name": "Mono jack socket",
-  "description": "",
+  "description": "Classic input/output jack for guitar in mono.",
   "points": {
     "$id": "6",
     "$values": [

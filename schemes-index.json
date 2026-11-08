@@ -13,6 +13,17 @@
     ]
   },
   {
+    "file": "hh-gibson-classic-4-pot.scheme.json",
+    "name": "HH Gibson classic 4 pot",
+    "description": "2 volume, 2 tone and 3 way switch. The gibson classics",
+    "tags": [
+      "gibson",
+      "hh",
+      "humbucker",
+      "classic"
+    ]
+  },
+  {
     "file": "sss-3-way-selector-switch--middle-pickup-volume.scheme.json",
     "name": "SSS 3-Way Selector Switch, Middle Pickup Volume",
     "description": "Think of this wiring as a telecaster with a blend knob for the middle volume. It gives you the neck and bridge option on position 2, and lets you dial in how quacky you want the middle pickup to sound when blended with neck or middle. ",
