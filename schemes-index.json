@@ -1,5 +1,18 @@
 [
   {
+    "file": "dan-armstrong-mod-wiring.scheme.json",
+    "name": "Dan Armstrong mod wiring",
+    "description": "One volume pot, one tone pot, one middle serial mix into neck and bridge.\n\nIt allows you to continuously blend or switch pickup combinations from the classic parallel Stratocaster chime into thicker, humbucker-style series tones.\n",
+    "tags": [
+      "sss",
+      "single coil",
+      "parallel",
+      "serial",
+      "blend",
+      "mix"
+    ]
+  },
+  {
     "file": "sss-3-way-selector-switch--middle-pickup-volume.scheme.json",
     "name": "SSS 3-Way Selector Switch, Middle Pickup Volume",
     "description": "Think of this wiring as a telecaster with a blend knob for the middle volume. It gives you the neck and bridge option on position 2, and lets you dial in how quacky you want the middle pickup to sound when blended with neck or middle. ",
